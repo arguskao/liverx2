@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>網路行銷 on 活力藥師網番外篇</title>
+    <link>https://arguskao.github.io/liverx2/tag/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
+    <description>Recent content in 網路行銷 on 活力藥師網番外篇</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 24 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://arguskao.github.io/liverx2/tag/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>從wordpress搬到Hugo</title>
+      <link>https://arguskao.github.io/liverx2/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://arguskao.github.io/liverx2/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
+      <description>實在不敢相信，我辦到了! 首先要感謝Mina的幫助，他的網站是 Mina&amp;rsquo;s Life Travel.是他的網站＋本人手把手的教學，才讓我一個完全不懂程式的人，把Hugo搞定的
+用Wordpress十幾年了，但是越來越肥大的問題，讓我一直不太滿意，所以一直在尋求一個好方法，之前試過Octopress，還有Ghost，可是都不太滿意，所以一直在找方法，最後找到Hexo，搞了半天還是失敗，最後終於有機會用到Hugo，希望能夠讓我解決這些問題。</description>
+    </item>
+    
+  </channel>
+</rss>
