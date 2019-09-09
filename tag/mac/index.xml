@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mac on 活力藥師網番外篇</title>
-    <link>https://arguskao.github.io/liverx2/tag/mac/</link>
+    <link>https://www.liverx.org/tag/mac/</link>
     <description>Recent content in mac on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 22 Nov 2012 06:54:05 +0000</lastBuildDate>
     
-	<atom:link href="https://arguskao.github.io/liverx2/tag/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.liverx.org/tag/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac上寫網頁一定要用的編輯器</title>
-      <link>https://arguskao.github.io/liverx2/2012/11/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</link>
+      <link>https://www.liverx.org/2012/11/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</link>
       <pubDate>Thu, 22 Nov 2012 06:54:05 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2012/11/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</guid>
+      <guid>https://www.liverx.org/2012/11/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</guid>
       <description>本來我一向是wordpress的死忠支持者，但是男人總是愛新鮮的嘛，有一陣子看到很多人在用Octopress，讓我摸索了一陣子，發現裡面的Markdown是給程式設計者用的，我們這種業餘玩咖，摸了幾次以後就放棄了，當然也因為要搞什麼Ruby環境，實在大大超過我所想像的世界。
 於是實在是已經走火入魔的我，開始想說是不是回頭用Html來刻網頁，速度上一定是會非常快的 ((主要是vps上的記憶體太小，真的要弄個什麼apache+php+mysql就滿了))。所以我就開始學習怎麼寫HTML了，要寫網頁一定要有個很棒的編輯器，本來我都一直使用Sublime 2，不過我從來不知道這個程式的強大，只有用到記事本的功能，結果一搜尋才知道，原來真的是很強很強的呀，推薦大家來用，可以省下很多時間喲。
 延伸閱讀：Ubuntu安裝sublime Text 2
@@ -25,10 +25,10 @@
     
     <item>
       <title>大腦運作的法則</title>
-      <link>https://arguskao.github.io/liverx2/2009/04/%E5%A4%A7%E8%85%A6%E9%81%8B%E4%BD%9C%E7%9A%84%E6%B3%95%E5%89%87/</link>
+      <link>https://www.liverx.org/2009/04/%E5%A4%A7%E8%85%A6%E9%81%8B%E4%BD%9C%E7%9A%84%E6%B3%95%E5%89%87/</link>
       <pubDate>Sun, 12 Apr 2009 17:03:40 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2009/04/%E5%A4%A7%E8%85%A6%E9%81%8B%E4%BD%9C%E7%9A%84%E6%B3%95%E5%89%87/</guid>
+      <guid>https://www.liverx.org/2009/04/%E5%A4%A7%E8%85%A6%E9%81%8B%E4%BD%9C%E7%9A%84%E6%B3%95%E5%89%87/</guid>
       <description>這還是一篇教你如何好好簡報的投影片
 Brain Rules for Presenters
 View more documents from garr.
@@ -37,10 +37,10 @@ View more documents from garr.
     
     <item>
       <title>跟Jobs學創新</title>
-      <link>https://arguskao.github.io/liverx2/2008/02/%E8%B7%9Fjobs%E5%AD%B8%E5%89%B5%E6%96%B0/</link>
+      <link>https://www.liverx.org/2008/02/%E8%B7%9Fjobs%E5%AD%B8%E5%89%B5%E6%96%B0/</link>
       <pubDate>Sat, 02 Feb 2008 13:35:31 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/02/%E8%B7%9Fjobs%E5%AD%B8%E5%89%B5%E6%96%B0/</guid>
+      <guid>https://www.liverx.org/2008/02/%E8%B7%9Fjobs%E5%AD%B8%E5%89%B5%E6%96%B0/</guid>
       <description>暨上一篇jobs的簡報，應該繼續來介紹一下Jobs這一位天才，其實他回到蘋果以後，作了許多特殊的事情，但是他創立蘋果以後，一直到回鍋之前，中間的那一段他做了些什麼?!
 賈伯斯在1985年蘋果高層權力鬥爭中離開蘋果並成立了NeXT公司 ((發展出NeXT電腦及NeXTSTEP操作系統。就像Lisa一樣，NeXT擁有最先進的技術，但是不能成為最流行的電腦，不知道創立NEXT公司是否帶給jobs一些想法，好的技術不一定能夠錢))。1997年，蘋果收購NeXT，賈伯斯回到蘋果接任首席執行官，他花1000萬美元從喬治盧卡斯 ((著名的導演，作品有星際大戰和奪寶奇兵))手中買了Pixar ((他從從喬治·盧卡斯手中收購了Lucasfilm旗下位於加利福尼亞州Emeryville的電腦動畫效果工作室，並成立獨立公司皮克斯動畫工作室（Pixar）。在之後十年，該公司成為了眾所周知的3D電腦動畫公司))，這公司已在2006年被迪士尼收購。賈伯斯還是迪士尼公司的董事會成員和最大個人股東．
 Pixar應該是Jobs做的第一個創新，將動畫技術結合一些古老的童話或者是生活中不可能達到的夢想藉由Pixar將之賦予生命，然後搬上螢幕，用特殊的行銷手法讓這些電影賺錢，大量動畫人員的薪水絕對會比大卡司便宜的太多，定位在Teenagers的客戶，沒有生產力，卻有最強大的購買力，沒有特殊的技術，透過思考模式的創新，讓迪士尼這家公司再創高峰．
@@ -57,10 +57,10 @@ Mac真的是精品嗎??jobs居然開了Mac的直營店，2006年5月18日，紐�
     
     <item>
       <title>Jobs的簡報</title>
-      <link>https://arguskao.github.io/liverx2/2008/01/jobs%E7%9A%84%E7%B0%A1%E5%A0%B1/</link>
+      <link>https://www.liverx.org/2008/01/jobs%E7%9A%84%E7%B0%A1%E5%A0%B1/</link>
       <pubDate>Sun, 27 Jan 2008 19:34:18 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/01/jobs%E7%9A%84%E7%B0%A1%E5%A0%B1/</guid>
+      <guid>https://www.liverx.org/2008/01/jobs%E7%9A%84%E7%B0%A1%E5%A0%B1/</guid>
       <description>就像大家所知道的，蘋果電腦這幾年老是領引時尚風潮，執行長Jobs無疑是整個流行的推動者，相對於微軟Bill gates的簡報，Jobs簡直就是已經進入神的領域，而他的簡報掌握的幾個重點，更是行銷的典範，值得我們好好學習，以下是他所利用的簡報技巧，可以讓大家參考．
  簡潔有力：整篇演講就是圍繞在MacBook Air身上，不多說其他的廢話，讓觀眾可以知道真正的重點．
  自在從容：很多世界級的大師演講，也是乖乖的站在講台上，像個木偶一樣，但是Jobs像個花蝴蝶一樣滿場飛舞，他才是這場簡報的主角，而不是那幾張Silde．

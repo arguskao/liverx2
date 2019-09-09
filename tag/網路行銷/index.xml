@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>網路行銷 on 活力藥師網番外篇</title>
-    <link>https://arguskao.github.io/liverx2/tag/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
+    <link>https://www.liverx.org/tag/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
     <description>Recent content in 網路行銷 on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 24 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://arguskao.github.io/liverx2/tag/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.liverx.org/tag/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>從wordpress搬到Hugo</title>
-      <link>https://arguskao.github.io/liverx2/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</link>
+      <link>https://www.liverx.org/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</link>
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
+      <guid>https://www.liverx.org/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
       <description>實在不敢相信，我辦到了! 首先要感謝Mina的幫助，他的網站是 Mina&amp;rsquo;s Life Travel.是他的網站＋本人手把手的教學，才讓我一個完全不懂程式的人，把Hugo搞定的
 用Wordpress十幾年了，但是越來越肥大的問題，讓我一直不太滿意，所以一直在尋求一個好方法，之前試過Octopress，還有Ghost，可是都不太滿意，所以一直在找方法，最後找到Hexo，搞了半天還是失敗，最後終於有機會用到Hugo，希望能夠讓我解決這些問題。</description>
     </item>
     
     <item>
       <title>台灣商標註冊申請</title>
-      <link>https://arguskao.github.io/liverx2/2017/10/%E5%8F%B0%E7%81%A3%E5%95%86%E6%A8%99%E8%A8%BB%E5%86%8A%E7%94%B3%E8%AB%8B/</link>
+      <link>https://www.liverx.org/2017/10/%E5%8F%B0%E7%81%A3%E5%95%86%E6%A8%99%E8%A8%BB%E5%86%8A%E7%94%B3%E8%AB%8B/</link>
       <pubDate>Wed, 11 Oct 2017 12:56:48 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2017/10/%E5%8F%B0%E7%81%A3%E5%95%86%E6%A8%99%E8%A8%BB%E5%86%8A%E7%94%B3%E8%AB%8B/</guid>
+      <guid>https://www.liverx.org/2017/10/%E5%8F%B0%E7%81%A3%E5%95%86%E6%A8%99%E8%A8%BB%E5%86%8A%E7%94%B3%E8%AB%8B/</guid>
       <description>商標設計事項：
  不應使用商品本身功能作為商標設計 例如，設計「滅蚊」為殺蟲劑商標，其滅蚊應為商品說明而非商標用途。
  避免與他人著作商標有相似構型
@@ -44,10 +44,10 @@
     
     <item>
       <title>PayPal綁定銀行或支票教學</title>
-      <link>https://arguskao.github.io/liverx2/2017/09/paypal%E7%B6%81%E5%AE%9A%E9%8A%80%E8%A1%8C%E6%88%96%E6%94%AF%E7%A5%A8%E6%95%99%E5%AD%B8/</link>
+      <link>https://www.liverx.org/2017/09/paypal%E7%B6%81%E5%AE%9A%E9%8A%80%E8%A1%8C%E6%88%96%E6%94%AF%E7%A5%A8%E6%95%99%E5%AD%B8/</link>
       <pubDate>Mon, 11 Sep 2017 12:18:26 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2017/09/paypal%E7%B6%81%E5%AE%9A%E9%8A%80%E8%A1%8C%E6%88%96%E6%94%AF%E7%A5%A8%E6%95%99%E5%AD%B8/</guid>
+      <guid>https://www.liverx.org/2017/09/paypal%E7%B6%81%E5%AE%9A%E9%8A%80%E8%A1%8C%E6%88%96%E6%94%AF%E7%A5%A8%E6%95%99%E5%AD%B8/</guid>
       <description>PayPal提供綁定銀行或支票進行儲值的功能， 請先進入錢包連結至允許儲值的帳戶。(以下透過PayPal台灣地區示範，不同地區顯示畫面會有出入)
 電子錢包連結 https://www.paypal.com/myaccount/wallet
 
@@ -69,10 +69,10 @@
     
     <item>
       <title>台南 網頁設計 網站架設 主機規劃 網頁優化</title>
-      <link>https://arguskao.github.io/liverx2/2017/06/%E5%8F%B0%E5%8D%97-%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88-%E7%B6%B2%E7%AB%99%E6%9E%B6%E8%A8%AD-%E4%B8%BB%E6%A9%9F%E8%A6%8F%E5%8A%83-%E7%B6%B2%E9%A0%81%E5%84%AA%E5%8C%96/</link>
+      <link>https://www.liverx.org/2017/06/%E5%8F%B0%E5%8D%97-%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88-%E7%B6%B2%E7%AB%99%E6%9E%B6%E8%A8%AD-%E4%B8%BB%E6%A9%9F%E8%A6%8F%E5%8A%83-%E7%B6%B2%E9%A0%81%E5%84%AA%E5%8C%96/</link>
       <pubDate>Thu, 22 Jun 2017 13:26:47 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2017/06/%E5%8F%B0%E5%8D%97-%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88-%E7%B6%B2%E7%AB%99%E6%9E%B6%E8%A8%AD-%E4%B8%BB%E6%A9%9F%E8%A6%8F%E5%8A%83-%E7%B6%B2%E9%A0%81%E5%84%AA%E5%8C%96/</guid>
+      <guid>https://www.liverx.org/2017/06/%E5%8F%B0%E5%8D%97-%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88-%E7%B6%B2%E7%AB%99%E6%9E%B6%E8%A8%AD-%E4%B8%BB%E6%A9%9F%E8%A6%8F%E5%8A%83-%E7%B6%B2%E9%A0%81%E5%84%AA%E5%8C%96/</guid>
       <description>精準打造網路行銷計畫
 有效提升網站人流，增加曝光度，
 優化網頁提升瀏覽體驗，
@@ -82,20 +82,20 @@ https://www.yoube.net</description>
     
     <item>
       <title>網路行銷的案例</title>
-      <link>https://arguskao.github.io/liverx2/2014/05/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E7%9A%84%E6%A1%88%E4%BE%8B/</link>
+      <link>https://www.liverx.org/2014/05/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E7%9A%84%E6%A1%88%E4%BE%8B/</link>
       <pubDate>Sun, 04 May 2014 14:41:46 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2014/05/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E7%9A%84%E6%A1%88%E4%BE%8B/</guid>
+      <guid>https://www.liverx.org/2014/05/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E7%9A%84%E6%A1%88%E4%BE%8B/</guid>
       <description>最近開始來打網路行銷的關鍵字，目前這個關鍵字不知道在哪一頁，看看何時可以上第一頁，希望也能夠像我幫忙做的另一個客戶一樣，五天就上第一頁。
 下一篇愛爾麗醫美涉嫌逃稅</description>
     </item>
     
     <item>
       <title>Adwords的秘訣</title>
-      <link>https://arguskao.github.io/liverx2/2013/06/adwords%E7%9A%84%E7%A7%98%E8%A8%A3/</link>
+      <link>https://www.liverx.org/2013/06/adwords%E7%9A%84%E7%A7%98%E8%A8%A3/</link>
       <pubDate>Wed, 05 Jun 2013 05:59:26 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2013/06/adwords%E7%9A%84%E7%A7%98%E8%A8%A3/</guid>
+      <guid>https://www.liverx.org/2013/06/adwords%E7%9A%84%E7%A7%98%E8%A8%A3/</guid>
       <description>對於很多想要做網路行銷的創業者，一定避免不了會想要打廣告，因為業績不管是初期創業，或者穩定成長期，都可能碰到瓶頸，第一個想到的就是打廣告。
 電視廣告我們一輩子應該都不用思考這方面的問題，廣播或者平面廣告也不適合我們小本經營的，最便宜的還是網路廣告了。
 而網路廣告，大概就是幾種比較有名的，google的廣告、yahoo的廣告、FB的廣告。而google廣告就是adwords。而本來yahoo廣告是獨霸的，但自從FB出現以後，yahoo就感覺上快完蛋了，連部落格都要準備收掉了，搜尋引擎也改用Bing，當然還是有人堅持yahoo使用者仍然是大族群，但是y拍這幾年被露天，甚至是淘寶搶走很多市場，我認為將來台灣雅虎會慢慢走向宏達電的後塵。
@@ -105,10 +105,10 @@ https://www.yoube.net</description>
     
     <item>
       <title>Mac上免費的網頁設計軟體</title>
-      <link>https://arguskao.github.io/liverx2/2012/08/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</link>
+      <link>https://www.liverx.org/2012/08/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</link>
       <pubDate>Tue, 07 Aug 2012 09:29:38 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2012/08/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</guid>
+      <guid>https://www.liverx.org/2012/08/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</guid>
       <description>最近實在太想學HTML和CSS，於是就開始著手找尋這類相關的軟體，一般windows上面大家都用Frontpage或者DreamWeaver比較多，雖然mac上也有DW，不過DW可不便宜，對於我們只是想玩玩的人來說，犯不著花這個大錢的。
 最後網路上大家都推薦兩套免費又有兄弟關係的軟體，就是Kompozer和Bluegriffon。
 延伸閱讀：Kompozer的教學。Bluegriffon的教學。
@@ -117,10 +117,10 @@ https://www.yoube.net</description>
     
     <item>
       <title>網路行銷課程列表</title>
-      <link>https://arguskao.github.io/liverx2/2012/01/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E8%AA%B2%E7%A8%8B%E5%88%97%E8%A1%A8/</link>
+      <link>https://www.liverx.org/2012/01/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E8%AA%B2%E7%A8%8B%E5%88%97%E8%A1%A8/</link>
       <pubDate>Mon, 09 Jan 2012 13:02:57 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2012/01/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E8%AA%B2%E7%A8%8B%E5%88%97%E8%A1%A8/</guid>
+      <guid>https://www.liverx.org/2012/01/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E8%AA%B2%E7%A8%8B%E5%88%97%E8%A1%A8/</guid>
       <description>最近因為某些原因又重新開設網路行銷私塾，雖是免費課程，但是居然沒有很多人參加，不過這些課程我個人認為可是很豐富的啦！
 課程如下
  網路行銷簡介
@@ -138,20 +138,20 @@ https://www.yoube.net</description>
     
     <item>
       <title>PR值到底可信嗎??</title>
-      <link>https://arguskao.github.io/liverx2/2008/08/pr%E5%80%BC%E5%88%B0%E5%BA%95%E5%8F%AF%E4%BF%A1%E5%97%8E/</link>
+      <link>https://www.liverx.org/2008/08/pr%E5%80%BC%E5%88%B0%E5%BA%95%E5%8F%AF%E4%BF%A1%E5%97%8E/</link>
       <pubDate>Fri, 15 Aug 2008 03:11:39 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/08/pr%E5%80%BC%E5%88%B0%E5%BA%95%E5%8F%AF%E4%BF%A1%E5%97%8E/</guid>
+      <guid>https://www.liverx.org/2008/08/pr%E5%80%BC%E5%88%B0%E5%BA%95%E5%8F%AF%E4%BF%A1%E5%97%8E/</guid>
       <description>最近Google 的PR值做了一些變動，我本來對我兩個認真做的網站，活力藥師網還有番外篇都可以很失望，這兩個網站都有再更新，也持續的寫了三年，可是卻始終只停留在三，怎麼也上不去，讓我相當相當的失望，後來剛好看到Ｇene老大的一篇文章，講到台灣幾個PR=6的網站，我才發現居然有一個只剩一篇文章的網站，Pr=6，那就是糖尿病達人這個網站，還有一個文章也不多的網站，居然PR=5，那就是老男人的家，其他幾個從來不管它的站，PR值居然也有4，這就讓我搞不懂那Pagerank到底是用什麼來判定的，好好寫文章？認真經營，大家來討論一下吧!!
 下一篇關鍵字的挑戰</description>
     </item>
     
     <item>
       <title>Zoho creator</title>
-      <link>https://arguskao.github.io/liverx2/2008/07/zoho-creator/</link>
+      <link>https://www.liverx.org/2008/07/zoho-creator/</link>
       <pubDate>Fri, 11 Jul 2008 06:36:11 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/07/zoho-creator/</guid>
+      <guid>https://www.liverx.org/2008/07/zoho-creator/</guid>
       <description>現在如果要寫個小小的資料庫，做個客戶關係管理的話，有時候請人家寫個小程式得花上一筆錢，現在有一個程式叫做Zoho creator，只需要動動滑鼠就可以做出一個小型的線上資料庫，對於不懂程式的人相當方便。
 底下有一篇教學相當清楚
 大家都可以參考喲</description>
@@ -159,10 +159,10 @@ https://www.yoube.net</description>
     
     <item>
       <title>Google adsense支援的西聯匯款不方便</title>
-      <link>https://arguskao.github.io/liverx2/2008/07/google-adsense%E6%94%AF%E6%8F%B4%E7%9A%84%E8%A5%BF%E8%81%AF%E5%8C%AF%E6%AC%BE%E4%B8%8D%E6%96%B9%E4%BE%BF/</link>
+      <link>https://www.liverx.org/2008/07/google-adsense%E6%94%AF%E6%8F%B4%E7%9A%84%E8%A5%BF%E8%81%AF%E5%8C%AF%E6%AC%BE%E4%B8%8D%E6%96%B9%E4%BE%BF/</link>
       <pubDate>Sun, 06 Jul 2008 05:14:43 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/07/google-adsense%E6%94%AF%E6%8F%B4%E7%9A%84%E8%A5%BF%E8%81%AF%E5%8C%AF%E6%AC%BE%E4%B8%8D%E6%96%B9%E4%BE%BF/</guid>
+      <guid>https://www.liverx.org/2008/07/google-adsense%E6%94%AF%E6%8F%B4%E7%9A%84%E8%A5%BF%E8%81%AF%E5%8C%AF%E6%AC%BE%E4%B8%8D%E6%96%B9%E4%BE%BF/</guid>
       <description>Google Adsense終於支援西聯匯款了，可見我真是英明呀，當初算算寄支票來，然後再扣掉手續費一點也不划算，所以呢，我就一直忍，忍了一年多，終於有比較方便的方式了，不過我個人還是覺得西聯匯款有個地方不是很聰明，就是他只能領還有存錢，什麼意思呢??一般我們使用那個Paypal的話，有個帳戶裡面的錢，也可以拿來支付其他的用途，這樣就方便的很，但是如果你想這樣處理西聯匯款的話，可就不行囉，因為你得到銀行把錢領出來，再存進去，得扣兩次的手續費，真的一點也不方便的咧!!!
 Google怎麼不開放其他的電子付款呢，不然用Paypal也好呀，真是討厭的Google。
 ps:西聯匯款的電話8723 1040，連星期六打電話都有人接，不過口音是大陸人，看來很多台灣的電話行銷客服人員越來越危險了。
@@ -171,10 +171,10 @@ ps:西聯匯款的電話8723 1040，連星期六打電話都有人接，不過�
     
     <item>
       <title>讓台灣319找到國際座標</title>
-      <link>https://arguskao.github.io/liverx2/2008/07/%E8%AE%93%E5%8F%B0%E7%81%A3319%E6%89%BE%E5%88%B0%E5%9C%8B%E9%9A%9B%E5%BA%A7%E6%A8%99/</link>
+      <link>https://www.liverx.org/2008/07/%E8%AE%93%E5%8F%B0%E7%81%A3319%E6%89%BE%E5%88%B0%E5%9C%8B%E9%9A%9B%E5%BA%A7%E6%A8%99/</link>
       <pubDate>Tue, 01 Jul 2008 13:46:03 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/07/%E8%AE%93%E5%8F%B0%E7%81%A3319%E6%89%BE%E5%88%B0%E5%9C%8B%E9%9A%9B%E5%BA%A7%E6%A8%99/</guid>
+      <guid>https://www.liverx.org/2008/07/%E8%AE%93%E5%8F%B0%E7%81%A3319%E6%89%BE%E5%88%B0%E5%9C%8B%E9%9A%9B%E5%BA%A7%E6%A8%99/</guid>
       <description>一個鄉鎮的特色，就足以讓台灣站上國際舞台 一座地方圖書館，就可能讓一種好的觀念擴散 一本書，更有可能改變一群人的未來
 我們正努力讓「我所看見的未來」一書，出現在每個基層公務員的桌上 出現在每座鄉鎮公共圖書館的架上，讓一種值得思考的觀念，一種從國際思考的視野 深耕地在我們最愛的土地上
 這是嚴長壽先生發起的募書活動，網站上有這樣幾句話，一本書可以改變一群人的未來，我相信城鄉的貧富差距不重要，心靈的充實與否才能改變未來，很多學者都來自於偏遠的鄉鎮，希望大家來支持嚴長壽先生的活動，謝謝各位。
@@ -183,10 +183,10 @@ ps:西聯匯款的電話8723 1040，連星期六打電話都有人接，不過�
     
     <item>
       <title>網拍專訪之黑傑克購物網</title>
-      <link>https://arguskao.github.io/liverx2/2008/06/%E7%B6%B2%E6%8B%8D%E5%B0%88%E8%A8%AA%E4%B9%8B/</link>
+      <link>https://www.liverx.org/2008/06/%E7%B6%B2%E6%8B%8D%E5%B0%88%E8%A8%AA%E4%B9%8B/</link>
       <pubDate>Fri, 27 Jun 2008 08:04:44 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/06/%E7%B6%B2%E6%8B%8D%E5%B0%88%E8%A8%AA%E4%B9%8B/</guid>
+      <guid>https://www.liverx.org/2008/06/%E7%B6%B2%E6%8B%8D%E5%B0%88%E8%A8%AA%E4%B9%8B/</guid>
       <description>很久之前在工商時報寫過網拍賣家的專訪，最近想繼續這樣的工作，預計寫完百大賣家，今天訪問的是一個專門賣纖維彈簧透氣墊的賣家。
 請問你是怎麼決定踏入網拍這一行??
 因為剛開始在公司接觸到一個產品﹔纖維彈簧透氣墊，這東西的應用範圍很廣，可以用在空調機車墊或者汽車座墊，特性在於非常通風透氣，例如機車坐墊在戶外的時候，因為太陽直射會使得溫度非常高，但是我們的機車坐墊，可以避免臀部與機車椅墊的直接全面接觸而感覺煎燙，騎乘時氣流會引入座墊內，有通風涼爽的效果，宛如坐墊有空調一般！
@@ -207,10 +207,10 @@ ps:西聯匯款的電話8723 1040，連星期六打電話都有人接，不過�
     
     <item>
       <title>Google真的能幫你致富??</title>
-      <link>https://arguskao.github.io/liverx2/2008/06/google%E7%9C%9F%E7%9A%84%E8%83%BD%E5%B9%AB%E4%BD%A0%E8%87%B4%E5%AF%8C/</link>
+      <link>https://www.liverx.org/2008/06/google%E7%9C%9F%E7%9A%84%E8%83%BD%E5%B9%AB%E4%BD%A0%E8%87%B4%E5%AF%8C/</link>
       <pubDate>Mon, 16 Jun 2008 07:26:58 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/06/google%E7%9C%9F%E7%9A%84%E8%83%BD%E5%B9%AB%E4%BD%A0%E8%87%B4%E5%AF%8C/</guid>
+      <guid>https://www.liverx.org/2008/06/google%E7%9C%9F%E7%9A%84%E8%83%BD%E5%B9%AB%E4%BD%A0%E8%87%B4%E5%AF%8C/</guid>
       <description>最近很紅的Google App Engine，有人認為可以幫助無名小子一夕成名，看到這種可以出名又賺錢的，我是最有興趣的，連忙到這裡來申請，結果申請的時候居然要傳簡訊認證，不知道為什麼我的手機收不到認證，我只好跟大陸的網友借手機，居然就給他通過了，恩!!這是Google的一小步，高藥師的一大步，距離成為鉅富又接近了1%，不過申請以後問題沒有結束，還得學習Python語言，夭壽，我什麼都會就是不會程式語言，不過還是想玩玩看，剛好網路有教學，我找到兩篇，一篇是介紹安裝python，另外一篇也差不多.
 都把他安裝好以後，我們就應該一定要來搞個Hello World驗收一下，證明我們也是會寫程式的喲！！
 這是我作好的東西，大家看一下吧，這可是使用Google的主機喲!!
@@ -219,10 +219,10 @@ ps:西聯匯款的電話8723 1040，連星期六打電話都有人接，不過�
     
     <item>
       <title>Mashup混搭網站</title>
-      <link>https://arguskao.github.io/liverx2/2008/05/mashup%E6%B7%B7%E6%90%AD%E7%B6%B2%E7%AB%99/</link>
+      <link>https://www.liverx.org/2008/05/mashup%E6%B7%B7%E6%90%AD%E7%B6%B2%E7%AB%99/</link>
       <pubDate>Sat, 31 May 2008 23:28:17 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/05/mashup%E6%B7%B7%E6%90%AD%E7%B6%B2%E7%AB%99/</guid>
+      <guid>https://www.liverx.org/2008/05/mashup%E6%B7%B7%E6%90%AD%E7%B6%B2%E7%AB%99/</guid>
       <description>有一天我又把四月份的數位時代拿起來翻翻，看到這篇講地圖日記的文章，作者是栗四維，文中介紹地圖日記應該是台灣最成功的混搭網站，是以提供Google Maps標記為基礎的免費網路日記，混搭Mashup可以說是Web2.0典型的技術之一，混搭讓創造軟體成為一種簡單而又快速的DIY體驗，事實上在之前，管理虛擬主機是一種遙不可及的技巧，至少對我們這種非科班出身的來說，但是透過像webmin這樣的開放軟體，高藥師自己就能架Server，現在這種技術讓有創意的人不一定非得找個技術出身的夥伴，以混搭平台programmableweb為例，從成立以已經有將近三千個混搭網站，這使得軟體真正成為一種服務，而不只是技術，有人已經開始給這樣的趨勢定了一個名詞Software as a Service，簡稱SaaS.
 Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺有趣的，大家可以上去玩一下，我自己也隨便弄了一個找尋Flickr上面的美女照片的程式，只是不知道怎麼限定在台北市就好，&amp;hellip;..
 高藥師目前正開始構思一個混搭網站，但是看來還是有點技術難度，希望有這方面技術的人願意伸出援手&amp;hellip;.
@@ -231,10 +231,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>Google打電話來</title>
-      <link>https://arguskao.github.io/liverx2/2008/05/google%E6%89%93%E9%9B%BB%E8%A9%B1%E4%BE%86/</link>
+      <link>https://www.liverx.org/2008/05/google%E6%89%93%E9%9B%BB%E8%A9%B1%E4%BE%86/</link>
       <pubDate>Thu, 29 May 2008 10:06:00 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/05/google%E6%89%93%E9%9B%BB%E8%A9%B1%E4%BE%86/</guid>
+      <guid>https://www.liverx.org/2008/05/google%E6%89%93%E9%9B%BB%E8%A9%B1%E4%BE%86/</guid>
       <description>因為想要使用Google的Adwords，所以就進了我的戶頭想要開設adwords的帳戶玩玩看，卻發現幾個不合理的事情，第一Google這麼大的公司居然不給人家用Paypal付款，這是怎麼回事??Paypal也不認真一點，只跟Ebay合作，所以我就寫了信給google，她們效率相當高，晚上寫的信，白天就回了，然後信中還說會請專人打電話給我．
 大概下午五點多，真的打電話來了，一聽口音就是大陸那邊的，非常有禮貌的給我回了電話，耐心的解釋了我的問題，這就是大公司，比那家要硬不硬的公司好多了．
 下一篇混搭網站</description>
@@ -242,20 +242,20 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>憂鬱症不輸減肥</title>
-      <link>https://arguskao.github.io/liverx2/2008/05/%E6%86%82%E9%AC%B1%E7%97%87%E4%B8%8D%E8%BC%B8%E6%B8%9B%E8%82%A5/</link>
+      <link>https://www.liverx.org/2008/05/%E6%86%82%E9%AC%B1%E7%97%87%E4%B8%8D%E8%BC%B8%E6%B8%9B%E8%82%A5/</link>
       <pubDate>Sun, 25 May 2008 18:00:00 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/05/%E6%86%82%E9%AC%B1%E7%97%87%E4%B8%8D%E8%BC%B8%E6%B8%9B%E8%82%A5/</guid>
+      <guid>https://www.liverx.org/2008/05/%E6%86%82%E9%AC%B1%E7%97%87%E4%B8%8D%E8%BC%B8%E6%B8%9B%E8%82%A5/</guid>
       <description>最近又開始想要做關鍵字來增加網站的流量，想要看看Yahoo搜尋的數量，於是打了幾個關鍵字，來查一下數量，首先當然打了減肥下去查，四月的搜尋次數是34265次，平均一天才1000次左右，看來如果廢力的把減肥做到第一頁，也只能達到這樣的效果，然後我又打了豐胸，出現的次數是7979次，一天不到三百次，後來我打了憂鬱症，出現的結果才讓我大吃一驚，居然是12456次，數量居然是減肥的三分之一，可見得在台灣憂鬱症的人比太平公主多很多．
 下一篇Google打電話來</description>
     </item>
     
     <item>
       <title>新書終於上市</title>
-      <link>https://arguskao.github.io/liverx2/2008/05/%E6%96%B0%E6%9B%B8%E7%B5%82%E6%96%BC%E4%B8%8A%E5%B8%82/</link>
+      <link>https://www.liverx.org/2008/05/%E6%96%B0%E6%9B%B8%E7%B5%82%E6%96%BC%E4%B8%8A%E5%B8%82/</link>
       <pubDate>Mon, 12 May 2008 09:50:15 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/05/%E6%96%B0%E6%9B%B8%E7%B5%82%E6%96%BC%E4%B8%8A%E5%B8%82/</guid>
+      <guid>https://www.liverx.org/2008/05/%E6%96%B0%E6%9B%B8%E7%B5%82%E6%96%BC%E4%B8%8A%E5%B8%82/</guid>
       <description>說來也許是個諷刺，或者也可以說是個巧合，寫部落格開始兩年多，從2006年三月開始，到2008年一月底和出版社簽約出書，預定五月一號上市，卻在上市前的半個月，我在Yahoo的部落格遭到雅虎毫無理由的關掉，據說是衛生主管機關去函說違反規定，真不曉得我們要這種衛生主管機關要做什麼??
 高藥師的部落格有四百多篇文章，一百四十萬次的瀏覽人次，將近一萬篇的回應，五千人的訂閱數，這種全台灣第一的醫療部落格，衛生主管機關居然說我違反規定，不過不管如何，新書還是上市了，書名叫做藥不會殺人，你的錯誤觀念才會．
 新書上市的活動和介紹可以參考出版社的宣傳，有興趣的可以看看．
@@ -267,10 +267,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>世界第一的簡報</title>
-      <link>https://arguskao.github.io/liverx2/2008/05/%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%9A%84%E7%B0%A1%E5%A0%B1/</link>
+      <link>https://www.liverx.org/2008/05/%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%9A%84%E7%B0%A1%E5%A0%B1/</link>
       <pubDate>Sat, 10 May 2008 06:23:42 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/05/%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%9A%84%E7%B0%A1%E5%A0%B1/</guid>
+      <guid>https://www.liverx.org/2008/05/%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E7%9A%84%E7%B0%A1%E5%A0%B1/</guid>
       <description>最近在slideshare上面看到一個經過評選為世界第一的簡報，看過以後覺得真的很棒，題目可能已經很老舊，講的是典範轉移，也跟世界是平的有關聯，總之日子越來越難混了
  | View | Upload your own
 下一篇上電視</description>
@@ -278,10 +278,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>關鍵性客戶所帶來的口碑行銷</title>
-      <link>https://arguskao.github.io/liverx2/2008/04/%E9%97%9C%E9%8D%B5%E6%80%A7%E5%AE%A2%E6%88%B6%E6%89%80%E5%B8%B6%E4%BE%86%E7%9A%84%E5%8F%A3%E7%A2%91%E8%A1%8C%E9%8A%B7/</link>
+      <link>https://www.liverx.org/2008/04/%E9%97%9C%E9%8D%B5%E6%80%A7%E5%AE%A2%E6%88%B6%E6%89%80%E5%B8%B6%E4%BE%86%E7%9A%84%E5%8F%A3%E7%A2%91%E8%A1%8C%E9%8A%B7/</link>
       <pubDate>Tue, 08 Apr 2008 09:00:35 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/04/%E9%97%9C%E9%8D%B5%E6%80%A7%E5%AE%A2%E6%88%B6%E6%89%80%E5%B8%B6%E4%BE%86%E7%9A%84%E5%8F%A3%E7%A2%91%E8%A1%8C%E9%8A%B7/</guid>
+      <guid>https://www.liverx.org/2008/04/%E9%97%9C%E9%8D%B5%E6%80%A7%E5%AE%A2%E6%88%B6%E6%89%80%E5%B8%B6%E4%BE%86%E7%9A%84%E5%8F%A3%E7%A2%91%E8%A1%8C%E9%8A%B7/</guid>
       <description>所有做生意的人都知道，口碑行銷是最有效的行銷方式，只是現在這種日頭赤焰焰，隨人顧性命的時機，如果不是超級滿意的服務，要讓客戶幫你介紹客戶，真是比登天還難，對於網路行銷來說，會不會也有一樣的情形呢??
 在很多著名的討論區裡面，常常會看到所謂的網友使用心得分享，但是這些是由廠商偽裝的成分居多，要知道網路的特性中，潛水的比冒出水面的多一百倍，除非有躁鬱症的網友，才會冒著沒有代言費，又要擔著有功無賞，做錯要罰的風險，如果你冒冒然去聽信這種推薦的話，當冤大頭的機會很大，倒是由朋友介紹的方式最穩當．
 網路上什麼都能買，有某些屬性的產品更適合透過網路來購買，以藥品來說，男性用品中的威而鋼之類的壯陽藥，高居網路購買的第一名，因為去店面購買很尷尬，又不能老是說幫朋友買，所以透過網路購買就可以避免掉這種尷尬，只是對於店家來說，這類的產品如果效果很好，顧客很滿意，也不會幫你介紹的，誰願意承認自己年紀輕輕就得使用藍色小藥丸呢??又比如豐胸產品好了，女性朋友用的再滿意，也不肯跟姊妹淘介紹，就算是好友，大家私底下競爭的可利害了，這些在網路上熱門的產品，願意大聲幫廠商作口碑行銷的實在是少數，不同於其他像3C產品或是衣服之類的，用過滿意會帶來更多的客戶．
@@ -292,10 +292,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>網路行銷</title>
-      <link>https://arguskao.github.io/liverx2/2008/03/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
+      <link>https://www.liverx.org/2008/03/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
       <pubDate>Mon, 17 Mar 2008 02:05:43 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2008/03/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</guid>
+      <guid>https://www.liverx.org/2008/03/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</guid>
       <description>網路行銷這個題目非常大，但是這年頭大家都知道網路行銷，也都在談網路行銷，但是真的懂網路行銷的很少，年紀大的更少，一堆騙錢的公司，告訴客戶只要在網路上買買關鍵字就是網路行銷，或者發發垃圾信，這些如果叫做網路行銷的話，那教書的教授都可以退休，大家也可以不用上班，只要參加一堆直銷，再利用網路行銷就可以賺大錢了 ．
 事實上很多人把網路行銷和關鍵字行銷搞混，把關鍵字行銷變成萬能的天神，以為只要買了關鍵字，客戶就會蜂湧而來，這完全是大錯特錯的想法，關鍵字行銷只能給你帶來曝光度，只能夠讓客戶比較多機會進入你的網站，但是要怎麼將客戶留住，甚至在許多的競爭者中看中你，願意購買你的商品，這是有一些學問的，你必須懂很多東西，包括顧客的心理，還有你所要銷售的東西品質，加上你的競爭者，產品的定價，這些都是網路行銷的一部分，而買關鍵字或者是發垃圾信，只是網路行銷的一小部分，重要度頂多只能20%而已．
 其實行銷的本質並沒有太大差別，網路行銷只是把實體交易變成網路交易而已，開一個店面會需要裝潢，網站或者Blog也需要弄的漂漂亮亮的，你賣的東西越便宜越有人買，在網路上更是如此，你去百貨公司買東西需要好服務，網路行銷亦然，只是網路行銷需要用到一些工具，許多人因為害怕科技，就以為網路行銷是個新東西，事實上以後網路行銷會變的很容易，尤其現在Google要開始進入手機廣告這一塊，將來的廣告可能會從電視或者報章雜誌，全部都湧向手機，也就沒有所謂是不是網路行銷的區別了．
@@ -306,10 +306,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>最近新作的幾個關鍵字</title>
-      <link>https://arguskao.github.io/liverx2/2007/10/%E6%9C%80%E8%BF%91%E6%96%B0%E4%BD%9C%E7%9A%84%E5%B9%BE%E5%90%84%E9%97%9C%E9%8D%B5%E5%AD%97/</link>
+      <link>https://www.liverx.org/2007/10/%E6%9C%80%E8%BF%91%E6%96%B0%E4%BD%9C%E7%9A%84%E5%B9%BE%E5%90%84%E9%97%9C%E9%8D%B5%E5%AD%97/</link>
       <pubDate>Fri, 26 Oct 2007 14:28:22 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2007/10/%E6%9C%80%E8%BF%91%E6%96%B0%E4%BD%9C%E7%9A%84%E5%B9%BE%E5%90%84%E9%97%9C%E9%8D%B5%E5%AD%97/</guid>
+      <guid>https://www.liverx.org/2007/10/%E6%9C%80%E8%BF%91%E6%96%B0%E4%BD%9C%E7%9A%84%E5%B9%BE%E5%90%84%E9%97%9C%E9%8D%B5%E5%AD%97/</guid>
       <description>受到三腳貓老師的影響，對於做關鍵字 ((為了讓某些特定單字，在搜尋的時候有較好的搜尋排名，該特定單字稱為關鍵字))也很拼命，這樣的行銷方式一般稱為關鍵字行銷，當然技術還是比不上我的老師，不過偶爾還是得要讓老師知道一下我的進度，最近做了幾個不算很冷門的關鍵字，名次還算挺高的．
 第一個是醫藥公關這個關鍵字，不過一個禮拜不到，在Yahoo搜尋就拼到第一名，比原來號稱醫藥公關專家的網站還猛，更好玩的是這家公司居然還有代理Yahoo的關鍵字，自己也花錢買了醫藥公關的關鍵字，沒想到還是輸給高藥師，可見各位老闆在慎選公關公司幫你做網路行銷的同時，得好好睜大眼睛呢!!
 第二個字是除斑雷射，這個字也算是不太冷門吧，在醫學美容中的微整形手術，算是相當熱門的，高藥師也在Yahoo搜尋排到第二名，第一名是博仁醫學美容，其他鼎鼎大名的那些整形中心完全沒有出現耶，真不知道是哪家做的關鍵字行銷??
@@ -319,10 +319,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>置入性行銷與媒體專訪</title>
-      <link>https://arguskao.github.io/liverx2/2007/10/%E7%BD%AE%E5%85%A5%E6%80%A7%E8%A1%8C%E9%8A%B7%E8%88%87%E5%AA%92%E9%AB%94%E5%B0%88%E8%A8%AA/</link>
+      <link>https://www.liverx.org/2007/10/%E7%BD%AE%E5%85%A5%E6%80%A7%E8%A1%8C%E9%8A%B7%E8%88%87%E5%AA%92%E9%AB%94%E5%B0%88%E8%A8%AA/</link>
       <pubDate>Mon, 15 Oct 2007 12:57:58 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2007/10/%E7%BD%AE%E5%85%A5%E6%80%A7%E8%A1%8C%E9%8A%B7%E8%88%87%E5%AA%92%E9%AB%94%E5%B0%88%E8%A8%AA/</guid>
+      <guid>https://www.liverx.org/2007/10/%E7%BD%AE%E5%85%A5%E6%80%A7%E8%A1%8C%E9%8A%B7%E8%88%87%E5%AA%92%E9%AB%94%E5%B0%88%E8%A8%AA/</guid>
       <description>看到這個標題，大家又要以為這是老套了，事實上今天不是真的要講置入性行銷和媒體專訪，這雖然是這一兩年忽然火紅起來的行銷手法，我想談的是這兩種手法和網路行銷裡面的SEO，也有人稱之為搜尋排前或是關鍵字行銷，聽起來似乎一點關係都沒有，但是仔細研究之下，會發現利用關鍵字在網路上來吸引人潮，怎麼會跟置入性行銷扯上關係呢??
 傳統的廣告方式因為商業性太強，實際上很容易引起消費的反彈或者戒心，所以為了讓消費者在不知不覺中就被影響，近幾年來利用媒體專訪而行置入性行銷，也的確得到不錯的效果，在網路上的廣告手法，從初期的Banner廣告，演變為購買關鍵字廣告，但很快被消費者認定為廣告，而忽略過不理，但是如果利用搜尋引擎找到的資料，基本上在消費者的認定中，會認為是網路的資訊或者可靠資訊，這就是所謂的關鍵字行銷，尤其是在前面幾個位置的連結，更可以快速吸引消費的目光；所以如果能夠在搜尋引擎的前面位置卡位，等於是票房的保證，根據調查結果，消費者的信任度會比傳統的廣告手法好上好幾倍．
 或者是一般公關公司會操作的手法就是採用媒體專訪，媒體專訪的好處在於可以短期內大量曝光，但是也只有短期的效果，最多只有一天，除非是有爆炸性的後續爆料，才會有更多的討論，相對於關鍵字行銷來說，長遠來看，投資報酬率是非常不划算的．
@@ -331,10 +331,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>專業醫藥網路行銷</title>
-      <link>https://arguskao.github.io/liverx2/2007/10/%E5%B0%88%E6%A5%AD%E9%86%AB%E8%97%A5%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
+      <link>https://www.liverx.org/2007/10/%E5%B0%88%E6%A5%AD%E9%86%AB%E8%97%A5%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</link>
       <pubDate>Sun, 07 Oct 2007 13:11:36 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2007/10/%E5%B0%88%E6%A5%AD%E9%86%AB%E8%97%A5%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</guid>
+      <guid>https://www.liverx.org/2007/10/%E5%B0%88%E6%A5%AD%E9%86%AB%E8%97%A5%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</guid>
       <description>最近因為一些原因，survey了一些號稱醫藥方面的整合行銷公司，發現好像大部分的整合行銷公司都比較少注意醫藥這一塊，真正可以算的上專業的醫藥方面的行銷公司，真是屈指可數，就算有在做的幾家公司，也都缺乏專業的醫藥背景，僅僅是跟醫生有良好的關係，或是跟醫藥記者熟而已，真正對於醫藥的生態，或者是消費者的需求，了解的程度都不算是深入，但是由於醫藥界是相當封閉的環境，主事者多半年紀較長，對於網路的了解不深，甚至可以說是完全不清楚，當然也由於藥廠的利潤豐厚，就算用傳統的媒體方式操作，需要花費大筆金錢，藥廠也覺得影響不大．
 但是真正專業的醫藥網路行銷，需要有哪些條件呢??
  對於網路的熟悉程度不僅僅只會上網，或是將其外包給配合的網路公司
@@ -347,10 +347,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>專業醫療生技</title>
-      <link>https://arguskao.github.io/liverx2/2007/09/%E5%B0%88%E6%A5%AD%E9%86%AB%E7%99%82%E7%94%9F%E6%8A%80/</link>
+      <link>https://www.liverx.org/2007/09/%E5%B0%88%E6%A5%AD%E9%86%AB%E7%99%82%E7%94%9F%E6%8A%80/</link>
       <pubDate>Fri, 28 Sep 2007 12:08:12 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2007/09/%E5%B0%88%E6%A5%AD%E9%86%AB%E7%99%82%E7%94%9F%E6%8A%80/</guid>
+      <guid>https://www.liverx.org/2007/09/%E5%B0%88%E6%A5%AD%E9%86%AB%E7%99%82%E7%94%9F%E6%8A%80/</guid>
       <description>今天秀月介紹一家專業醫療生技公司給我認識，這家公司是凱格蘭媒體整合行銷公司，現在的醫療生技公司很多，作醫療生技的媒體行銷公司更多，不過秀月介紹的好，這家凱格蘭在醫藥公關這一塊，的確是非常專業，她們的客戶很多都是專業醫療生技公司，我和媒體總監談了大約一個小時，我們交換了許多現在關於醫療生技的生態，也談到現在媒體的演變，還有一些關於現在專業的醫療生技公司，是如何操作媒體，還有如何定位產品，巧的是居然總監的家離我家只有一公里左右，這世界真是很小呀．
 我專業的地方，除了幫這些專業醫療生技公司作網路行銷以外，我真的搞起藥品行銷也是相當在行的，不管是藥品定位或者是搞網路活動，都是我內行的，看來今天收穫很多．
 下一篇專業醫藥網路行銷</description>
@@ -358,20 +358,20 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>纖體美酵素</title>
-      <link>https://arguskao.github.io/liverx2/2007/08/%E7%BA%96%E9%AB%94%E7%BE%8E%E9%85%B5%E7%B4%A0/</link>
+      <link>https://www.liverx.org/2007/08/%E7%BA%96%E9%AB%94%E7%BE%8E%E9%85%B5%E7%B4%A0/</link>
       <pubDate>Wed, 22 Aug 2007 18:15:02 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2007/08/%E7%BA%96%E9%AB%94%E7%BE%8E%E9%85%B5%E7%B4%A0/</guid>
+      <guid>https://www.liverx.org/2007/08/%E7%BA%96%E9%AB%94%E7%BE%8E%E9%85%B5%E7%B4%A0/</guid>
       <description>最近朋友的公司出了一個產品，叫做纖體美酵素，在網路行銷一向做的不好，於是想請我幫忙，我就跟他打賭，三天之內，讓這篇文章能夠將纖體美酵素排在搜尋引擎的第一頁.
 下一篇專業醫療生技</description>
     </item>
     
     <item>
       <title>關鍵字搜尋排名的結果</title>
-      <link>https://arguskao.github.io/liverx2/2007/05/%E6%90%9C%E5%B0%8B%E6%8E%92%E5%90%8D%E7%9A%84%E7%B5%90%E6%9E%9C/</link>
+      <link>https://www.liverx.org/2007/05/%E6%90%9C%E5%B0%8B%E6%8E%92%E5%90%8D%E7%9A%84%E7%B5%90%E6%9E%9C/</link>
       <pubDate>Thu, 24 May 2007 03:55:45 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2007/05/%E6%90%9C%E5%B0%8B%E6%8E%92%E5%90%8D%E7%9A%84%E7%B5%90%E6%9E%9C/</guid>
+      <guid>https://www.liverx.org/2007/05/%E6%90%9C%E5%B0%8B%E6%8E%92%E5%90%8D%E7%9A%84%E7%B5%90%E6%9E%9C/</guid>
       <description>最近因為受到高人指點了一些小小的SEO技巧，於是馬上加入了關鍵字行銷的行列，使得本站的一些關鍵字，能在Google或者Yahoo搜尋都有不錯的成績，現在就來跟大家舉例一下：
 首先我們來看Google大神的搜尋結果，在首頁打入&amp;rdquo;imovane&amp;rdquo;，結果出現排名第一的是&amp;rdquo;活力藥師網&amp;ndash;奇摩部落格&amp;rdquo;，怪的是google居然找到Yahoo的，等會看看Yhaoo會不會找到Google&amp;hellip;.；給他在Yhaoo打imovane下去，第一名就是&amp;rdquo;www.liverx.net&amp;rdquo;也是高藥師的啦!!!
 簡單的說，在Yhaoo和Google打入imovane這個關鍵字，高藥師都是第一的啦!!只是Yahoo很好笑!!搜尋居然不是找到自己的Blog，反而讓Google找到!!
@@ -386,10 +386,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>漫談網路創業系列一</title>
-      <link>https://arguskao.github.io/liverx2/2006/10/%E6%BC%AB%E8%AB%87%E7%B6%B2%E8%B7%AF%E5%89%B5%E6%A5%AD%E7%B3%BB%E5%88%97%E4%B8%80/</link>
+      <link>https://www.liverx.org/2006/10/%E6%BC%AB%E8%AB%87%E7%B6%B2%E8%B7%AF%E5%89%B5%E6%A5%AD%E7%B3%BB%E5%88%97%E4%B8%80/</link>
       <pubDate>Tue, 03 Oct 2006 10:36:00 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2006/10/%E6%BC%AB%E8%AB%87%E7%B6%B2%E8%B7%AF%E5%89%B5%E6%A5%AD%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
+      <guid>https://www.liverx.org/2006/10/%E6%BC%AB%E8%AB%87%E7%B6%B2%E8%B7%AF%E5%89%B5%E6%A5%AD%E7%B3%BB%E5%88%97%E4%B8%80/</guid>
       <description>本篇於10月5日(中秋節)於工商時報D2版登出!!!
 最近跟朋友聊起&amp;rdquo;網路創業&amp;ldquo;這個名詞，發現許多人(包括一些本身有過創業經驗的)都對&amp;rdquo;網路創業&amp;rdquo;產生一些錯誤的夢想(或者說是迷思)，筆者自己曾經經歷過幾次網路泡沫，都幸運的安全度過，雖然不敢說是專家，但是想把一些經驗跟各位朋友探討一下。
 1.迷思一：網路創業的成本較低
@@ -414,10 +414,10 @@ Yahoo為了讓這件事情變的更簡單，提出了Yahoo pipes，這網站挺�
     
     <item>
       <title>各種blog的比較</title>
-      <link>https://arguskao.github.io/liverx2/2006/08/%E5%90%84%E7%A8%AEblog%E7%9A%84%E6%AF%94%E8%BC%83/</link>
+      <link>https://www.liverx.org/2006/08/%E5%90%84%E7%A8%AEblog%E7%9A%84%E6%AF%94%E8%BC%83/</link>
       <pubDate>Sun, 20 Aug 2006 10:37:00 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2006/08/%E5%90%84%E7%A8%AEblog%E7%9A%84%E6%AF%94%E8%BC%83/</guid>
+      <guid>https://www.liverx.org/2006/08/%E5%90%84%E7%A8%AEblog%E7%9A%84%E6%AF%94%E8%BC%83/</guid>
       <description>這年頭，講到網路行銷，就一定要講到Blog部落格，好像不成為部落客就不夠流行，Blog儼然成為網路行銷的代名詞，從WEB1.0時代，見面的問候是你有個人homepage(烘培雞)嗎??到現在WEB 2.0時候，就會問候你有blog(部落格)嗎???到了WEB 3.0&amp;hellip;.對了還沒有進步到3.0不過我可以預言，將來WEB 3.0一定是手機上的窩，簡稱手機窩!!
 言歸正傳，高藥師第一個Blog是自己架的，當然也不是為了搞網路行銷而作的，完全是因為太無聊，可惜架好以後沒人看，看了一些關於網路行銷的書以後，才知道得跑到大站來靠行，這些大站都有免費的blog，在這些blog中，最早期也最有名的應該算是無名小站了吧!!我一時興起，就把有名的BLOG都給他申請起來了，然後每家都貼一樣的文章，一方面增加知名度，一方面如果萬一哪天那家廠商倒了，也不會想哭沒眼淚．
 我申請完以後，發現每家的Blog都有她的特色，其實不太一樣，就把它分析一下給大家吧
@@ -432,10 +432,10 @@ Hinet的Xuite，覺得應該是非常棒的，可是好像沒人在看的樣子!
     
     <item>
       <title>好怪的yahoo搜尋喲!!</title>
-      <link>https://arguskao.github.io/liverx2/2006/03/%E5%A5%BD%E6%80%AA%E7%9A%84yahoo%E6%90%9C%E5%B0%8B%E5%96%B2/</link>
+      <link>https://www.liverx.org/2006/03/%E5%A5%BD%E6%80%AA%E7%9A%84yahoo%E6%90%9C%E5%B0%8B%E5%96%B2/</link>
       <pubDate>Sun, 19 Mar 2006 06:20:00 +0000</pubDate>
       
-      <guid>https://arguskao.github.io/liverx2/2006/03/%E5%A5%BD%E6%80%AA%E7%9A%84yahoo%E6%90%9C%E5%B0%8B%E5%96%B2/</guid>
+      <guid>https://www.liverx.org/2006/03/%E5%A5%BD%E6%80%AA%E7%9A%84yahoo%E6%90%9C%E5%B0%8B%E5%96%B2/</guid>
       <description>本來我的網站可以被google找到以後,覺得雖然挺高興的,但是聽說有許多人還是不知道GOOGLE大神
 所以就想說上上yahoo的網站看看他們搜尋的結果也會出現嗎(打入活力藥師網)
 結果居然出乎的意料之外
