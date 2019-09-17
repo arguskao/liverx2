@@ -13,20 +13,20 @@
     
     <item>
       <title>從wordpress搬到Hugo</title>
-      <link>https://www.liverx.org/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</link>
+      <link>https://www.liverx.org/2019/08/24/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</link>
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2019/08/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
+      <guid>https://www.liverx.org/2019/08/24/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
       <description>實在不敢相信，我辦到了! 首先要感謝Mina的幫助，他的網站是 Mina&amp;rsquo;s Life Travel.是他的網站＋本人手把手的教學，才讓我一個完全不懂程式的人，把Hugo搞定的
 用Wordpress十幾年了，但是越來越肥大的問題，讓我一直不太滿意，所以一直在尋求一個好方法，之前試過Octopress，還有Ghost，可是都不太滿意，所以一直在找方法，最後找到Hexo，搞了半天還是失敗，最後終於有機會用到Hugo，希望能夠讓我解決這些問題。</description>
     </item>
     
     <item>
       <title>Centos和Ubuntu的選擇</title>
-      <link>https://www.liverx.org/2013/02/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</link>
+      <link>https://www.liverx.org/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</link>
       <pubDate>Wed, 13 Feb 2013 14:31:28 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2013/02/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</guid>
+      <guid>https://www.liverx.org/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</guid>
       <description>Centos和Ubuntu都是Linux的分支，本來我是一向習慣Centos，最早其實是喜歡用Fedora的，但是因為套件安裝的方式，所以讓我慢慢開始習慣使用Ubuntu。
 Centos的套件安裝是用Yum，而Ubuntu是用apt-get，雖然操作方式大同小異，但是兩種的差異在於套件的衝突性，還有支援度。用yum安裝套件常會有衝突的情況發生，最後產生錯誤的時候，我敢保證，問遍所有的網路高手，他們都會告訴你重裝，因為那不是他們熟悉的Ubuntu，沒人有興趣幫你解決。
 當然在套件更新的速度上，Ubuntu也略勝一籌。另外在許多東西的安排方式，Ubuntu似乎聰明一些，例如apache的虛擬主機設定方式，還有模組安裝啟動方面，Ubuntu都要方便一些，所以我推薦大家可以多學習使用Ubuntu。
@@ -35,10 +35,10 @@ Centos的套件安裝是用Yum，而Ubuntu是用apt-get，雖然操作方式大�
     
     <item>
       <title>解決vsftpd不能離開家目錄的方式</title>
-      <link>https://www.liverx.org/2013/01/%E8%A7%A3%E6%B1%BAvsftpd%E4%B8%8D%E8%83%BD%E9%9B%A2%E9%96%8B%E5%AE%B6%E7%9B%AE%E9%8C%84%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
+      <link>https://www.liverx.org/2013/01/13/%E8%A7%A3%E6%B1%BAvsftpd%E4%B8%8D%E8%83%BD%E9%9B%A2%E9%96%8B%E5%AE%B6%E7%9B%AE%E9%8C%84%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Sun, 13 Jan 2013 14:03:23 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2013/01/%E8%A7%A3%E6%B1%BAvsftpd%E4%B8%8D%E8%83%BD%E9%9B%A2%E9%96%8B%E5%AE%B6%E7%9B%AE%E9%8C%84%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://www.liverx.org/2013/01/13/%E8%A7%A3%E6%B1%BAvsftpd%E4%B8%8D%E8%83%BD%E9%9B%A2%E9%96%8B%E5%AE%B6%E7%9B%AE%E9%8C%84%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
       <description>ftp是網路主機一定要提供的服務，一般來說大家都是用vsftpd這個程式比較多，設定可以參考連結文章裡面的教學，但是通常大家需要限制使用者不能亂切換目錄，尤其是有提供他人登入帳號，怕把主機秘密看光光，所以我們需要不能離開家目錄的方式。
 修改vsftpd.conf 只允許某些人登錄ftp，也就是說限制所有人，必須新增一個list，讓在裡面的使用者名單可以受到限制。
 chroot_local_user=NO chroot_list_enable=yes chroot_list_file=/etc/vsftpd.chroot_list //列在裡面的使用者可登錄，無法離開家目錄
@@ -48,10 +48,10 @@ chroot_local_user=NO chroot_list_enable=yes chroot_list_file=/etc/vsftpd.chroot_
     
     <item>
       <title>Mac上寫網頁一定要用的編輯器</title>
-      <link>https://www.liverx.org/2012/11/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</link>
+      <link>https://www.liverx.org/2012/11/22/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</link>
       <pubDate>Thu, 22 Nov 2012 06:54:05 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2012/11/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</guid>
+      <guid>https://www.liverx.org/2012/11/22/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/</guid>
       <description>本來我一向是wordpress的死忠支持者，但是男人總是愛新鮮的嘛，有一陣子看到很多人在用Octopress，讓我摸索了一陣子，發現裡面的Markdown是給程式設計者用的，我們這種業餘玩咖，摸了幾次以後就放棄了，當然也因為要搞什麼Ruby環境，實在大大超過我所想像的世界。
 於是實在是已經走火入魔的我，開始想說是不是回頭用Html來刻網頁，速度上一定是會非常快的 ((主要是vps上的記憶體太小，真的要弄個什麼apache+php+mysql就滿了))。所以我就開始學習怎麼寫HTML了，要寫網頁一定要有個很棒的編輯器，本來我都一直使用Sublime 2，不過我從來不知道這個程式的強大，只有用到記事本的功能，結果一搜尋才知道，原來真的是很強很強的呀，推薦大家來用，可以省下很多時間喲。
 延伸閱讀：Ubuntu安裝sublime Text 2
@@ -60,10 +60,10 @@ chroot_local_user=NO chroot_list_enable=yes chroot_list_file=/etc/vsftpd.chroot_
     
     <item>
       <title>Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin</title>
-      <link>https://www.liverx.org/2012/10/ubuntu%E8%A3%9Dnginxphpmysqlphpmyadmin/</link>
+      <link>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
       <pubDate>Thu, 04 Oct 2012 08:02:42 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2012/10/ubuntu%E8%A3%9Dnginxphpmysqlphpmyadmin/</guid>
+      <guid>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
       <description>上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
 安裝nginx+php apt-get install htop joe unzip
@@ -84,20 +84,20 @@ location ~ .php$ { fastcgi_split_path_info ^(.+.php)(/.+)$;
     
     <item>
       <title>打開AWS主機ping的方法</title>
-      <link>https://www.liverx.org/2012/09/%E6%89%93%E9%96%8Baws%E4%B8%BB%E6%A9%9Fping%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <link>https://www.liverx.org/2012/09/06/%E6%89%93%E9%96%8Baws%E4%B8%BB%E6%A9%9Fping%E7%9A%84%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 06 Sep 2012 05:13:25 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2012/09/%E6%89%93%E9%96%8Baws%E4%B8%BB%E6%A9%9Fping%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://www.liverx.org/2012/09/06/%E6%89%93%E9%96%8Baws%E4%B8%BB%E6%A9%9Fping%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
       <description>使用amazone主機的人都知道，他的主機是默認關掉ping的，但是其實是可以打開的，打開的方法也很簡單
 找到Security groups，選Inbound，裡面的Custom ICMP rule，下拉選單選echo replay(也就是ping的回應) 下一篇Mac上免費的網頁設計軟體</description>
     </item>
     
     <item>
       <title>Mac上免費的網頁設計軟體</title>
-      <link>https://www.liverx.org/2012/08/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</link>
+      <link>https://www.liverx.org/2012/08/07/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</link>
       <pubDate>Tue, 07 Aug 2012 09:29:38 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2012/08/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</guid>
+      <guid>https://www.liverx.org/2012/08/07/mac%E4%B8%8A%E5%85%8D%E8%B2%BB%E7%9A%84%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E8%BB%9F%E9%AB%94/</guid>
       <description>最近實在太想學HTML和CSS，於是就開始著手找尋這類相關的軟體，一般windows上面大家都用Frontpage或者DreamWeaver比較多，雖然mac上也有DW，不過DW可不便宜，對於我們只是想玩玩的人來說，犯不著花這個大錢的。
 最後網路上大家都推薦兩套免費又有兄弟關係的軟體，就是Kompozer和Bluegriffon。
 延伸閱讀：Kompozer的教學。Bluegriffon的教學。
