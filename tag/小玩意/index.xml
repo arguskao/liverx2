@@ -142,25 +142,6 @@ Trackback是大部分人都會搞錯的字詞，他本來最早是Movable上的�
     </item>
     
     <item>
-      <title>如何製作部落格觀察</title>
-      <link>https://www.liverx.org/2007/01/13/%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E9%83%A8%E8%90%BD%E6%A0%BC%E8%A7%80%E5%AF%9F/</link>
-      <pubDate>Sat, 13 Jan 2007 04:45:00 +0000</pubDate>
-      
-      <guid>https://www.liverx.org/2007/01/13/%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E9%83%A8%E8%90%BD%E6%A0%BC%E8%A7%80%E5%AF%9F/</guid>
-      <description>上次介紹那個線上人數的製作,對於很多網友來說,反應不實用,因為大部分的時候線上都只有一人,所以大家希望能夠介紹那個部落格觀察怎麼來的,當然我們做人要懂得飲水思源,我是從紀香的網站看到的(紀香的文筆超讚的),當場就給他弄來玩玩了
-首先我們要進到部落格觀察的網站
-請將你的部落格網址填入 &amp;ldquo;新增資料&amp;rdquo; 底下的空白處,我填入http://www.kimo.com,好了以後,就給他按下&amp;rdquo;新增&amp;rdquo;的按鈕!!,然後伺服器開始運作,時間會有點久,可以去看一下報紙或者泡麵吃,過了一段時間以後,會出現這個畫面!!!
-看到紅紅的&amp;rdquo;取得貼紙&amp;rdquo;沒,快點按下去!!!然後會出現下面的圖
-這邊要稍微注意一下,你要選取&amp;rdquo;圖像版本&amp;rdquo;這欄裡面的東西(右邊這一欄),這裡的例子就是
-http://look.urs.tw/showhistory.php?BlogID=15211&amp;rdquo; target=&amp;rdquo;_blank&amp;rdquo;&amp;gt;
-http://look.urs.tw/images/s4.php?BlogID=15211&amp;quot; width=&amp;ldquo;120&amp;rdquo; height=&amp;ldquo;100&amp;rdquo; alt=&amp;ldquo;&amp;rdquo;&amp;ldquo;&amp;rdquo;&amp;ldquo;&amp;rdquo;&amp;ldquo;&amp;ldquo;BlogLook&amp;rdquo;&amp;ldquo;&amp;rdquo;&amp;ldquo;&amp;rdquo;&amp;ldquo;&amp;rdquo; Score and Rank&amp;rdquo; border=&amp;ldquo;0&amp;rdquo;&amp;gt;
-如果跟我選同一種圖的話!!!
-然後再進到管理部落格裡面,選自定欄位,將上面那段代碼填入內容裡面,名稱隨便你打,這樣就大功告成了!!
-如果那些數字的意思看不懂的話,就在這邊研究一下
-http://look.urs.tw/doc.html</description>
-    </item>
-    
-    <item>
       <title>如何製作即時線上人數???</title>
       <link>https://www.liverx.org/2006/12/30/%E5%A6%82%E4%BD%95%E8%A3%BD%E4%BD%9C%E5%8D%B3%E6%99%82%E7%B7%9A%E4%B8%8A%E4%BA%BA%E6%95%B8/</link>
       <pubDate>Sat, 30 Dec 2006 17:36:00 +0000</pubDate>
