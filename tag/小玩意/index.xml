@@ -6,24 +6,10 @@
     <description>Recent content in 小玩意 on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 10 Jun 2008 14:33:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2008 09:15:02 +0000</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/tag/%E5%B0%8F%E7%8E%A9%E6%84%8F/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>可以用手機看我的blog了</title>
-      <link>https://www.liverx.org/2008/06/10/%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%89%8B%E6%A9%9F%E7%9C%8B%E6%88%91%E7%9A%84blog%E4%BA%86/</link>
-      <pubDate>Tue, 10 Jun 2008 14:33:24 +0000</pubDate>
-      
-      <guid>https://www.liverx.org/2008/06/10/%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%89%8B%E6%A9%9F%E7%9C%8B%E6%88%91%E7%9A%84blog%E4%BA%86/</guid>
-      <description>今天無意間看到電腦玩物上面有個圖案，我一時手癢馬上給他按下去，發現這是我想了很久的手機版Blog!!!於是我馬上給他設定好，幾分鐘而已，我的活力藥師網就好了
-網址變成 http://arguskao.mofuse.mobi
-番外篇的網址 http://liverxorg.mofuse.mobi
-看來手機看blog的時代不遠了，我也得來準備一下寫手機專用的Blog!!!
-下一篇Google真的能幫你致富
-下一篇Google真能幫你致富嗎</description>
-    </item>
     
     <item>
       <title>Google的面試題目</title>
@@ -49,15 +35,6 @@ Songza (聽起來有點像台語的爽啦)是一個可以讓你快速找到歌�
 利用搜尋欄打入歌曲名稱以後，左邊會出現一堆的搜尋到的結果，滑鼠按下去以後，會出現一個十字標，選上就是Play，直接就給他唱下去，選下就是加入歌曲的List，然後歌曲的List會出現在右邊，如果選右邊就是Rate評分，評分也很簡單，只有好或不好，如果選左就是Share可以分享出去，分享有三種方式，可以選寄給朋友，或者是直接得到歌曲的連結，還可以有代碼放在自己的Blog上，這&amp;hellip;.真是爽啦!!!
 還等什麼呢??快點去體驗一下，保證你會愛上這網站的!!
 下一篇若水比賽的結果</description>
-    </item>
-    
-    <item>
-      <title>FLASH</title>
-      <link>https://www.liverx.org/2007/12/23/flash/</link>
-      <pubDate>Sun, 23 Dec 2007 08:29:26 +0000</pubDate>
-      
-      <guid>https://www.liverx.org/2007/12/23/flash/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -121,24 +98,6 @@ Pubmed 的Rss 是
 http://www.ncbi.nlm.nih.gov/feed/rss.cgi?ChanKey=PubMedNews
 Lancet的Rss 是 http://www.thelancet.com/rss
 下一篇如果真的醫藥分業就好了</description>
-    </item>
-    
-    <item>
-      <title>Blog的三大核心功能:RSS，Permalink和Trackback</title>
-      <link>https://www.liverx.org/2007/06/28/blog%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BDrsspermalink%E5%92%8Ctrackback/</link>
-      <pubDate>Thu, 28 Jun 2007 11:42:07 +0000</pubDate>
-      
-      <guid>https://www.liverx.org/2007/06/28/blog%E7%9A%84%E4%B8%89%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BDrsspermalink%E5%92%8Ctrackback/</guid>
-      <description>親愛的寶貝，你問過我blog和留言板有什麼不同???我簡單的向你說明一下..
-曾經有某位天王級的歌后，號稱花了五百萬弄了一個blog，但是我想他們應該是犯了常見的錯誤，就是把五百萬花在無謂的地方，最後只留給程式設計人 員五千元而已，所以被惡搞，搞到弄出來的是一個留言板，可惜天后只會擠奶，不知道真正的blog應該有哪些功能，如果沒有了這些功能，是不能叫他是 blog,就像A奶就是A奶，擠成G奶，它本質上還是個A奶…………
-我們就稍微來談談有了怎麼樣的功能，我們可以叫他做BLOG；一般來說留言功能是留言板就會有的，所以這不能算是blog的功能之一，個人列舉了三個功能：RSS、Permalink、Trackback
-RSS的原文是Rich Site Summary，對於大部分的朋友來說是比較不陌生的，有時候我們不知道喜愛的網站不是有更新，又沒時間每一個網站上去看，如果我們可以好好的利用這個功 能的話，我們就可以很方便的從那些訂閱的網站中得到資料，英文稱之為Feed，有人翻譯成”餵”我覺得也相當傳神，想想看，別人主動把東西送到你嘴裡，這 不就是餵嗎??? 至於RSS的本質是一種遵循W3C RDF規範的XML格式，幾乎所有的標準Blog都會支持Rss的技術規範，有時候你在blog上面看到RSS2.0，那就表示這網站有支援訂閱服務!!!
-Permalink是Blog的第二個要件，一般的翻譯有稱為固定連結或是靜態連結的，們將動態網頁rewriting成靜態的連結，是最穩定也是相 當保險的SEO方式，對於想要在搜尋引擎上出格頭地的blog來說，使用Permalink是一個非常重要的決定。如果blog想要被搜尋引擎更快更容易 的被搜索到，除了blog的內容好以外，進入搜尋引擎的頁面內容越多，這樣被不同用戶找到的機會越大，當然對於pagerank也有相當程度的影響．這樣的好處對於一些做關鍵字行銷的部落客，可就大有好處．
-由於Google大神現在是整個搜尋界的天王，他的搜尋方式自然也會受到重視，於google搜尋的資料來說，靜態頁面佔了比較多的比例，為如果我們將動態網頁的參數變成像靜態網頁的形式，效果就會更好 例如 http://www.liverx.net/?p=123 可以改成 http://www.liverx.net/2007/05/17
-Trackback是大部分人都會搞錯的字詞，他本來最早是Movable上的一个小功能。我們甚至可以說，就是這個小功能在部落格圈掀起了一場革 命，一般的中文翻譯翻譯成”引用”，其實並不是一個很好的翻譯，正確的翻譯應該翻成”回溯”，以前我們在別人的網站上留下自己的感想，但是如果一天上了很 多網站最後自己也忘了到底在哪些網站留過文章，總不能自己把所有的文章都加入我的最愛吧!!
-但是有了TrackBack以後，你可以換個作法，將自己的意見寫在自己網站上，然後向該網站發出通知，這樣對方就知道了，自己以後也容易從自己網站上去 找對方的網頁，看起來好像不是很複雜的功能，卻有特殊的意義；透過這樣的方在雙方的網站上留下痕跡，也就間接的讓雙方的網站產生連結，任何對這網站有意見 的blog，就可以全部連接起來，這是那G奶五百萬blog所做不出來的!!!
-所以能夠完整的擁有這三種功能的咚咚，我們才能夠稱為是blog!!!
-下一篇是關鍵字行銷對人生的啟示</description>
     </item>
     
     <item>
