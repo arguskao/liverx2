@@ -378,12 +378,12 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/category/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
+    <loc>https://www.liverx.org/tag/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
     <lastmod>2017-06-22T13:26:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.liverx.org/tag/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
+    <loc>https://www.liverx.org/category/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
     <lastmod>2017-06-22T13:26:47+00:00</lastmod>
   </url>
   
@@ -923,26 +923,6 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/tag/%E7%B3%96%E5%B0%BF%E7%97%85/</loc>
-    <lastmod>2014-05-11T12:17:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/tag/%E7%B5%B1%E4%B8%80%E5%81%A5%E5%BA%B73d/</loc>
-    <lastmod>2014-05-11T12:17:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/2014/05/11/%E7%B5%B1%E4%B8%80%E5%81%A5%E5%BA%B73d/</loc>
-    <lastmod>2014-05-11T12:17:17+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/category/%E8%97%A5%E5%BB%A0%E8%A1%8C%E9%8A%B7/</loc>
-    <lastmod>2014-05-11T12:17:17+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.liverx.org/2014/05/04/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7%E7%9A%84%E6%A1%88%E4%BE%8B/</loc>
     <lastmod>2014-05-04T14:41:46+00:00</lastmod>
   </url>
@@ -1273,6 +1253,11 @@
   </url>
   
   <url>
+    <loc>https://www.liverx.org/category/%E8%97%A5%E5%BB%A0%E8%A1%8C%E9%8A%B7/</loc>
+    <lastmod>2009-02-14T08:44:14+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.liverx.org/2009/02/11/%E8%AB%96%E8%AA%9E/</loc>
     <lastmod>2009-02-11T11:03:55+00:00</lastmod>
   </url>
@@ -1340,11 +1325,6 @@
   <url>
     <loc>https://www.liverx.org/tag/%E9%A2%A8%E6%99%AF/</loc>
     <lastmod>2008-09-17T02:12:10+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/2008/08/01/%E8%B3%9C%E5%A4%9A%E5%88%A9/</loc>
-    <lastmod>2008-08-01T09:36:16+00:00</lastmod>
   </url>
   
   <url>
@@ -1483,11 +1463,6 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/2008/02/22/%E6%B0%B8%E4%BF%A1%E8%88%87%E7%A6%AE%E4%BE%86%E7%B5%90%E7%9B%9F/</loc>
-    <lastmod>2008-02-22T05:04:23+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.liverx.org/2008/02/10/%E8%97%A5%E5%B1%80%E7%82%BA%E4%BD%95%E8%A6%81%E8%B7%9F%E4%B8%AD%E7%9B%A4%E8%B2%B7%E8%97%A5/</loc>
     <lastmod>2008-02-10T14:54:40+00:00</lastmod>
   </url>
@@ -1618,11 +1593,6 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/2007/10/18/%E8%97%A5%E5%B1%80%E5%9C%B0%E5%9C%96/</loc>
-    <lastmod>2007-10-18T15:05:06+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.liverx.org/2007/10/16/%E6%B7%9A%E5%85%89%E9%96%83%E9%96%83%E8%A7%80%E5%BE%8C%E6%84%9F/</loc>
     <lastmod>2007-10-16T16:31:45+00:00</lastmod>
   </url>
@@ -1665,11 +1635,6 @@
   <url>
     <loc>https://www.liverx.org/2007/10/03/%E5%9B%9B%E6%9C%88%E7%89%A9%E8%AA%9E%E8%A7%80%E5%BE%8C%E6%84%9F/</loc>
     <lastmod>2007-10-03T16:28:58+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/2007/09/27/2006%E5%B9%B4%E9%8A%B7%E5%94%AE%E6%8E%92%E8%A1%8C%E6%A6%9C%E5%89%8D%E4%BA%8C%E5%8D%81%E5%90%8D%E8%97%A5%E5%93%81/</loc>
-    <lastmod>2007-09-27T07:41:30+00:00</lastmod>
   </url>
   
   <url>
@@ -2190,11 +2155,6 @@
   <url>
     <loc>https://www.liverx.org/2006/11/04/%E7%B6%B2%E8%B7%AF%E5%89%B5%E6%A5%AD%E7%B3%BB%E5%88%97%E5%85%AB%E4%B9%8B%E9%A4%85%E4%B9%BE%E5%A5%87%E5%85%B5/</loc>
     <lastmod>2006-11-04T16:46:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/2006/11/04/%E5%8F%88%E6%9C%89%E4%B8%8D%E9%8C%AF%E7%9A%84%E5%AD%B8%E5%90%8D%E8%97%A5%E4%B8%8A%E5%B8%82/</loc>
-    <lastmod>2006-11-04T06:10:00+00:00</lastmod>
   </url>
   
   <url>
