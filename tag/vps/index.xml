@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vps on 活力藥師網番外篇</title>
-    <link>https://www.liverx.org/tag/vps/</link>
+    <link>/tag/vps/</link>
     <description>Recent content in vps on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 14 Apr 2014 14:15:51 +0000</lastBuildDate>
     
-	<atom:link href="https://www.liverx.org/tag/vps/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tag/vps/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>免費主機的列表</title>
-      <link>https://www.liverx.org/2014/04/14/%E5%85%8D%E8%B2%BB%E4%B8%BB%E6%A9%9F%E7%9A%84%E5%88%97%E8%A1%A8/</link>
+      <link>/2014/04/14/%E5%85%8D%E8%B2%BB%E4%B8%BB%E6%A9%9F%E7%9A%84%E5%88%97%E8%A1%A8/</link>
       <pubDate>Mon, 14 Apr 2014 14:15:51 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2014/04/14/%E5%85%8D%E8%B2%BB%E4%B8%BB%E6%A9%9F%E7%9A%84%E5%88%97%E8%A1%A8/</guid>
+      <guid>/2014/04/14/%E5%85%8D%E8%B2%BB%E4%B8%BB%E6%A9%9F%E7%9A%84%E5%88%97%E8%A1%A8/</guid>
       <description>雖然現在主機實在不貴，可是有人還是想說找個免費的主機來練練手，尤其是玩一些不是很重要的程式的時候，所以我列出來給大家參考。
 Heroku：這是大家耳熟能詳的平台了，主要提供給Ruby的使用者可輕易做到延展性架構，目前是許多Ruby on Rails開發人員喜愛的平台，Heroku本身是架構在Amazon所提供的雲端架構上，當然不只有可以用 Ruby，也可以用PHP。我自己是在上面用Octopress。唯一缺點是速度上有點慢。可以自定域名。
 Openshit：本來也是速度上超慢，最近不知道怎樣，速度忽然快到讓人可以接受了，這個除了Ruby以外，還可以用Node.js，我在上面架了Ghost。只花了兩分鐘，對於不懂怎麼架的人，可以參考這一篇文章。可以自定域名。
@@ -27,10 +27,10 @@ pagoda box：速度上還可以，但是記憶體只給200MB，就只能架個wo
     
     <item>
       <title>超級爛主機digitalocean</title>
-      <link>https://www.liverx.org/2013/11/17/%E8%B6%85%E7%B4%9A%E7%88%9B%E4%B8%BB%E6%A9%9Fdigitalocean/</link>
+      <link>/2013/11/17/%E8%B6%85%E7%B4%9A%E7%88%9B%E4%B8%BB%E6%A9%9Fdigitalocean/</link>
       <pubDate>Sun, 17 Nov 2013 16:43:17 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2013/11/17/%E8%B6%85%E7%B4%9A%E7%88%9B%E4%B8%BB%E6%A9%9Fdigitalocean/</guid>
+      <guid>/2013/11/17/%E8%B6%85%E7%B4%9A%E7%88%9B%E4%B8%BB%E6%A9%9Fdigitalocean/</guid>
       <description>雖然網路上有許多說digitalocean不錯的網站，不過我個人只能祝福他們，如果他們是有拿digitalocean架網站的話。請看我的慘案。
 本來我只拿digitalocean當練習機，後來因為AWS的free到期，就把一些平常不太用的Blog移到digitalocean上，想說反正也不貴，雖然記憶體和CPU都不是很給力，就將就的用。
 沒想到用不到一個月，忽然主機進不去，收到一封信，叫我填一些資料，說因為某種原因要停掉我的網站，我就乖乖填了資料，沒有想到回信去，因為我的網站被入侵，所以只能停掉我的網站！！靠背咧，在這一行打混快20年，租過大小主機，沒有被這樣對待的，然後中間就是鬼打牆，問他有什麼證據說我被入侵，牠也說不清楚，也不理會，反正牠就是停掉網站，然後拜託半天，就給你半小時備份資料！
@@ -40,10 +40,10 @@ pagoda box：速度上還可以，但是記憶體只給200MB，就只能架個wo
     
     <item>
       <title>千萬不要買Hostigation</title>
-      <link>https://www.liverx.org/2013/04/02/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E8%B2%B7hostigation/</link>
+      <link>/2013/04/02/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E8%B2%B7hostigation/</link>
       <pubDate>Tue, 02 Apr 2013 03:20:01 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2013/04/02/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E8%B2%B7hostigation/</guid>
+      <guid>/2013/04/02/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E8%B2%B7hostigation/</guid>
       <description>雖然網路上很多人推薦這家主機，但是根據我用的這家公司的vps，除了給自己找麻煩以外，不知道還能說什麼？主機會常常當機以外，也會卡卡的連不上，寫信給這家公司，回答就是這是vps，你得自己解決。明明主機有問題，跟vps有什麼關係，只好重裝才恢復正常，最後這台只能拿來練習，根本不能架網站。
 請大家千萬記得，不要再被騙了。爛公司！就是Hostigation。
 下一篇Linode和Digitalocean的比較</description>
@@ -51,10 +51,10 @@ pagoda box：速度上還可以，但是記憶體只給200MB，就只能架個wo
     
     <item>
       <title>Digitalocean和Linode的比較</title>
-      <link>https://www.liverx.org/2013/03/22/digitalocean%E5%92%8Clinode%E7%9A%84%E6%AF%94%E8%BC%83/</link>
+      <link>/2013/03/22/digitalocean%E5%92%8Clinode%E7%9A%84%E6%AF%94%E8%BC%83/</link>
       <pubDate>Fri, 22 Mar 2013 20:45:18 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2013/03/22/digitalocean%E5%92%8Clinode%E7%9A%84%E6%AF%94%E8%BC%83/</guid>
+      <guid>/2013/03/22/digitalocean%E5%92%8Clinode%E7%9A%84%E6%AF%94%E8%BC%83/</guid>
       <description>最近digitalocean的廣告非常多，不管到哪個網站都可以看到，我剛好也看到這個廣告，因為剛好需要一個vps，看到很多人的介紹，強調是使用SSD硬碟，於是我也心動刷卡買了一台來試試看，但是用了幾天，好像速度上不如預期，至少比我現在用的AWS爛上一些些，估計是因為沒有東京機房的關係。
 後來還是受不了，雖然Linode貴到暴，可是禁不住大家的狂推薦，(基本上網路找不到負評)，只好眼睛閉著刷卡下去。我會想買linode有一個最重要的原因，是開linode的首頁速度也很快，所以就買下去了，後來也沒有讓我失望，除了速度馬上快到破表，最近Linode又把4CPU變成8CPU，流量增大十倍（可惜我沒有用圖床），我拼了命的用也用不到1%的流量，如果預算上可以的話，還是推薦買Linode吧。
 結論：我現在把ditalocean當成練習機，玩一玩可以關掉，多快樂呀。一個月才用不到一元美金，可以用上好幾年吧。
@@ -63,10 +63,10 @@ pagoda box：速度上還可以，但是記憶體只給200MB，就只能架個wo
     
     <item>
       <title>Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin</title>
-      <link>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
+      <link>/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
       <pubDate>Thu, 04 Oct 2012 08:02:42 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
+      <guid>/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
       <description>上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
 安裝nginx+php apt-get install htop joe unzip

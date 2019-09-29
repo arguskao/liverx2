@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on 活力藥師網番外篇</title>
-    <link>https://www.liverx.org/tag/ubuntu/</link>
+    <link>/tag/ubuntu/</link>
     <description>Recent content in ubuntu on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Wed, 13 Feb 2013 14:31:28 +0000</lastBuildDate>
     
-	<atom:link href="https://www.liverx.org/tag/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tag/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Centos和Ubuntu的選擇</title>
-      <link>https://www.liverx.org/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</link>
+      <link>/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</link>
       <pubDate>Wed, 13 Feb 2013 14:31:28 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</guid>
+      <guid>/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</guid>
       <description>Centos和Ubuntu都是Linux的分支，本來我是一向習慣Centos，最早其實是喜歡用Fedora的，但是因為套件安裝的方式，所以讓我慢慢開始習慣使用Ubuntu。
 Centos的套件安裝是用Yum，而Ubuntu是用apt-get，雖然操作方式大同小異，但是兩種的差異在於套件的衝突性，還有支援度。用yum安裝套件常會有衝突的情況發生，最後產生錯誤的時候，我敢保證，問遍所有的網路高手，他們都會告訴你重裝，因為那不是他們熟悉的Ubuntu，沒人有興趣幫你解決。
 當然在套件更新的速度上，Ubuntu也略勝一籌。另外在許多東西的安排方式，Ubuntu似乎聰明一些，例如apache的虛擬主機設定方式，還有模組安裝啟動方面，Ubuntu都要方便一些，所以我推薦大家可以多學習使用Ubuntu。
@@ -25,10 +25,10 @@ Centos的套件安裝是用Yum，而Ubuntu是用apt-get，雖然操作方式大�
     
     <item>
       <title>Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin</title>
-      <link>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
+      <link>/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
       <pubDate>Thu, 04 Oct 2012 08:02:42 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
+      <guid>/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
       <description>上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
 安裝nginx+php apt-get install htop joe unzip
