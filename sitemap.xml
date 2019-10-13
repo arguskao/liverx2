@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2019-10-13T15:37:54+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tag/caddy/</loc>
     <lastmod>2019-10-13T15:37:54+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/caddy/</loc>
+    <loc>/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/</loc>
     <lastmod>2019-10-13T15:37:54+08:00</lastmod>
   </url>
   
@@ -35,11 +40,6 @@
   <url>
     <loc>/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/</loc>
     <lastmod>2019-10-13T15:37:54+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/</loc>
-    <lastmod>2019-10-11T10:50:46+08:00</lastmod>
   </url>
   
   <url>
