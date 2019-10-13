@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Caddy終於成功了</title>
+      <link>/caddy/</link>
+      <pubDate>Sun, 13 Oct 2019 15:37:54 +0800</pubDate>
+      
+      <guid>/caddy/</guid>
+      <description>每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
+前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
+換到Hugo以後，就開始對靜態網頁這種東西著迷了，速度快，架設起來很方便，又剛好碰到Oracle推免費主機，當然趕快搶了兩台，他們主機有個特性，就是頻寬很大，但是主機慢到爆，可能都是回收的主機，可能連SSD都沒有，於是想要利用這個頻寬大的主機，只能夠利用靜態網頁的特性了，在上面架Hugo，但是&amp;hellip;..如果這種主機使用傳統的apache，太肥大了。甚至連Nginx都會太大，我就想起來了和hugo一樣都是Go語言寫的Caddy，看到網路上介紹，非常輕薄短小，我就準備一台主機來好好折騰了。</description>
+    </item>
+    
+    <item>
       <title>Fda認證申請</title>
       <link>/2019/10/11/fda%E8%AA%8D%E8%AD%89%E7%94%B3%E8%AB%8B/</link>
       <pubDate>Fri, 11 Oct 2019 10:50:46 +0800</pubDate>
@@ -19,6 +30,16 @@
       <guid>/2019/10/11/fda%E8%AA%8D%E8%AD%89%E7%94%B3%E8%AB%8B/</guid>
       <description>因為去新加坡參展，很多客戶問了公司產品是否有FDA認證，目前當然是沒有囉，所以找了幾家代辦公司，想說透過別人申請比較方便，沒想到這些公司姿態都挺高的，感覺上專業度也不是很夠，當然收費太高，也是一個重點！
 我準備開始自己來申請，首先要找一個美國公民，這應該是最大的挑戰吧！</description>
+    </item>
+    
+    <item>
+      <title>從wordpress搬到Hugo</title>
+      <link>/2019/08/24/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/24/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
+      <description>實在不敢相信，我辦到了! 首先要感謝Mina的幫助，他的網站是 Mina&amp;rsquo;s Life Travel.是他的網站＋本人手把手的教學，才讓我一個完全不懂程式的人，把Hugo搞定的
+用Wordpress十幾年了，但是越來越肥大的問題，讓我一直不太滿意，所以一直在尋求一個好方法，之前試過Octopress，還有Ghost，可是都不太滿意，所以一直在找方法，最後找到Hexo，搞了半天還是失敗，最後終於有機會用到Hugo，希望能夠讓我解決這些問題。</description>
     </item>
     
     <item>

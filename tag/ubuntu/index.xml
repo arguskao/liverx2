@@ -6,10 +6,21 @@
     <description>Recent content in ubuntu on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 13 Feb 2013 14:31:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Oct 2019 15:37:54 +0800</lastBuildDate>
     
 	<atom:link href="/tag/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Caddy終於成功了</title>
+      <link>/caddy/</link>
+      <pubDate>Sun, 13 Oct 2019 15:37:54 +0800</pubDate>
+      
+      <guid>/caddy/</guid>
+      <description>每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
+前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
+換到Hugo以後，就開始對靜態網頁這種東西著迷了，速度快，架設起來很方便，又剛好碰到Oracle推免費主機，當然趕快搶了兩台，他們主機有個特性，就是頻寬很大，但是主機慢到爆，可能都是回收的主機，可能連SSD都沒有，於是想要利用這個頻寬大的主機，只能夠利用靜態網頁的特性了，在上面架Hugo，但是&amp;hellip;..如果這種主機使用傳統的apache，太肥大了。甚至連Nginx都會太大，我就想起來了和hugo一樣都是Go語言寫的Caddy，看到網路上介紹，非常輕薄短小，我就準備一台主機來好好折騰了。</description>
+    </item>
     
     <item>
       <title>Centos和Ubuntu的選擇</title>
