@@ -25,12 +25,14 @@
 大概按照步驟一步一步就可以設定完成了。不過中間gist程式那裏有些小地方錯誤，可能大家要自己注意一下。
 最難的地方就是設定那個Caddyfile，還有發證書的地方。
 如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。
- sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy  這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
+ sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy 
+這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
  oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html }  這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
-做到這一步還不能自動啟動，一定得最後四步做完才行。 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.service sydo systemctl status caddy.service  參考文章 (Debain)</description>
+做到這一步還不能自動啟動，一定得最後四步做完才行。 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.service sydo systemctl status caddy.service  參考文章 (Debain)
+參考文章 內地的文章，挺詳細</description>
     </item>
     
   </channel>
