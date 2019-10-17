@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on 活力藥師網番外篇</title>
-    <link>/tag/ubuntu/</link>
+    <link>https://www.liverx.org/tag/ubuntu/</link>
     <description>Recent content in ubuntu on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 13 Oct 2019 15:37:54 +0800</lastBuildDate>
     
-	<atom:link href="/tag/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.liverx.org/tag/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Caddy終於成功了</title>
-      <link>/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/</link>
+      <link>https://www.liverx.org/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/</link>
       <pubDate>Sun, 13 Oct 2019 15:37:54 +0800</pubDate>
       
-      <guid>/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/</guid>
+      <guid>https://www.liverx.org/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/</guid>
       <description>每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
 前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
 換到Hugo以後，就開始對靜態網頁這種東西著迷了，速度快，架設起來很方便，又剛好碰到Oracle推免費主機，當然趕快搶了兩台，他們主機有個特性，就是頻寬很大，但是主機慢到爆，可能都是回收的主機，可能連SSD都沒有，於是想要利用這個頻寬大的主機，只能夠利用靜態網頁的特性了，在上面架Hugo，但是&amp;hellip;..如果這種主機使用傳統的apache，太肥大了。甚至連Nginx都會太大，我就想起來了和hugo一樣都是Go語言寫的Caddy，看到網路上介紹，非常輕薄短小，我就準備一台主機來好好折騰了。
@@ -37,10 +37,10 @@ sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己
     
     <item>
       <title>Centos和Ubuntu的選擇</title>
-      <link>/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</link>
+      <link>https://www.liverx.org/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</link>
       <pubDate>Wed, 13 Feb 2013 14:31:28 +0000</pubDate>
       
-      <guid>/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</guid>
+      <guid>https://www.liverx.org/2013/02/13/centos%E5%92%8Cubuntu%E7%9A%84%E9%81%B8%E6%93%87/</guid>
       <description>Centos和Ubuntu都是Linux的分支，本來我是一向習慣Centos，最早其實是喜歡用Fedora的，但是因為套件安裝的方式，所以讓我慢慢開始習慣使用Ubuntu。
 Centos的套件安裝是用Yum，而Ubuntu是用apt-get，雖然操作方式大同小異，但是兩種的差異在於套件的衝突性，還有支援度。用yum安裝套件常會有衝突的情況發生，最後產生錯誤的時候，我敢保證，問遍所有的網路高手，他們都會告訴你重裝，因為那不是他們熟悉的Ubuntu，沒人有興趣幫你解決。
 當然在套件更新的速度上，Ubuntu也略勝一籌。另外在許多東西的安排方式，Ubuntu似乎聰明一些，例如apache的虛擬主機設定方式，還有模組安裝啟動方面，Ubuntu都要方便一些，所以我推薦大家可以多學習使用Ubuntu。
@@ -49,10 +49,10 @@ Centos的套件安裝是用Yum，而Ubuntu是用apt-get，雖然操作方式大�
     
     <item>
       <title>Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin</title>
-      <link>/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
+      <link>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</link>
       <pubDate>Thu, 04 Oct 2012 08:02:42 +0000</pubDate>
       
-      <guid>/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
+      <guid>https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/</guid>
       <description>上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
 安裝nginx+php apt-get install htop joe unzip
