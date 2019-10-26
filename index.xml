@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>關於Hugo on 活力藥師網番外篇</title>
@@ -10,6 +10,15 @@
     
 	<atom:link href="https://www.liverx.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Forestry一個好用的Hugo後台</title>
+      <link>https://www.liverx.org/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</link>
+      <pubDate>Thu, 24 Oct 2019 16:02:13 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gitlab的設定</title>
