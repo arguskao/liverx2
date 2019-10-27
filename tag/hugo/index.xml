@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on 活力藥師網番外篇</title>
+    <title>hugo on 活力藥師網番外篇</title>
     <link>https://www.liverx.org/tag/hugo/</link>
-    <description>Recent content in Hugo on 活力藥師網番外篇</description>
+    <description>Recent content in hugo on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 22 Oct 2019 08:41:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 16:02:13 +0800</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/tag/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Forestry一個好用的Hugo後台</title>
+      <link>https://www.liverx.org/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</link>
+      <pubDate>Sat, 26 Oct 2019 16:02:13 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</guid>
+      <description>很多人不喜歡用Hugo這類靜態網站，最重要的原因是沒有後台，尤其對於習慣用Wordpress這類動態網站來說，更是很痛苦的一件事情。
+所幸，我們的痛苦，還是有人聽到的。
+Forestry 非常方便，除了可以新建一個網站以外，也可以匯入很多已經建立好的網站，不管是在Github或者Gitlab上的，對於我來說，真是完全解決了痛苦，可惜免費版只有三個人可以編輯。</description>
+    </item>
     
     <item>
       <title>Gitlab的設定</title>
