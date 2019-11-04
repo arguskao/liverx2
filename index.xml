@@ -12,14 +12,37 @@
     
     
     <item>
+      <title>千萬不要用godaddy買網址</title>
+      <link>https://www.liverx.org/2019/11/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E7%94%A8godaddy%E8%B2%B7%E7%B6%B2%E5%9D%80/</link>
+      <pubDate>Mon, 04 Nov 2019 17:07:46 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2019/11/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E7%94%A8godaddy%E8%B2%B7%E7%B6%B2%E5%9D%80/</guid>
+      <description>對於很多人來說godaddy幾乎就是申請網址的代名詞，不過本人很少用這家公司申請網址，除非是客戶一定要申請.com.tw的網址，我才會用這家1，
+但是有一次發生一件事情以後，我就建議大家不要再用godaddy了，是因為一個客戶忘記續約，一般過期都是補交錢就好了，結果godaddy居然說台灣要收一個過期費80美金！一個網址才多少錢，你要收80美金！我本來以為是台灣政府的惡習，但是詢問同樣的公司gandi卻說不用收這筆費用，所以大家千萬要小心了囉！
+ 平常我都用gandi或者namesilo。 [return]   </description>
+    </item>
+    
+    <item>
+      <title>Paypal的小問題</title>
+      <link>https://www.liverx.org/2019/11/01/paypal%E7%9A%84%E5%B0%8F%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Fri, 01 Nov 2019 16:59:03 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2019/11/01/paypal%E7%9A%84%E5%B0%8F%E5%95%8F%E9%A1%8C/</guid>
+      <description>其實用paypal已經十多年了，除了手續費高了一點，然後不能收台灣人的費用以外，其他都還算滿意，但是&amp;hellip;.就是這個但是。
+最近因為申請一張JCB的卡，有高額回饋的，想要換過來，卻發現paypal居然不接受JCB的卡，寫信去問，得到的回答就是除了日本以外，就是不接受這個卡，提醒大家如果辦卡的時候，千萬要注意這件事情喲。
+最後還是得繼續用原來的卡，真是！</description>
+    </item>
+    
+    <item>
       <title>Forestry一個好用的Hugo後台</title>
-      <link>https://www.liverx.org/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</link>
+      <link>https://www.liverx.org/2019/10/26/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</link>
       <pubDate>Sat, 26 Oct 2019 16:02:13 +0800</pubDate>
       
-      <guid>https://www.liverx.org/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</guid>
+      <guid>https://www.liverx.org/2019/10/26/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/</guid>
       <description>很多人不喜歡用Hugo這類靜態網站，最重要的原因是沒有後台，尤其對於習慣用Wordpress這類動態網站來說，更是很痛苦的一件事情。
 所幸，我們的痛苦，還是有人聽到的。
-Forestry 非常方便，除了可以新建一個網站以外，也可以匯入很多已經建立好的網站，不管是在Github或者Gitlab上的，對於我來說，真是完全解決了痛苦，可惜免費版只有三個人可以編輯。</description>
+Forestry 非常方便，除了可以新建一個網站以外，也可以匯入很多已經建立好的網站，不管是在Github或者Gitlab上的，對於我來說，真是完全解決了痛苦，可惜免費版只有三個人可以編輯。
+還有對於喜歡放圖片的來說，它更是方便，不用煩惱圖片要放那裏了。</description>
     </item>
     
     <item>
@@ -38,7 +61,8 @@ Forestry 非常方便，除了可以新建一個網站以外，也可以匯入�
 yoube網路行銷
 失眠真痛苦
 糖尿病教室
-法鬥大小事</description>
+法鬥大小事
+砂勞越</description>
     </item>
     
     <item>
@@ -64,11 +88,11 @@ image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: 
       
       <guid>https://www.liverx.org/2019/10/17/%E5%85%8D%E8%B2%BB%E7%9A%84%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81%E4%B8%BB%E6%A9%9F/</guid>
       <description>其實很久沒有寫免費相關的題材了，因為這年頭聰明的人都知道免費的最貴！但是自從我玩了Hugo以後，才發現原來很多網路上支援靜態網頁的主機，都是免費的，而且品質高，限制少，又沒有廣告，又支援你自定網址，真是爽到呆掉！！
-##第一名：Github 根據我個人使用的結果，基本上可以說是沒有缺點，除了空間限制在1GB以外，如果不是圖很多的部落客，應該是不會超過這個限制才對。
-##第二名 Gitlab 他和Github有點類似競爭者，不過因為本人比較笨的關係，不太會用CI，所以目前是放棄這個網站的。
-##第三名 Surge 不但能自訂網域還支援SSL憑證，而且他是真正無限流量的。不過使用上要稍微學一下，網路google一下。
-##第四名 Render 這是我目前搭配Github來使用的，他速度也非常快，不過好像不能單獨架網站，需要從其他地方匯入，不過很剛好！我喜歡！一樣支援自訂網域還支援SSL憑證。
-##第五名 Zeit.co 這個網站希望不會太快倒，他居然有台灣的CDN網點，爽到飛起來，目前我也有用。
+第一名：Github 根據我個人使用的結果，基本上可以說是沒有缺點，除了空間限制在1GB以外，如果不是圖很多的部落客，應該是不會超過這個限制才對。
+第二名 Gitlab 他和Github有點類似競爭者，不過因為本人比較笨的關係，不太會用CI，所以目前是放棄這個網站的。
+第三名 Surge 不但能自訂網域還支援SSL憑證，而且他是真正無限流量的。不過使用上要稍微學一下，網路google一下。
+第四名 Render 這是我目前搭配Github來使用的，他速度也非常快，不過好像不能單獨架網站，需要從其他地方匯入，不過很剛好！我喜歡！一樣支援自訂網域還支援SSL憑證。
+第五名 Zeit.co 這個網站希望不會太快倒，他居然有台灣的CDN網點，爽到飛起來，目前我也有用。
 當然還有很多公司提供的免費空間，例如GCP有提供終身免費1GB流量的空間，不過根本沒實用性，就不推薦了！</description>
     </item>
     
