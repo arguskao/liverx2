@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.1" />
   <meta itemprop="name" content="Caddy終於成功了">
 <meta itemprop="description" content="每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
 前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
@@ -17,25 +17,22 @@
 參考1：將 nginx 調整為 caddy，世界上的網站都與 ssl 做好朋友
 大概按照步驟一步一步就可以設定完成了。不過中間gist程式那裏有些小地方錯誤，可能大家要自己注意一下。
 最難的地方就是設定那個Caddyfile，還有發證書的地方。
-如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。
- sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy 
+如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。1
+sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
+我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html }  這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
-sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
-做到這一步還不能自動啟動，一定得最後四步做完才行。 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.service sydo systemctl status caddy.service  參考文章 (Debain)
-參考文章 內地的文章，挺詳細">
-
-
+sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
+sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.">
 <meta itemprop="datePublished" content="2019-10-13T15:37:54&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-13T15:37:54&#43;08:00" />
-<meta itemprop="wordCount" content="65">
+<meta itemprop="wordCount" content="81">
 
 
 
 <meta itemprop="keywords" content="" />
-
   <meta property="og:title" content="Caddy終於成功了" />
 <meta property="og:description" content="每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
 前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
@@ -44,15 +41,15 @@ sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己
 參考1：將 nginx 調整為 caddy，世界上的網站都與 ssl 做好朋友
 大概按照步驟一步一步就可以設定完成了。不過中間gist程式那裏有些小地方錯誤，可能大家要自己注意一下。
 最難的地方就是設定那個Caddyfile，還有發證書的地方。
-如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。
- sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy 
+如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。1
+sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
+我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html }  這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
-sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
-做到這一步還不能自動啟動，一定得最後四步做完才行。 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.service sydo systemctl status caddy.service  參考文章 (Debain)
-參考文章 內地的文章，挺詳細" />
+sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
+sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.liverx.org/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/" />
 <meta property="article:published_time" content="2019-10-13T15:37:54+08:00" />
@@ -67,15 +64,15 @@ sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己
 參考1：將 nginx 調整為 caddy，世界上的網站都與 ssl 做好朋友
 大概按照步驟一步一步就可以設定完成了。不過中間gist程式那裏有些小地方錯誤，可能大家要自己注意一下。
 最難的地方就是設定那個Caddyfile，還有發證書的地方。
-如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。
- sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy 
+如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。1
+sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
+我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html }  這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
-sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
-做到這一步還不能自動啟動，一定得最後四步做完才行。 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.service sydo systemctl status caddy.service  參考文章 (Debain)
-參考文章 內地的文章，挺詳細"/>
+sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
+sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy."/>
 <meta name="twitter:site" content="@arguskao"/>
 
   
@@ -300,58 +297,47 @@ sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己
 
   <div class="content">
     <p>每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。</p>
-
 <p>前一陣子，整個<a href="https://liverx.org/2019/08/24/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/">從Wordpress，換到Hugo</a>，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。</p>
-
 <p>換到Hugo以後，就開始對靜態網頁這種東西著迷了，速度快，架設起來很方便，又剛好碰到Oracle推免費主機，當然趕快搶了兩台，他們主機有個特性，就是頻寬很大，但是主機慢到爆，可能都是回收的主機，可能連SSD都沒有，於是想要利用這個頻寬大的主機，只能夠利用靜態網頁的特性了，在上面架Hugo，但是&hellip;..如果這種主機使用傳統的apache，太肥大了。甚至連Nginx都會太大，我就想起來了和hugo一樣都是Go語言寫的<a href="https://liverx.org/tag/caddy">Caddy</a>，看到網路上介紹，非常輕薄短小，我就準備一台主機來好好折騰了。</p>
-
 <p>其實Caddy設定很簡單，我花很多天的時間是因為我的port被封住，我不知道，所以白白浪費很多天，偷懶的我，要參考一下大德的文章。</p>
-
 <p>參考1：<a href="https://blog.caesarchi.com/2017/04/06/nginx_caddy_cloudflare/">將 nginx 調整為 caddy，世界上的網站都與 ssl 做好朋友</a></p>
-
 <p>大概按照步驟一步一步就可以設定完成了。不過中間gist程式那裏有些小地方錯誤，可能大家要自己注意一下。</p>
-
 <p>最難的地方就是設定那個Caddyfile，還有發證書的地方。</p>
-
 <p>如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。
-**，然後有一個指令很重要，非打不可。</p>
-
-<p><code>
-sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/caddy
-</code></p>
-
+**，然後有一個指令很重要，非打不可。<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><code>sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/caddy</code></p>
+<p><strong>我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現</strong></p>
 <p>這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。</p>
-
 <p>重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com</p>
-
 <pre><code> oracle.example.com {
   tls example@gmail.com #這裡打你自己的Email
   root /var/www  #這裡打你的檔案路徑
   index index.html
+  gzip                             # 網頁壓縮
+    header /assets {       # 加入檔頭，指定 assets 路徑下
+      Cache-Control &quot;max-age=604800&quot;   # 控制瀏覽器快取，壽命一週
+    }
   }
-</code></pre>
-
-<p>這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！</p>
-
+</code></pre><p>這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！</p>
 <p>附註：會碰到port 80 被占用的話，就使用</p>
-
 <pre><code>sudo netstat -lnp | grep 80
-</code></pre>
-
-<p>看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。</p>
-
-<h4>做到這一步還不能自動啟動，一定得最後四步做完才行。</h4>
-
+</code></pre><p>看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。</p>
+<!-- raw HTML omitted -->
 <pre><code>sudo chmod 644 /etc/systemd/system/caddy.service
 sudo systemctl enable caddy.service
 sudo systemctl start caddy.service
-sydo systemctl status caddy.service
+sudo systemctl status caddy.service
 
-</code></pre>
-
-<p><a href="https://www.giuem.com/caddy-tutorial-for-debian/">參考文章</a> (Debain)</p>
-
+</code></pre><p><a href="https://www.giuem.com/caddy-tutorial-for-debian/">參考文章</a> (Debain)</p>
 <p><a href="https://wzfou.com/caddy/">參考文章</a> 內地的文章，挺詳細</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>如果說Cloudflare的DNS地方沒有打勾。問題就會變得很簡單。只是雖然這樣不知道為何要用CF的DNS了。<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#8617;</a></p>
+</li>
+</ol>
+</section>
 
   </div>
   <footer>
@@ -443,6 +429,17 @@ sydo systemctl status caddy.service
 
         </section>
         <header>
+          <h1><a href="../../../../2019/12/01/caddy%E5%92%8Cwordpress/">Caddy和wordpress</a></h1>
+          <time class="published" datetime="">December 1, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2019/11/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E7%94%A8godaddy%E8%B2%B7%E7%B6%B2%E5%9D%80/">千萬不要用godaddy買網址</a></h1>
           <time class="published" datetime="">November 4, 2019</time>
         </header>
@@ -500,17 +497,6 @@ sydo systemctl status caddy.service
         <header>
           <h1><a href="../../../../2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/">Caddy終於成功了</a></h1>
           <time class="published" datetime="">October 13, 2019</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2019/10/11/fda%E8%AA%8D%E8%AD%89%E7%94%B3%E8%AB%8B/">Fda認證申請</a></h1>
-          <time class="published" datetime="">October 11, 2019</time>
         </header>
       </article>
       
@@ -588,7 +574,7 @@ sydo systemctl status caddy.service
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.59.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.60.1'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

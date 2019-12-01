@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wordpress on 活力藥師網番外篇</title>
+    <link>https://www.liverx.org/tag/wordpress/</link>
+    <description>Recent content in wordpress on 活力藥師網番外篇</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 01 Dec 2019 18:27:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.liverx.org/tag/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Caddy和wordpress</title>
+      <link>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</link>
+      <pubDate>Sun, 01 Dec 2019 18:27:33 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</guid>
+      <description>自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
+一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。
+假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu為例)
+sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
+example.com { root /var/www/wordpress gzip fastcgi / 127.0.0.1:9000 php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?_url={uri} } } 最後再安裝Mysql，務必按照順序
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：
+mysql -u root -p [^2] CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改 CREATE USER wpuser@localhost; #代表用戶名是wpuser，也可以更改 SET PASSWORD FOR wordpressuser@localhost= PASSWORD(&amp;quot;password&amp;quot;); #password就是你要的密碼 GRANT ALL PRIVILEGES ON wordpress.</description>
+    </item>
+    
+  </channel>
+</rss>

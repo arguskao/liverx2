@@ -33,10 +33,10 @@ Forestry 非常方便，除了可以新建一個網站以外，也可以匯入�
 實際上這兩個網站是有不少的差別的，對於想要把Hugo這個SSG，Host在上面的人來說，可能會花點力氣，至少對我這種沒程度的人來說，差點搞死了。
 我覺得最大的差點有兩點，本來有三點，就是private repo，但是後來github也取消了。
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
-image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master  本來以為設定這個成功以後，就可以用了，沒想到居然出現
- fatal: No url found for submodule path &#39;public&#39; in .gitmodules  我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
- [submodule &amp;quot;path_to_submodule&amp;quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置）  設定好以後再
- git submodule init git submodule update  還要設定.</description>
+image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
+fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
+[submodule &amp;quot;path_to_submodule&amp;quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+git submodule init git submodule update 還要設定.</description>
     </item>
     
     <item>
@@ -46,11 +46,6 @@ image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: 
       
       <guid>https://www.liverx.org/2019/10/17/%E5%85%8D%E8%B2%BB%E7%9A%84%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81%E4%B8%BB%E6%A9%9F/</guid>
       <description>其實很久沒有寫免費相關的題材了，因為這年頭聰明的人都知道免費的最貴！但是自從我玩了Hugo以後，才發現原來很多網路上支援靜態網頁的主機，都是免費的，而且品質高，限制少，又沒有廣告，又支援你自定網址，真是爽到呆掉！！
-第一名：Github 根據我個人使用的結果，基本上可以說是沒有缺點，除了空間限制在1GB以外，如果不是圖很多的部落客，應該是不會超過這個限制才對。
-第二名 Gitlab 他和Github有點類似競爭者，不過因為本人比較笨的關係，不太會用CI，所以目前是放棄這個網站的。
-第三名 Surge 不但能自訂網域還支援SSL憑證，而且他是真正無限流量的。不過使用上要稍微學一下，網路google一下。
-第四名 Render 這是我目前搭配Github來使用的，他速度也非常快，不過好像不能單獨架網站，需要從其他地方匯入，不過很剛好！我喜歡！一樣支援自訂網域還支援SSL憑證。
-第五名 Zeit.co 這個網站希望不會太快倒，他居然有台灣的CDN網點，爽到飛起來，目前我也有用。
 當然還有很多公司提供的免費空間，例如GCP有提供終身免費1GB流量的空間，不過根本沒實用性，就不推薦了！</description>
     </item>
     

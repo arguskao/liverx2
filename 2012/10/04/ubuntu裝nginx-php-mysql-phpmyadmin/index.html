@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.60.1" />
   <meta itemprop="name" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin">
 <meta itemprop="description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
@@ -26,16 +26,13 @@ joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0
 這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock
 location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
 # NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127.">
-
-
 <meta itemprop="datePublished" content="2012-10-04T08:02:42&#43;00:00" />
 <meta itemprop="dateModified" content="2012-10-04T08:02:42&#43;00:00" />
-<meta itemprop="wordCount" content="116">
+<meta itemprop="wordCount" content="114">
 
 
 
 <meta itemprop="keywords" content="" />
-
   <meta property="og:title" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin" />
 <meta property="og:description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
@@ -299,80 +296,44 @@ location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
   
 
   <div class="content">
-    
-
-<p>上一篇寫到<a href="http://www.liverx.org/2013/02/13/centos%e5%92%8cubuntu%e7%9a%84%e9%81%b8%e6%93%87/">Ubuntu和Centos的選擇</a>以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。</p>
-
+    <p>上一篇寫到<a href="http://www.liverx.org/2013/02/13/centos%e5%92%8cubuntu%e7%9a%84%e9%81%b8%e6%93%87/">Ubuntu和Centos的選擇</a>以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。</p>
 <p>如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，</p>
-
-<h1 id="安裝nginx-php">安裝nginx+php</h1>
-
+<h1 id="nginxphp">安裝nginx+php</h1>
 <p>apt-get install htop joe unzip</p>
-
 <p>可以直接安裝nignx      apt-get install nginx</p>
-
 <p>然後再裝php5-fpm    apt-get install php5 php5-fpm，不建議再裝php-fcgi，容易相衝</p>
-
 <p>apt-get install php5-cli php5-xcache</p>
-
 <p>php -v 檢查是否成功安裝xcache，成功的話，會出現xcache字眼</p>
-
 <p>joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0</p>
-
 <p>可以先確定一下停掉apache2 ，service apache2 stop</p>
-
 <p>我個人習慣將root 目錄設成 /var/www/vhosts，所以待會的例子都以此目錄為準，請自己更改成您自己的目錄</p>
-
 <p>更改 root  /var/www/vhosts  (請改成自己的目錄）</p>
-
 <p>       index  index.php index.htm index.html  (index.php 是新增的，原來沒有)</p>
-
 <p>然後重點來了，這裡如果錯了，php會不能用，請注意紅色部分就是要將註解取消</p>
-
 <p>這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock</p>
-
 <p>location ~ .php$ {
 fastcgi_split_path_info ^(.+.php)(/.+)$;</p>
-
-<h1 id="note-you-should-have-cgi-fix-pathinfo-0-in-php-ini"># NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini</h1>
-
-<h1 id="with-php5-cgi-alone"># With php5-cgi alone:</h1>
-
-<h1 id="fastcgi-pass-127-0-0-1-9000">#fastcgi_pass 127.0.0.1:9000;</h1>
-
-<h1 id="with-php5-fpm"># With php5-fpm:</h1>
-
+<h1 id="-note-you-should-have-cgifixpathinfo--0-in-phpini"># NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini</h1>
+<h1 id="-with-php5cgi-alone"># With php5-cgi alone:</h1>
+<h1 id="fastcgipass-1270019000">#fastcgi_pass 127.0.0.1:9000;</h1>
+<h1 id="-with-php5fpm"># With php5-fpm:</h1>
 <p>fastcgi_pass unix:/run/php5-fpm.sock;
 fastcgi_index index.php;
 fastcgi_param SCRIPT_FILENAME /var/www/vhosts$fastcgi_script_name;
 include /etc/nginx/fastcgi_params;</p>
-
 <p>service php5-fpm restart，確定要有 OK出現，才有設定成功</p>
-
 <p>service nginx restart</p>
-
 <p>改好以後，看看是否正常，可以joe /var/www/vhosts/info.php</p>
-
-<p>填入 &lt;?php phpinfo(); ?&gt;，然後<a href="http://ip/info.php">http://ip/info.php</a> ，看到該看的畫面就成功了。</p>
-
-<h1 id="安裝-mysql">安裝 mysql</h1>
-
+<p>填入 <!-- raw HTML omitted -->，然後http://ip/info.php ，看到該看的畫面就成功了。</p>
+<h1 id="-mysql">安裝 mysql</h1>
 <p>apt-get install mysql-server</p>
-
 <p>我自己覺得mysql效能不好，所以其實是用Percona，使用方法和mysql完全一樣，安裝方法可以參考<a href="http://blog.longwin.com.tw/2012/10/ubuntu-debian-percona-mysql-2012/">percona安裝</a>。</p>
-
-<h1 id="安裝phpmyadmin">安裝phpmyadmin</h1>
-
-<p>我個人偏向用<a href="http://ip/phpmyadmin">http://ip/phpmyadmin</a> 的方式來使用phpmyadmin，而ubuntu的安裝更是簡單</p>
-
+<h1 id="phpmyadmin">安裝phpmyadmin</h1>
+<p>我個人偏向用http://ip/phpmyadmin 的方式來使用phpmyadmin，而ubuntu的安裝更是簡單</p>
 <p>apt-get install phpmyadmin</p>
-
 <p>安裝好以後，建議</p>
-
 <p>mv /usr/share/phpmyadmin /var/www/vhosts/</p>
-
 <p>到這裡，所有的安裝都成功了。</p>
-
 <p>下一篇<a href="http://www.liverx.org/2012/09/06/%e6%89%93%e9%96%8baws%e4%b8%bb%e6%a9%9fping%e7%9a%84%e6%96%b9%e6%b3%95/">打開AWS ping的方法</a></p>
 
   </div>
@@ -465,6 +426,17 @@ include /etc/nginx/fastcgi_params;</p>
 
         </section>
         <header>
+          <h1><a href="../../../../2019/12/01/caddy%E5%92%8Cwordpress/">Caddy和wordpress</a></h1>
+          <time class="published" datetime="">December 1, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2019/11/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E7%94%A8godaddy%E8%B2%B7%E7%B6%B2%E5%9D%80/">千萬不要用godaddy買網址</a></h1>
           <time class="published" datetime="">November 4, 2019</time>
         </header>
@@ -522,17 +494,6 @@ include /etc/nginx/fastcgi_params;</p>
         <header>
           <h1><a href="../../../../2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/">Caddy終於成功了</a></h1>
           <time class="published" datetime="">October 13, 2019</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2019/10/11/fda%E8%AA%8D%E8%AD%89%E7%94%B3%E8%AB%8B/">Fda認證申請</a></h1>
-          <time class="published" datetime="">October 11, 2019</time>
         </header>
       </article>
       
@@ -610,7 +571,7 @@ include /etc/nginx/fastcgi_params;</p>
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.59.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.60.1'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

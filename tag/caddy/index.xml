@@ -6,10 +6,25 @@
     <description>Recent content in caddy on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 13 Oct 2019 15:37:54 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 18:27:33 +0800</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/tag/caddy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Caddy和wordpress</title>
+      <link>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</link>
+      <pubDate>Sun, 01 Dec 2019 18:27:33 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</guid>
+      <description>自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
+一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。
+假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu為例)
+sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
+example.com { root /var/www/wordpress gzip fastcgi / 127.0.0.1:9000 php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?_url={uri} } } 最後再安裝Mysql，務必按照順序
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：
+mysql -u root -p [^2] CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改 CREATE USER wpuser@localhost; #代表用戶名是wpuser，也可以更改 SET PASSWORD FOR wordpressuser@localhost= PASSWORD(&amp;quot;password&amp;quot;); #password就是你要的密碼 GRANT ALL PRIVILEGES ON wordpress.</description>
+    </item>
     
     <item>
       <title>Caddy終於成功了</title>
@@ -24,15 +39,15 @@
 參考1：將 nginx 調整為 caddy，世界上的網站都與 ssl 做好朋友
 大概按照步驟一步一步就可以設定完成了。不過中間gist程式那裏有些小地方錯誤，可能大家要自己注意一下。
 最難的地方就是設定那個Caddyfile，還有發證書的地方。
-如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。
- sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy 
+如果是透過Cloudflare來設定DNS，**請記住設定DNS only，橘色不要選取喲。 **，然後有一個指令很重要，非打不可。1
+sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy
+我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html }  這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
-sudo netstat -lnp | grep 80  看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
-做到這一步還不能自動啟動，一定得最後四步做完才行。 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.service sydo systemctl status caddy.service  參考文章 (Debain)
-參考文章 內地的文章，挺詳細</description>
+sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
+sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.</description>
     </item>
     
   </channel>
