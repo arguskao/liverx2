@@ -4,7 +4,56 @@
   
   <url>
     <loc>https://www.liverx.org/blog/</loc>
-    <lastmod>2019-12-01T18:27:33+08:00</lastmod>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/category/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/%E5%89%B5%E6%A5%AD/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/category/%E5%9F%B7%E6%A5%AD%E6%97%A5%E8%AA%8C%E5%92%8C%E8%87%AA%E8%A8%80%E8%87%AA%E8%AA%9E/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/2019/12/05/%E7%AB%A5%E8%80%81%E5%B8%AB%E6%94%B9%E8%AE%8A%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%80%E7%94%9F/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/%E8%80%81%E8%8E%8A%E6%80%9D%E6%83%B3/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/%E8%B3%BA%E9%8C%A2/</loc>
+    <lastmod>2019-12-05T18:01:34+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -18,20 +67,6 @@
   
   <url>
     <loc>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</loc>
-    <lastmod>2019-12-01T18:27:33+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/category/</loc>
-    <lastmod>2019-12-01T18:27:33+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/tag/</loc>
     <lastmod>2019-12-01T18:27:33+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -165,13 +200,6 @@
   
   <url>
     <loc>https://www.liverx.org/2019/10/11/fda%E8%AA%8D%E8%AD%89%E7%94%B3%E8%AB%8B/</loc>
-    <lastmod>2019-10-11T10:50:46+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/category/%E5%9F%B7%E6%A5%AD%E6%97%A5%E8%AA%8C%E5%92%8C%E8%87%AA%E8%A8%80%E8%87%AA%E8%AA%9E/</loc>
     <lastmod>2019-10-11T10:50:46+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -570,13 +598,6 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/tag/%E5%89%B5%E6%A5%AD/</loc>
-    <lastmod>2017-10-11T12:56:48+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.liverx.org/2017/10/11/%E5%8F%B0%E7%81%A3%E5%95%86%E6%A8%99%E8%A8%BB%E5%86%8A%E7%94%B3%E8%AB%8B/</loc>
     <lastmod>2017-10-11T12:56:48+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -592,13 +613,6 @@
   
   <url>
     <loc>https://www.liverx.org/2017/09/11/paypal%E7%B6%81%E5%AE%9A%E9%8A%80%E8%A1%8C%E6%88%96%E6%94%AF%E7%A5%A8%E6%95%99%E5%AD%B8/</loc>
-    <lastmod>2017-09-11T12:18:26+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/tag/%E8%B3%BA%E9%8C%A2/</loc>
     <lastmod>2017-09-11T12:18:26+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -668,14 +682,14 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/category/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
+    <loc>https://www.liverx.org/tag/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
     <lastmod>2017-06-22T13:26:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://www.liverx.org/tag/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
+    <loc>https://www.liverx.org/category/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
     <lastmod>2017-06-22T13:26:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

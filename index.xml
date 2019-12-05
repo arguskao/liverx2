@@ -12,6 +12,28 @@
     
     
     <item>
+      <title>童老師改變了我的一生</title>
+      <link>https://www.liverx.org/2019/12/05/%E7%AB%A5%E8%80%81%E5%B8%AB%E6%94%B9%E8%AE%8A%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%80%E7%94%9F/</link>
+      <pubDate>Thu, 05 Dec 2019 18:01:34 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2019/12/05/%E7%AB%A5%E8%80%81%E5%B8%AB%E6%94%B9%E8%AE%8A%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%80%E7%94%9F/</guid>
+      <description>很多人都知道這兩年，我忙著拓展國外的市場，雖然不敢說把生意做的多大，但是至少我在心態上卻有很多的改變，難道是因為我中了樂透嗎？其實源自於一個20多年前的緣份。
+話說在公元2000年左右，正是網路網路興起的時代，對於走在時代尖端的我來說，看到很多一夜致富的實例，當然到處去聽演講也成為我增長功力的捷徑。但是幾十場的演講中，只有一個演講給我極大的震撼，甚至可以是影響我之後的創業。我記得是在建中附近的一個大樓，那天是聽童雪鈺老師的演講，當時演講主題是如何經營電子商務，當時童老師是國內最大的玉山票務中心的創辦人，在20年後覺得沒什麼了不起，但在當時，不說絕無僅有，但是絕對第二名也看不到玉山票務的車尾燈，雖然我不愛旅行，沒有買過機票。1但是對於個行業的頂尖人物，那是一定要去聽的。
+那天演講很精采，不過前面的內容我不太記得，重點在於一個觀眾問的問題！
+問：童先生，您雖然是現在的第一名，但是您知道國內的某售票平台和微軟，集資兩億，想要和您一決高下，不曉得您怕不怕？2
+答：回答這個問題之前，忘記提到為何要創立票務中心，因為我很喜歡出國玩，但是出國的費用中，最貴的就是機加酒，所以我希望所有愛旅行的人都能夠買到便宜的機票和酒店，如果他們真的能夠提供更便宜的服務，那麼成功不必在我。3
+但是他們如果是用低價競爭，我雖然暫時會離開這個市場，但是他們勢必無法長久，只能漲價，漲價以後就會有別人進來，他們又要開始降價，就會掉入輪迴！，我是第一次聽到有人用佛法講生意，雖然事隔這麼多年，我還能記住那個畫面。
+老師最後做個總結，賺錢不是結果，如果你把事情做好，錢會追著你跑。做不好，你就追著錢跑。
+我之後創業就秉持老師三個教誨。第一先把事情的本質搞清楚，為何做這個事情，我主要創業是因為覺得西醫不能解決很多問題，所以用中藥來研發產品。第二是不打價格戰，別人一天倒晚這個促銷那個拍賣，我仍然不為所動，不欺騙客戶以免掉入輪迴。第三，如果有人做的比我更好，我不能嫉妒，要有成功不必在我的心胸。
+今年老師的教導：道德經最後一章。聖人不積，既以為人己愈有；既以與人己愈多。我們不用怕教別人，別人會了我們就完了，要一直努力創新，幫助他人。
+老師本來已經到加拿大享清福，但是有鑑於台灣這幾年來亂象叢生，所以想要傳授真正的道（老莊思想），我雖不材，願意拋磚引玉，以自己的收穫慰老師張目。
+  那個年代出國還算是奢侈享受，也多半是跟團為主，自己買機票的不多。&amp;#8617;
+ 好傢伙，感覺是來踢館的。&amp;#8617;
+ 這麼多年再想起老師當初說那段話的時候，我真的震驚居然有人可以有如此心胸，說來容易做來難。&amp;#8617;
+   </description>
+    </item>
+    
+    <item>
       <title>Caddy和wordpress</title>
       <link>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</link>
       <pubDate>Sun, 01 Dec 2019 18:27:33 +0800</pubDate>
@@ -19,11 +41,11 @@
       <guid>https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/</guid>
       <description>自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
 一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。
-假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu為例)
+假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { root /var/www/wordpress gzip fastcgi / 127.0.0.1:9000 php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?_url={uri} } } 最後再安裝Mysql，務必按照順序
-sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：
-mysql -u root -p [^2] CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改 CREATE USER wpuser@localhost; #代表用戶名是wpuser，也可以更改 SET PASSWORD FOR wordpressuser@localhost= PASSWORD(&amp;quot;password&amp;quot;); #password就是你要的密碼 GRANT ALL PRIVILEGES ON wordpress.</description>
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+最後再安裝Mysql，務必按照順序。
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：</description>
     </item>
     
     <item>
