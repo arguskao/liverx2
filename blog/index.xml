@@ -6,10 +6,25 @@
     <description>Recent content in Blog on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 11 Dec 2019 22:18:32 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 18:18:27 +0800</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>明年的願望</title>
+      <link>https://www.liverx.org/2019/12/31/%E6%98%8E%E5%B9%B4%E7%9A%84%E9%A1%98%E6%9C%9B/</link>
+      <pubDate>Tue, 31 Dec 2019 18:18:27 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2019/12/31/%E6%98%8E%E5%B9%B4%E7%9A%84%E9%A1%98%E6%9C%9B/</guid>
+      <description>又到了每年的最後一天，今年雖然有些不順利，但還是有驚無險的過了。
+不知道有沒有神明，也不知道神明會不會聽見，但是我總還是要許願的，期待明年能夠增加足夠的人手，當然人手要可以用的。
+最重要的是明年的三個政府計畫，總額七百萬，如果能拿到，對公司的發展應該非常有利。
+再來就是我想做的這些平台，也希望能夠上線，感覺不太會賺錢，但是我仍然希望要投資。
+接下來就是兩場國外的展覽。
+香港的獸醫診所市場＋新加坡的市場。
+就這樣！</description>
+    </item>
     
     <item>
       <title>如何拿馬來西亞的中醫執照</title>
@@ -378,7 +393,7 @@ sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.ser
   銀行帳戶與PayPal登記名稱必須相符，以利PayPal識別身分；
   若您銀行帳戶為約定轉帳的模式，需事先將PayPal登記為收款人(查看收款人資訊)；
   轉帳資金需要3~6天才能顯示於PayPal帳戶餘額中。
-  不同國家地區的PayPal連結銀行與儲值的規定不同，請參考**常見問題或連繫客服**。
+  不同國家地區的PayPal連結銀行與儲值的規定不同，請參考**常見問題**或**連繫客服**。
   </description>
     </item>
     
@@ -2985,7 +3000,7 @@ Mac真的是精品嗎??jobs居然開了Mac的直營店，2006年5月18日，紐�
 首推 http://english.csie.ncnu.edu.tw/index.php?ct=icrt/icrt 暨大的英語資源，練聽力的地方，ICRT英聽學習
 http://www.esl-lab.com/ 依據程度不同等級的聽力練習
 http://www.voanews.com/english/portal.cfm 美國之音慢速英文，算是比較慢的英文廣播電臺喔，是美要播給非英文母語人聽的，有時可當廣播當背景音樂聽
-http://www.bbc.co.uk/worldservice/learni...sh/newsenglish/ 英國BBC網嘍！
+http://www.bbc.co.uk/worldservice/learni&amp;hellip;sh/newsenglish/ 英國BBC網嘍！
 讀的話，就多看文章啦！小說雜誌漫畫都行，以下為整理的英文學習網站介紹給大家，希望大家可以快快樂樂的學英語啦！
 http://www.ncu.edu.tw/%7Ewenchi/english/index.html 中大英語學習資料庫，資料多多
 http://www.cc.nctu.edu.tw/~tedknoy/ 交大外籍教師架設的網站
@@ -3125,7 +3140,7 @@ http://www.freexinwen.com/chinese/eng/abc.htm 慣用美語
       <guid>https://www.liverx.org/2007/10/31/%E8%97%A5%E4%BA%8B%E6%B3%95/</guid>
       <description>藥事法(民國 95 年 05 月 30 日 修正)
 第 一 章 總則
-[ ](http://blog.sina.com.tw/arguskao/article.php?pbgid=26995&amp;amp;entryid=573560)第 1 條
+[ ](http://blog.sina.com.tw/arguskao/article.php?pbgid=26995&amp;amp;entryid=573560)[第 1 條](http://law.moj.gov.tw/Scripts/Query1B.asp?no=1L00300011)
 藥事之管理，依本法之規定；本法未規定者，依其他有關法律之規定。但管制藥品管理條例有規定者，優先適用該條例之規定。 前項所稱藥事，指藥物、藥商、藥局及其有關事項。  第 2 條
 本法所稱衛生主管機關：在中央為行政院衛生署；在直轄市為直轄市政府；在縣 (市) 為縣 (市) 政府。  第 3 條
 中央衛生主管機關得專設藥物管理機關，直轄市及縣 (市) 衛生主管機關於必要時亦得報准設置。  第 4 條
