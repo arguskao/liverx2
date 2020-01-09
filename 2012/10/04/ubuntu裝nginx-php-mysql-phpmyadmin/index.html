@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.62.2" />
   <meta itemprop="name" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin">
 <meta itemprop="description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
@@ -298,7 +298,7 @@ location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
   <div class="content">
     <p>上一篇寫到<a href="http://www.liverx.org/2013/02/13/centos%e5%92%8cubuntu%e7%9a%84%e9%81%b8%e6%93%87/">Ubuntu和Centos的選擇</a>以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。</p>
 <p>如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，</p>
-<h1 id="nginxphp">安裝nginx+php</h1>
+<h1 id="安裝nginxphp">安裝nginx+php</h1>
 <p>apt-get install htop joe unzip</p>
 <p>可以直接安裝nignx      apt-get install nginx</p>
 <p>然後再裝php5-fpm    apt-get install php5 php5-fpm，不建議再裝php-fcgi，容易相衝</p>
@@ -313,9 +313,9 @@ location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
 <p>這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock</p>
 <p>location ~ .php$ {
 fastcgi_split_path_info ^(.+.php)(/.+)$;</p>
-<h1 id="-note-you-should-have-cgifix-pathinfo--0-in-phpini"># NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini</h1>
+<h1 id="-note-you-should-have-cgifix_pathinfo--0-in-phpini"># NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini</h1>
 <h1 id="-with-php5-cgi-alone"># With php5-cgi alone:</h1>
-<h1 id="fastcgi-pass-1270019000">#fastcgi_pass 127.0.0.1:9000;</h1>
+<h1 id="fastcgi_pass-1270019000">#fastcgi_pass 127.0.0.1:9000;</h1>
 <h1 id="-with-php5-fpm"># With php5-fpm:</h1>
 <p>fastcgi_pass unix:/run/php5-fpm.sock;
 fastcgi_index index.php;
@@ -325,10 +325,10 @@ include /etc/nginx/fastcgi_params;</p>
 <p>service nginx restart</p>
 <p>改好以後，看看是否正常，可以joe /var/www/vhosts/info.php</p>
 <p>填入 <!-- raw HTML omitted -->，然後http://ip/info.php ，看到該看的畫面就成功了。</p>
-<h1 id="-mysql">安裝 mysql</h1>
+<h1 id="安裝-mysql">安裝 mysql</h1>
 <p>apt-get install mysql-server</p>
 <p>我自己覺得mysql效能不好，所以其實是用Percona，使用方法和mysql完全一樣，安裝方法可以參考<a href="http://blog.longwin.com.tw/2012/10/ubuntu-debian-percona-mysql-2012/">percona安裝</a>。</p>
-<h1 id="phpmyadmin">安裝phpmyadmin</h1>
+<h1 id="安裝phpmyadmin">安裝phpmyadmin</h1>
 <p>我個人偏向用http://ip/phpmyadmin 的方式來使用phpmyadmin，而ubuntu的安裝更是簡單</p>
 <p>apt-get install phpmyadmin</p>
 <p>安裝好以後，建議</p>
@@ -426,6 +426,17 @@ include /etc/nginx/fastcgi_params;</p>
 
         </section>
         <header>
+          <h1><a href="../../../../google%E9%9B%B2%E7%AB%AF%E7%A1%AC%E7%A2%9F%E7%9A%84%E5%84%AA%E9%BB%9E/">Google雲端硬碟的優點</a></h1>
+          <time class="published" datetime="">January 9, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2019/12/31/%E6%98%8E%E5%B9%B4%E7%9A%84%E9%A1%98%E6%9C%9B/">明年的願望</a></h1>
           <time class="published" datetime="">December 31, 2019</time>
         </header>
@@ -483,17 +494,6 @@ include /etc/nginx/fastcgi_params;</p>
         <header>
           <h1><a href="../../../../2019/11/01/paypal%E7%9A%84%E5%B0%8F%E5%95%8F%E9%A1%8C/">Paypal的小問題</a></h1>
           <time class="published" datetime="">November 1, 2019</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2019/10/26/forestry%E4%B8%80%E5%80%8B%E5%A5%BD%E7%94%A8%E7%9A%84hugo%E5%BE%8C%E5%8F%B0/">Forestry一個好用的Hugo後台</a></h1>
-          <time class="published" datetime="">October 26, 2019</time>
         </header>
       </article>
       
@@ -566,12 +566,12 @@ include /etc/nginx/fastcgi_params;</p>
   
   <p class="copyright">
     
-      &copy; 2019
+      &copy; 2020
       
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.62.0'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.62.2'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
