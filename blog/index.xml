@@ -6,10 +6,24 @@
     <description>Recent content in Blog on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 31 Dec 2019 18:18:27 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jan 2020 20:32:05 +0800</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google雲端硬碟的優點</title>
+      <link>https://www.liverx.org/2020/01/09/google%E9%9B%B2%E7%AB%AF%E7%A1%AC%E7%A2%9F%E7%9A%84%E5%84%AA%E9%BB%9E/</link>
+      <pubDate>Thu, 09 Jan 2020 20:32:05 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/01/09/google%E9%9B%B2%E7%AB%AF%E7%A1%AC%E7%A2%9F%E7%9A%84%E5%84%AA%E9%BB%9E/</guid>
+      <description>用電腦這麼多年，硬碟避免不了還是一段時間就會壞掉，所以備份非常重要，本來是應該買一個外接電腦硬碟來備份，不過既然同為硬碟，一樣也會壞掉，所以後來我覺得應該弄個雲端硬碟可能比較方便和穩定，雖然CP值來說，電腦硬碟比較便宜，不過為了穩定來說，畢竟資料比較重要。
+一般來說，我最喜歡的是Dropbox，也因為之前一些優惠，所以我有免費的額度將近50GB，其實這樣的大小，大概可以放一輩子的文件，目前為止文件、影片、圖片，也不會超過10GB。
+不過為了保險，我還是決定再來一個雲端備份，可能會好一點，最後我在Google硬碟和icloud中選擇，分析一下兩個產品的優缺點。
+優點： Google 比較適合我的使用習慣，因為可以在電腦裡面選擇哪些資料夾要同步備份，而不是讓Icloud預設。然後Google 可以邀群家長群組5個人，對於小公司使用的人來說，我覺得相當好。icloud 最低的價格是50GB，一個月只要30元。畢竟有些容量不需要那麼大。
+缺點： Google 最低選擇是100GB，一個月要65元，稍微貴一點。
+icloud 不能自由選擇要哪些資料夾，只能夠預設一些固定的，如果硬要備份，必須移動檔案到icloud drive，我覺得非常不方便，除非是用iOS系統比較方便，而對mac的使用者不是很方便。</description>
+    </item>
     
     <item>
       <title>明年的願望</title>
