@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.liverx.org/blog/</loc>
+    <lastmod>2020-01-20T23:27:44+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://www.liverx.org/category/</loc>
     <lastmod>2020-01-20T23:27:44+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -17,15 +24,8 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/test/</loc>
+    <loc>https://www.liverx.org/2020/01/20/test/</loc>
     <lastmod>2020-01-20T23:27:44+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/blog/</loc>
-    <lastmod>2020-01-09T20:32:05+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
