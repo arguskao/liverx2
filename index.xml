@@ -12,12 +12,14 @@
     
     
     <item>
-      <title>Test</title>
-      <link>https://www.liverx.org/2020/01/20/test/</link>
-      <pubDate>Mon, 20 Jan 2020 23:27:44 +0800</pubDate>
+      <title>怎麼在ebay上使用信用卡</title>
+      <link>https://www.liverx.org/2020/01/28/%E6%80%8E%E9%BA%BC%E5%9C%A8ebay%E4%B8%8A%E4%BD%BF%E7%94%A8%E4%BF%A1%E7%94%A8%E5%8D%A1/</link>
+      <pubDate>Tue, 28 Jan 2020 08:56:38 +0800</pubDate>
       
-      <guid>https://www.liverx.org/2020/01/20/test/</guid>
-      <description>不測試 ###我真笨</description>
+      <guid>https://www.liverx.org/2020/01/28/%E6%80%8E%E9%BA%BC%E5%9C%A8ebay%E4%B8%8A%E4%BD%BF%E7%94%A8%E4%BF%A1%E7%94%A8%E5%8D%A1/</guid>
+      <description>ebay雖然在美國是二手拍賣的天下，但是在台灣，雖然早期就已經進入，但如今應該是沒幾個人在用，加上蝦皮進來以後，我看台灣ebay的流量可能會跟我的網站差不多，廢話不多說，最近因為一些原因，在美國ebay上買一些東西，發現付款時候，怎麼樣也不能用信用卡，上網找了很多人的資料，好像很多人也遇到這個問題。
+我有打電話和Email去問，結果他們也找不出問題來，打電話給銀行，也不是銀行的問題，最後我發現真正的問題所在了！！
+兩個可能！ 1. 賣家不收信用卡，可能是怕假卡的關係，所以只透過paypal來收款 2. 信用卡上面打資料時候，我們的First name 要打名字，也就是第一格打英文名字，第二格打姓，這樣就可以成功了 附註：後來發現好像名字倒過來打也可以，玉山Only卡可以用，但是玉山Ubear卡不行。中國信託Linepay卡可以用。</description>
     </item>
     
     <item>
@@ -233,7 +235,7 @@ sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.ser
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.liverx.org/2019/08/24/%E5%BE%9Ewordpress%E6%90%AC%E5%88%B0hugo/</guid>
-      <description>實在不敢相信，我辦到了! 首先要感謝Mina的幫助，他的網站是 Mina&#39;s Life Travel.是他的網站＋本人手把手的教學，才讓我一個完全不懂程式的人，把Hugo搞定的
+      <description>實在不敢相信，我辦到了! 首先要感謝Mina的幫助，他的網站是 Mina&amp;rsquo;s Life Travel.是他的網站＋本人手把手的教學，才讓我一個完全不懂程式的人，把Hugo搞定的
  用Wordpress十幾年了，但是越來越肥大的問題，讓我一直不太滿意，所以一直在尋求一個好方法，之前試過Octopress，還有Ghost，可是都不太滿意，所以一直在找方法，最後找到Hexo，搞了半天還是失敗，最後終於有機會用到Hugo，希望能夠讓我解決這些問題。</description>
     </item>
     
@@ -297,7 +299,7 @@ sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.ser
       
       <guid>https://www.liverx.org/2018/10/27/high-5%E5%88%B6%E9%9C%B8%E9%9D%92%E6%98%A5/</guid>
       <description>故事大綱：
-《High 5 制霸青春》（英語：High 5 Basketball），2016年台灣偶像劇，由SpeXial-宏正、SpeXial-晨翔、Janet、毛弟、程予希、A&#39;N&#39;D-宇宙、路斯明、高英軒領銜主演。本劇以高中校園籃球為題材，2016年5月9日開鏡，2016年10月15日於八大綜合台、愛奇藝台灣站播出。
+《High 5 制霸青春》（英語：High 5 Basketball），2016年台灣偶像劇，由SpeXial-宏正、SpeXial-晨翔、Janet、毛弟、程予希、A&amp;rsquo;N&amp;rsquo;D-宇宙、路斯明、高英軒領銜主演。本劇以高中校園籃球為題材，2016年5月9日開鏡，2016年10月15日於八大綜合台、愛奇藝台灣站播出。
 敘述一名毫無執教經驗的女教練，帶領高中籃球隊，為了堅持打好每場球，找回自己青春時期那份純粹、毫無保留的勇氣，是一部挑戰夢想，跨越自我極限的勵志戲劇。
  * [誰說台灣偶像劇只能拍小情小愛？其實觀眾要看的不是愛，而是這件事](http://www.storm.mg/lifestyle/180426) * [High 5制霸青春：驚豔超乎預期](http://www.nownews.com/n/2016/10/25/2282341) * [High 5制霸青春：人物介紹&amp;amp;分集簡介](http://wang4cbook.pixnet.net/blog/post/324539298-high-5-%E5%88%B6%E9%9C%B8%E9%9D%92%E6%98%A5%EF%BC%9A%E5%8A%87%E6%83%85%E7%B0%A1%E4%BB%8B%EF%BC%86%E4%BA%BA%E7%89%A9%E4%BB%8B%E7%B4%B9%EF%BC%86%E5%88%86%E9%9B%86) * [High 5制霸青春EP1：誠意十足的籃球台劇](http://glenna1106.blogspot.tw/2016/10/high5-ep1.html) * [#台劇 #復甦 #心得High5制霸青春第一集觀後心得](https://www.dcard.tw/f/movie/p/225035644)  編輯感想：《High 5制霸青春》不但是繼《籃球火》之後少見的籃球運動劇，而且從目前實際播出的內容來看，並不是走把籃球當作點綴噱頭，其實仍是以愛情線為主的假運動劇。
 從第一集到第三集，大量的運動場景和內容，從編劇、執行到選角都非常用心，每個環節都環環相扣，確實做到足以外銷的專業質感，也難怪大家看到這劇會有一種「台劇終於復甦」的興奮感！可以說是繼《麻醉風暴》和《出境事務所》之後最紮實的職人劇了！</description>
@@ -4855,7 +4857,7 @@ ps:
 倩如：&amp;ldquo;意外??這世上哪裡有意外??唯一的意外就是你居然愛上那臭婊子!!一切都在我的計畫當中，我爲什麼堅持由我來開車，讓曼娟坐在我的右邊??我雖然可能也會死，但是我甘願賭，結果我輕傷，曼娟當場就死了，這不是天意，是什麼??你以為我巴巴的要載他去看你，是為什麼!!!她的安全帶我動過手腳了，哈哈哈&amp;hellip;..上天是公平的，你的心裡只有她，我就讓你想個夠!!哈哈哈&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;rdquo;
 大智跌坐在地上，望著已經接近瘋狂的倩如，他的思緒漂回三年前的一場演唱會，那是他第一次看到曼娟&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;
 Talk to me softly，There is something in your eyes&amp;hellip;.
-只要有大智在的地方，這首招牌歌Don&#39;t cry不知道安慰過多少人寂寞的心；在幾千個激動的fans裡面；總是有一個人靜靜的坐在底下；默默的替大智加油；不管刮風下雨；雖然她總是說她是來看他的哥哥阿明．
+只要有大智在的地方，這首招牌歌Don&amp;rsquo;t cry不知道安慰過多少人寂寞的心；在幾千個激動的fans裡面；總是有一個人靜靜的坐在底下；默默的替大智加油；不管刮風下雨；雖然她總是說她是來看他的哥哥阿明．
 阿明是樂團的BASS手，阿明是個怪胎，平時的他缺乏自信，神經質，優柔寡斷，但是只要跟大智在一起的場合，他就像喝醉了酒一樣，不但話多了起來，人也變的瘋瘋癲癲,一上台，彈起BASS，彷彿世界都踩在他的腳下，那種不可一世的神情，不知道迷死了多少懷春的少女；但是阿明只相信大智，他看大智的眼神，讓外界傳聞他是玻璃的傳聞從没少過，阿明常說，如果大智不在的話，他就好像熟女沒有化妝一樣，渾身不自在；甚至連大智都開玩笑，他自己也不知道前世和阿明是什麼關係??阿明不論說什麼，他永遠都聽的懂!!
 倩如是這個團中唯一的女生，可別以為搞BAND的女生都是恐龍，倩如可是超級美女，她永遠的古裝打扮，讓這個搖滾樂團聲名遠播，也因為如此，這個團才能吸引到不只是女性的fans!!!其他的團員也因為這樣，多多少少對倩如禮讓了三分，唯一只有擔任主唱的大智從來不甩她，但是倩如看大智的眼神總有一些迷離．．．
 正安是團裡的吉他手，不知道為什麼他身上總有一股貴族的氣息，大家都開玩笑他一定是哪個大企業家的私生子!!他的志向是當個律師，卻偏偏考上醫學系，大智的爸爸是個名醫，偏偏大智考上法律系；他爹氣個半死，所以他們常私底下說，如果可以兩個人對掉身分，那就太美好了!!!

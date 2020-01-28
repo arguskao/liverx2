@@ -4,28 +4,42 @@
   
   <url>
     <loc>https://www.liverx.org/blog/</loc>
-    <lastmod>2020-01-20T23:27:44+08:00</lastmod>
+    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.liverx.org/category/</loc>
-    <lastmod>2020-01-20T23:27:44+08:00</lastmod>
+    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/ebay/</loc>
+    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.liverx.org/tag/</loc>
-    <lastmod>2020-01-20T23:27:44+08:00</lastmod>
+    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://www.liverx.org/2020/01/20/test/</loc>
-    <lastmod>2020-01-20T23:27:44+08:00</lastmod>
+    <loc>https://www.liverx.org/2020/01/28/%E6%80%8E%E9%BA%BC%E5%9C%A8ebay%E4%B8%8A%E4%BD%BF%E7%94%A8%E4%BF%A1%E7%94%A8%E5%8D%A1/</loc>
+    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/category/%E7%B6%B2%E8%B7%AF%E8%B3%BC%E7%89%A9/</loc>
+    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
