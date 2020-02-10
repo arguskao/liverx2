@@ -4,27 +4,48 @@
   
   <url>
     <loc>https://www.liverx.org/blog/</loc>
-    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
+    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.liverx.org/category/</loc>
-    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/tag/ebay/</loc>
-    <lastmod>2020-01-28T08:56:38+08:00</lastmod>
+    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.liverx.org/tag/</loc>
+    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/%E6%B0%B8%E5%AE%89%E6%97%85%E9%81%8A/</loc>
+    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/2020/02/10/%E6%B0%B8%E5%AE%89%E6%97%85%E9%81%8A%E7%9C%9F%E7%9A%84%E9%9B%A2%E8%AD%9C/</loc>
+    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/category/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</loc>
+    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/ebay/</loc>
     <lastmod>2020-01-28T08:56:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -668,13 +689,6 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/category/%E7%B6%B2%E8%B7%AF%E8%A1%8C%E9%8A%B7/</loc>
-    <lastmod>2017-10-11T12:56:48+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.liverx.org/2017/09/11/paypal%E7%B6%81%E5%AE%9A%E9%8A%80%E8%A1%8C%E6%88%96%E6%94%AF%E7%A5%A8%E6%95%99%E5%AD%B8/</loc>
     <lastmod>2017-09-11T12:18:26+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -745,14 +759,14 @@
   </url>
   
   <url>
-    <loc>https://www.liverx.org/tag/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
+    <loc>https://www.liverx.org/category/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
     <lastmod>2017-06-22T13:26:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://www.liverx.org/category/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
+    <loc>https://www.liverx.org/tag/%E9%97%9C%E9%8D%B5%E5%AD%97%E8%A1%8C%E9%8A%B7/</loc>
     <lastmod>2017-06-22T13:26:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -3617,6 +3631,24 @@
   <url>
     <loc>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95/</loc>
     <lastmod>2006-03-17T09:31:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/category/mac/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/mac-mini/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/1/01/01/%E5%93%AA%E7%A8%AEmac-mini%E6%9C%80%E5%A5%BD/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
