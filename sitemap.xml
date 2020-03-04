@@ -4,21 +4,42 @@
   
   <url>
     <loc>https://www.liverx.org/blog/</loc>
-    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <lastmod>2020-03-04T21:34:11+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.liverx.org/category/</loc>
-    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <lastmod>2020-03-04T21:34:11+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.liverx.org/tag/</loc>
-    <lastmod>2020-02-10T22:17:30+08:00</lastmod>
+    <lastmod>2020-03-04T21:34:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/2020/03/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E8%B2%B7avast%E9%98%B2%E6%AF%92/</loc>
+    <lastmod>2020-03-04T21:34:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/tag/%E9%98%B2%E6%AF%92%E8%BB%9F%E9%AB%94/</loc>
+    <lastmod>2020-03-04T21:34:11+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/</loc>
+    <lastmod>2020-03-04T21:34:11+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -74,13 +95,6 @@
   
   <url>
     <loc>https://www.liverx.org/tag/goolge/</loc>
-    <lastmod>2020-01-09T20:32:05+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/</loc>
     <lastmod>2020-01-09T20:32:05+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
