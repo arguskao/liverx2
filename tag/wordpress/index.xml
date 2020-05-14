@@ -6,10 +6,27 @@
     <description>Recent content in wordpress on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 01 Dec 2019 18:27:33 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 15:09:30 +0800</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/tag/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>用Caddy2來架設wordpress</title>
+      <link>https://www.liverx.org/2020/05/12/%E7%94%A8caddy2%E4%BE%86%E6%9E%B6%E8%A8%ADwordpress/</link>
+      <pubDate>Tue, 12 May 2020 15:09:30 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/05/12/%E7%94%A8caddy2%E4%BE%86%E6%9E%B6%E8%A8%ADwordpress/</guid>
+      <description>講起Web server，大家熟知的應該是apache或者Nginx，但是這幾年出現更輕薄短小的Caddy，我會知道這個東西，是因為玩Hugo，剛好都是go語言寫的東西，雖然一直還沒時間研究出如果用Caddy+hugo並且自動部屬。
+之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
+安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
+sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
+echo &amp;quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
+systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
+第一行預設是:80，我直接改成網址去掉後面的:80
+第二行是 虛擬主機的位置，你看檔案要放在哪裡</description>
+    </item>
     
     <item>
       <title>Caddy和wordpress</title>

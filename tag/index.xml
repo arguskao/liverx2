@@ -6,10 +6,28 @@
     <description>Recent content in Tag on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 04 Mar 2020 21:34:11 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 15:09:30 +0800</lastBuildDate>
     
 	<atom:link href="https://www.liverx.org/tag/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>caddy</title>
+      <link>https://www.liverx.org/tag/caddy/</link>
+      <pubDate>Tue, 12 May 2020 15:09:30 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/tag/caddy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wordpress</title>
+      <link>https://www.liverx.org/tag/wordpress/</link>
+      <pubDate>Tue, 12 May 2020 15:09:30 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/tag/wordpress/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>防毒軟體</title>
@@ -89,24 +107,6 @@
       <pubDate>Thu, 05 Dec 2019 18:01:34 +0800</pubDate>
       
       <guid>https://www.liverx.org/tag/%E8%80%81%E8%8E%8A%E6%80%9D%E6%83%B3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>caddy</title>
-      <link>https://www.liverx.org/tag/caddy/</link>
-      <pubDate>Sun, 01 Dec 2019 18:27:33 +0800</pubDate>
-      
-      <guid>https://www.liverx.org/tag/caddy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>wordpress</title>
-      <link>https://www.liverx.org/tag/wordpress/</link>
-      <pubDate>Sun, 01 Dec 2019 18:27:33 +0800</pubDate>
-      
-      <guid>https://www.liverx.org/tag/wordpress/</guid>
       <description></description>
     </item>
     
