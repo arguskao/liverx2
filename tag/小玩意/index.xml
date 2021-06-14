@@ -6,11 +6,7 @@
     <description>Recent content in 小玩意 on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 25 Apr 2008 09:15:02 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.liverx.org/tag/%E5%B0%8F%E7%8E%A9%E6%84%8F/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 25 Apr 2008 09:15:02 +0000</lastBuildDate><atom:link href="https://www.liverx.org/tag/%E5%B0%8F%E7%8E%A9%E6%84%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google的面試題目</title>
       <link>https://www.liverx.org/2008/04/25/google%E7%9A%84%E9%9D%A2%E8%A9%A6%E9%A1%8C%E7%9B%AE/</link>
@@ -58,7 +54,7 @@ http://home.t-online.de/home/toni.goeller/idiom_wm/ 線上英語片語字典，�
 http://www.taipeitimes.com/News , http://www.chinapost.com.tw/ 台灣的TaipeiTimes 和 Chinapost
 http://www.nationalgeographic.com/ , http://www.discovery.com/ 當然也不能少了國家地理頻道和discovery啦！
 http://www.brainpop.com/ 很好玩的網站，有各方面的題材(科學、數學、醫學&amp;hellip;)，用動畫的方式呈現，可以練聽力，但須註冊付費才能聽更多，可惜~~
-http://www.en8848.com/ 大陸的網站(簡)，是可以下載多本小說的地方，最多哈利波特原版了，也有有聲小說下載喔！要註冊， http://www.encyclopedia.com/ 我個人覺得很讚的一個網站，讚到不行呀！英語的線上百科全書，網頁一開就是&amp;quot;歷史上的今天發生什麼事&amp;rdquo;，可以查到很多東西啦！
+http://www.en8848.com/ 大陸的網站(簡)，是可以下載多本小說的地方，最多哈利波特原版了，也有有聲小說下載喔！要註冊， http://www.encyclopedia.com/ 我個人覺得很讚的一個網站，讚到不行呀！英語的線上百科全書，網頁一開就是&amp;quot;歷史上的今天發生什麼事&amp;quot;，可以查到很多東西啦！
 http://140.137.11.168/day/index.asp 每日一句，可查詢名言佳句，這網頁每日提供一句的名言佳句，還可以點選音符的符號唸給你聽喔！缺點是，可查的句子不是太多就是了~~
 http://www.liveabc.com/epaper/live/2001/08/03/paper.asp 一份英語報，每週五發行，有各式各樣的生活化主題
 http://www.penpalworld.com/index.asp 用英文交世界各地的筆友，有興趣去看看，要註冊(free)，當然我已加入啦！~~
@@ -92,7 +88,7 @@ http://www.freexinwen.com/chinese/eng/abc.htm 慣用美語
 訂閱Rss，必須選擇你慣用的訂閱程式，市面上有很多選擇，我個人建議使用Google reader或者是 Yahoo的，我先用Google reader來舉例(我也建議用這個)，首先我建議先去申請Google的帳號，以後有很多東西都會用到，可以前往www.google.com.tw去申請一個帳號，然後呢待會要加入Google reader，它就會叫你填入帳號密碼才能使用!!
 我用台灣瀏覽人數第一的醫療blog來舉例，活力藥師網 ，進到網站以後，到左下角在&amp;quot;部落格相簿&amp;quot;和&amp;quot;blog觀察&amp;quot;中間，有小小的RSS,旁邊有個小問號!!
 請將滑鼠移到上面按下去，然後就會跳出，然後你在subscribe to this feed using 旁邊的下拉式選單，要選Google reader，然後底下的always use xxx前面的方框要打勾，如果確定以後就按下Subscibe now的按鈕。
-然後要閱讀的話，就到google 登入以後，或者打http://www.google.com/reader/ 也可以，就會看到這樣的畫面，等會我們可以試試看加入其他網站看看，可以直接按下&amp;quot;Add subscription&amp;rdquo;，會跳出一個方框，我們填入&amp;quot;http://www.fda.gov/bbs/topics/news/rssPress.xml&amp;rdquo;，再按下旁邊的Add就可以了!!
+然後要閱讀的話，就到google 登入以後，或者打http://www.google.com/reader/ 也可以，就會看到這樣的畫面，等會我們可以試試看加入其他網站看看，可以直接按下&amp;quot;Add subscription&amp;quot;，會跳出一個方框，我們填入&amp;quot;http://www.fda.gov/bbs/topics/news/rssPress.xml&amp;quot;，再按下旁邊的Add就可以了!!
 附註： http://www.fda.gov/oc/po/firmrecalls/rssRecalls.xml 是另外關於recall的RSS
 Pubmed 的Rss 是
 http://www.ncbi.nlm.nih.gov/feed/rss.cgi?ChanKey=PubMedNews
@@ -115,8 +111,8 @@ Lancet的Rss 是 http://www.thelancet.com/rss
 背景色 : 色を選ぶ 文字色 : 色を選ぶ ボーダー色 : 色を選ぶ
 然後你可以 在那個背景色 裡面填 你要的顏色 (但是我沒有改,就按照原來的,數字不同代表顏色不同)
 填好以後 按下 xxxxxxxxxxxxxxx作成xxx (日文字不會打) ,外面有個白框框
-就會跳出 一段代碼  &amp;ldquo;http://www.muryo-counter.net/counter_FFFFFF_000000_000000_www.kimo.com.jpg&amp;quot; border=&amp;quot;0&amp;rdquo; alt=&amp;quot;&amp;ldquo;&amp;ldquo;&amp;ldquo;カウンター&amp;quot;&amp;gt;&amp;rdquo;
-然後你進入&amp;quot;管理我的部落格&amp;rdquo;,左邊有一個&amp;rsquo;進階管理&amp;rsquo;,下面有個&amp;rsquo;自定管理欄位&amp;rsquo;,把自訂管理欄位按下去以後,右邊的畫面會出現&amp;rsquo; 自訂欄位名稱&amp;rsquo;,你就自己填入&amp;quot;線上人數&amp;quot;呀,或是&amp;quot;識貨的內行人數&amp;quot;隨便都可以
+就會跳出 一段代碼  &amp;ldquo;http://www.muryo-counter.net/counter_FFFFFF_000000_000000_www.kimo.com.jpg&amp;quot; border=&amp;ldquo;0&amp;rdquo; alt=&amp;ldquo;&amp;ldquo;&amp;ldquo;&amp;ldquo;カウンター&amp;rdquo;&amp;gt;&amp;rdquo;
+然後你進入&amp;quot;管理我的部落格&amp;rdquo;,左邊有一個&amp;rsquo;進階管理&#39;,下面有個&amp;rsquo;自定管理欄位&#39;,把自訂管理欄位按下去以後,右邊的畫面會出現&#39; 自訂欄位名稱&#39;,你就自己填入&amp;quot;線上人數&amp;quot;呀,或是&amp;quot;識貨的內行人數&amp;quot;隨便都可以
 至於&amp;quot;自訂欄位內容&amp;rdquo;,就把剛剛代碼那段給他整段貼進去,這樣就OK了!!!
 記得按儲存 這樣就搞定了
 下一篇又前進兩名</description>

@@ -6,10 +6,17 @@
     <description>Recent content in github on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 22 Oct 2019 08:41:28 +0800</lastBuildDate>
-    
-	<atom:link href="https://www.liverx.org/tag/github/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 14 Jun 2021 22:29:09 +0800</lastBuildDate><atom:link href="https://www.liverx.org/tag/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>怎麼解決git上傳github的問題</title>
+      <link>https://www.liverx.org/2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Mon, 14 Jun 2021 22:29:09 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/</guid>
+      <description>距離上一篇廢話已經快要9個月，當然偷懶的原因也有，但是最主要的原因是因為我把番外篇從Wordpress變成Hugo，又把Hugo架在Github上，你知道像我們這種非科班的，怎麼會用git這種高級的工具，所以常常會出現錯誤，身邊又找不到人問，久了以後，就不太想寫文章，但是
+ 我今天剛好找到一個很棒的工具，解決我所有的問題！
+ 不教大家用，純粹爽到不記錄不行，這工具就是Github Desktop，試用以後，寫文章上傳都不會錯誤了，看來我今年真的要出運了！</description>
+    </item>
     
     <item>
       <title>Gitlab的設定</title>

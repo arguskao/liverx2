@@ -5,10 +5,6 @@
     <link>https://www.liverx.org/contact/</link>
     <description>Recent content in 聯絡我 on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh</language>
-    
-	<atom:link href="https://www.liverx.org/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh</language><atom:link href="https://www.liverx.org/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

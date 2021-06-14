@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遠端控制 on 活力藥師網番外篇</title>
+    <link>https://www.liverx.org/tag/%E9%81%A0%E7%AB%AF%E6%8E%A7%E5%88%B6/</link>
+    <description>Recent content in 遠端控制 on 活力藥師網番外篇</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 27 May 2020 14:04:46 +0800</lastBuildDate><atom:link href="https://www.liverx.org/tag/%E9%81%A0%E7%AB%AF%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teamviewer和anydesk的區別</title>
+      <link>https://www.liverx.org/2020/05/27/teamviewer%E5%92%8Canydesk%E7%9A%84%E5%8D%80%E5%88%A5/</link>
+      <pubDate>Wed, 27 May 2020 14:04:46 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/05/27/teamviewer%E5%92%8Canydesk%E7%9A%84%E5%8D%80%E5%88%A5/</guid>
+      <description>因為疫情的關係，本來不太多人用的遠端控制電腦的軟體，也變得火熱起來，今天要介紹兩套我個人常用的遠端控制軟體。
+這是我最愛用的遠端控制軟體，安全性高，費用不便宜，還好個人非商業用免費，但是麻煩的是雙方要用同一版本的才行，有時候你提早升級，對方沒有的話，你還要請對方升級一下。最近就是碰到對方iOS版本太舊，導致teamviewer無法升級。只好改用另外一套&amp;hellip;.
+Anydesk anydesk 安全性比較差，預設不需要使用密碼，但是好處在於不會像Teamviewer強迫雙方要一樣的版本。這是比較合理的地方。
+如果臨時要和陌生人使用遠端控制，建議使用 AnyDesk會比較開心喲。</description>
+    </item>
+    
+  </channel>
+</rss>

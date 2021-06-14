@@ -6,10 +6,91 @@
     <description>Recent content in 電腦筆記 on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 12 May 2020 15:09:30 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 Jun 2021 22:29:09 +0800</lastBuildDate><atom:link href="https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>怎麼解決git上傳github的問題</title>
+      <link>https://www.liverx.org/2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Mon, 14 Jun 2021 22:29:09 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/</guid>
+      <description>距離上一篇廢話已經快要9個月，當然偷懶的原因也有，但是最主要的原因是因為我把番外篇從Wordpress變成Hugo，又把Hugo架在Github上，你知道像我們這種非科班的，怎麼會用git這種高級的工具，所以常常會出現錯誤，身邊又找不到人問，久了以後，就不太想寫文章，但是
+ 我今天剛好找到一個很棒的工具，解決我所有的問題！
+ 不教大家用，純粹爽到不記錄不行，這工具就是Github Desktop，試用以後，寫文章上傳都不會錯誤了，看來我今年真的要出運了！</description>
+    </item>
     
-	<atom:link href="https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何選購macmini</title>
+      <link>https://www.liverx.org/2020/07/21/%E5%A6%82%E4%BD%95%E9%81%B8%E8%B3%BCmacmini/</link>
+      <pubDate>Tue, 21 Jul 2020 10:03:06 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/07/21/%E5%A6%82%E4%BD%95%E9%81%B8%E8%B3%BCmacmini/</guid>
+      <description>Mac mini這個產品在蘋果裡面是一個很尷尬的角色，很多人並不知道這個產品存在，因為你到專賣店裡面，是看不到這個便當盒的，因為在蘋果的坪效管理中，mac mini沒有資格放在實體展示中心。偏偏他又肩負著蘋果最低價電腦的角色，讓那些窮鬼有機會用到高大上的mac電腦。
+mac電腦裡面銷售最好的應該是macbook了，因為到外面咖啡廳辦公時候，沒有macbook裝逼怎麼行？如果經濟狀況允許，朋友來家裡看到你的iMac也一定會羨慕你的財力。
+但是真正CP值最高的卻是Mac mini，幾乎和macbook一樣的規格，但是售價可以便宜不少，雖然沒有螢幕，但是耐用度高很多，又不用兩三年換一次電池，又可以裝兩顆內建硬碟，開開心心的使用RAID 0，讓硬碟的速度增加將近兩倍，散熱又好。
+但是&amp;hellip;.新的mac mini 一台也是要三四萬，對於我們這種窮鬼來說，還是覺得買不下去，所以很多人會願意買二手的，因為如果只是要上上網，十年前的機種，已經讓你用的很快樂了！
+ 我就來介紹一下，要怎麼買Mac Mini才有最高的CP值
+ 2010年的mac mini通常是有光碟機的，但是因為CPU是用Duo Core 2， RAM也只支援到DDR3 1333，一般換了SSD，也還是可以用，如果收購價格低於3000，也可以入手試試看。
+2011年的mac mini目前是 CP值比較高的，因為目前雖然只支援到10.13 High Sierra，但是穩定度也是最高的，而且可以自由加RAM，可以內建兩個SSD ，推薦入手價格空機約在7000元上下。
+2012年的mac mini，比起2011年只有一個優勢，就是可以升級到10.15最新的Catalina，但是我覺得在軟體支援度不夠的情況下，還是只升到10.14Mojave就好，推薦入手價空機約在10000元上下
+2014年的mac mini，有一個非常討厭的地方，就是他的RAM是燒在主機版上，**如果覺得記憶體不夠的話，是沒有辦法加的。**但是優點是他終於有USB3了，外接的速度會快一點，雖然實測還是用硬碟開機很慢&amp;hellip;.內接硬碟也可能用SATA以外的PCIE，可惜只有PCIE*2，速度上還是慢一點，不用買太快的，也跑不到。 推薦入手空機價4GB 9000元，8GB 12000元
+2018和2020年的mac mini，我個人是不推薦買的，貴不是原因，雖然可以更換記憶體，可是SSD變成燒在上面，一旦壽終正寢，不好意思，只能送回原廠，更換SSD的價格可能會讓你想死。
+ mac mini真的很耐用，我自己使用了2011年的到現在，仍然很正常，後來賣給別人了
+ </description>
+    </item>
     
+    <item>
+      <title>Mac底下安裝Laravel</title>
+      <link>https://www.liverx.org/2020/07/09/mac%E5%BA%95%E4%B8%8B%E5%AE%89%E8%A3%9Dlaravel/</link>
+      <pubDate>Thu, 09 Jul 2020 17:39:08 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/07/09/mac%E5%BA%95%E4%B8%8B%E5%AE%89%E8%A3%9Dlaravel/</guid>
+      <description>我是MAC的使用者，而且程度不是很好的那一個，所以我是使用HomeBrew，來管理這些套件。
+要安裝HomeBrew很簡單，只需要打
+/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot;  真的超容易的，首先只要brew composer，就可以裝好composer
+ 然後再用composer安裝Laravel，你可以打
+composer global require &amp;quot;laravel/installer&amp;quot; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
+你一定很興奮打laravel，想要開始打怪，但是！還不行因為php版本不夠新，現在最新的PHP版本是7.4，所以你必須
+brew install php@7.4 然後就可以執行laravel new
+然後打一個php artisan serve，然後瀏覽器打開 http://127.0.0.1:8000 就成功了！</description>
+    </item>
+    
+    <item>
+      <title>哪裡下載好的簡報模版</title>
+      <link>https://www.liverx.org/2020/05/29/%E5%93%AA%E8%A3%A1%E4%B8%8B%E8%BC%89%E5%A5%BD%E7%9A%84%E7%B0%A1%E5%A0%B1%E6%A8%A1%E7%89%88/</link>
+      <pubDate>Fri, 29 May 2020 09:43:37 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/05/29/%E5%93%AA%E8%A3%A1%E4%B8%8B%E8%BC%89%E5%A5%BD%E7%9A%84%E7%B0%A1%E5%A0%B1%E6%A8%A1%E7%89%88/</guid>
+      <description>上次寫過寫簡報的好幫手以後，有網友問我，是不是能夠多提供一些可以下載這些網站版型的資訊，因為很多人不是需要商業版型的。
+今天跟大家介紹幾個不錯的網站
+Sildesgo 這個網站雖然是英文的，不過他一進去就很清楚，有分了好幾種方式讓你選擇，可以用顏色，**或者是類型（例如可愛、卡通之類)，**也可以用Marketing、教育、醫學來分，裡面的PPT模版，完全免費，品質也是相當高的，個人覺得應該很夠你用了。
+Pikbest 這也是國外的網站，但是主要是提供付費下載的網站，免費內容不多。除了PPT模版以外，這個網站還有海報設計、背景、音效、配樂。主要靠VIP資格賺錢。
+Showeet 這也是國外網站，幾乎都是免費資源，我覺得設計風格很不錯，還有履歷範本，對於想找工作的相當不錯。
+優品 這個網站是中文的，算是大陸那邊的網站，不過這麼大的網站連SSL都沒有，實在令人匪夷所思。可以免費下載的內容相當多，不過很多也是要付費的，這很正常，不然網站無法營運。 不知道是不是受到賈柏斯的影響，對於那種想要把整個頁面都塞滿的作法，我是不太贊成的，相對於國外的設計，我覺得華人設計風格實在是不行。如果大家還有珍藏的網站，也可以提供給我，讓我補充。</description>
+    </item>
+    
+    <item>
+      <title>寫商業簡報的好幫手</title>
+      <link>https://www.liverx.org/2020/05/28/%E5%AF%AB%E5%95%86%E6%A5%AD%E7%B0%A1%E5%A0%B1%E7%9A%84%E5%A5%BD%E5%B9%AB%E6%89%8B/</link>
+      <pubDate>Thu, 28 May 2020 16:07:53 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/05/28/%E5%AF%AB%E5%95%86%E6%A5%AD%E7%B0%A1%E5%A0%B1%E7%9A%84%E5%A5%BD%E5%B9%AB%E6%89%8B/</guid>
+      <description>講起做簡報，台灣應該80%的人都用powerpoint，就算我是無敵果粉，但是我一樣用powerpoint，Keynote我很少用。但是這些東西用久，應該會很膩，也有人會去下載模版來用，現在有一個網站，幫你解決這些問題，經過我的試用，我覺得還算不錯，推薦大家使用。（不過他是偏向商業報告）
+Slides， 是一个簡報寫作工具，主要在線上使用不用下載軟體到硬碟，通過內置模版，包含內容模塊、樣式、字體、動畫等，填寫相關頁面內容即可完成一份商業簡報的製作。
+註冊登錄後即可開始創建，首先填寫項目關鍵信息，如項目名稱、網址、聯繫方式等，之後可以通過選擇模版，上傳Logo，設置字體和動畫等，進行全面的樣式和內容定制，通過左側內容模塊導航，填寫頁面相關內容。之後選擇公開或私密發布，將分享鏈接分享出去即可，對方無需專門軟件，可直接在線上查看。對於私密分享，可以在後台查看訪問記錄等信息。
+Slides 建立三個文檔是免費的，沒有功能限制。如果需要準備更多文稿，或者是想要不公開內容，付費價格每月 99 美金起跳。</description>
+    </item>
+    
+    <item>
+      <title>Teamviewer和anydesk的區別</title>
+      <link>https://www.liverx.org/2020/05/27/teamviewer%E5%92%8Canydesk%E7%9A%84%E5%8D%80%E5%88%A5/</link>
+      <pubDate>Wed, 27 May 2020 14:04:46 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2020/05/27/teamviewer%E5%92%8Canydesk%E7%9A%84%E5%8D%80%E5%88%A5/</guid>
+      <description>因為疫情的關係，本來不太多人用的遠端控制電腦的軟體，也變得火熱起來，今天要介紹兩套我個人常用的遠端控制軟體。
+這是我最愛用的遠端控制軟體，安全性高，費用不便宜，還好個人非商業用免費，但是麻煩的是雙方要用同一版本的才行，有時候你提早升級，對方沒有的話，你還要請對方升級一下。最近就是碰到對方iOS版本太舊，導致teamviewer無法升級。只好改用另外一套&amp;hellip;.
+Anydesk anydesk 安全性比較差，預設不需要使用密碼，但是好處在於不會像Teamviewer強迫雙方要一樣的版本。這是比較合理的地方。
+如果臨時要和陌生人使用遠端控制，建議使用 AnyDesk會比較開心喲。</description>
+    </item>
     
     <item>
       <title>用Caddy2來架設wordpress</title>
@@ -77,7 +158,7 @@ sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install
       <guid>https://www.liverx.org/2019/11/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E7%94%A8godaddy%E8%B2%B7%E7%B6%B2%E5%9D%80/</guid>
       <description>對於很多人來說godaddy幾乎就是申請網址的代名詞，不過本人很少用這家公司申請網址，除非是客戶一定要申請.com.tw的網址，我才會用這家1，
 但是有一次發生一件事情以後，我就建議大家不要再用godaddy了，是因為一個客戶忘記續約，一般過期都是補交錢就好了，結果godaddy居然說台灣要收一個過期費80美金！一個網址才多少錢，你要收80美金！我本來以為是台灣政府的惡習，但是詢問同樣的公司gandi卻說不用收這筆費用，所以大家千萬要小心了囉！
-  平常我都用gandi或者namesilo。 &amp;#x21a9;&amp;#xfe0e;
+  平常我都用gandi或者namesilo。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
    </description>
     </item>
     
