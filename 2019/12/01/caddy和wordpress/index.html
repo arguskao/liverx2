@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.86.0" />
   <meta itemprop="name" content="Caddy和wordpress">
 <meta itemprop="description" content="自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
 一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
@@ -16,8 +16,8 @@
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
 example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
-sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL："><meta itemprop="datePublished" content="2019-12-01T18:27:33&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-01T18:27:33&#43;08:00" />
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL："><meta itemprop="datePublished" content="2019-12-01T18:27:33+08:00" />
+<meta itemprop="dateModified" content="2019-12-01T18:27:33+08:00" />
 <meta itemprop="wordCount" content="241">
 <meta itemprop="keywords" content="" />
   <meta property="og:title" content="Caddy和wordpress" />
@@ -30,8 +30,8 @@ example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2019-12-01T18:27:33&#43;08:00" />
-<meta property="article:modified_time" content="2019-12-01T18:27:33&#43;08:00" />
+<meta property="article:published_time" content="2019-12-01T18:27:33+08:00" />
+<meta property="article:modified_time" content="2019-12-01T18:27:33+08:00" />
 
 
   <meta name="twitter:card" content="summary"/>
@@ -420,6 +420,17 @@ group = apache ***這裡改成caddy***
 
         </section>
         <header>
+          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
+          <time class="published" datetime="">September 1, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/06/20/52%E6%AD%B2%E7%9A%84%E7%94%9F%E6%97%A5/">52歲的生日</a></h1>
           <time class="published" datetime="">June 20, 2021</time>
         </header>
@@ -477,17 +488,6 @@ group = apache ***這裡改成caddy***
         <header>
           <h1><a href="../../../../2020/08/10/%E8%9A%A4%E4%B8%8D%E5%88%B0%E5%92%8C%E5%85%A8%E8%83%BD%E7%8B%97%E7%9A%84%E5%8D%80%E5%88%A5/">蚤不到和全能狗的區別</a></h1>
           <time class="published" datetime="">August 10, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2020/07/27/%E5%A4%8F%E5%B0%8F%E6%BB%BF%E7%9A%84%E5%88%B0%E4%BE%86/">夏小滿的到來</a></h1>
-          <time class="published" datetime="">July 27, 2020</time>
         </header>
       </article>
       
@@ -565,7 +565,7 @@ group = apache ***這裡改成caddy***
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.83.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.86.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

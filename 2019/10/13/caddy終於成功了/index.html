@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.86.0" />
   <meta itemprop="name" content="Caddy終於成功了">
 <meta itemprop="description" content="每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
 前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
@@ -25,8 +25,8 @@ sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
  oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
-sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy."><meta itemprop="datePublished" content="2019-10-13T15:37:54&#43;08:00" />
-<meta itemprop="dateModified" content="2019-10-13T15:37:54&#43;08:00" />
+sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy."><meta itemprop="datePublished" content="2019-10-13T15:37:54+08:00" />
+<meta itemprop="dateModified" content="2019-10-13T15:37:54+08:00" />
 <meta itemprop="wordCount" content="81">
 <meta itemprop="keywords" content="" />
   <meta property="og:title" content="Caddy終於成功了" />
@@ -48,8 +48,8 @@ sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己�
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.liverx.org/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2019-10-13T15:37:54&#43;08:00" />
-<meta property="article:modified_time" content="2019-10-13T15:37:54&#43;08:00" />
+<meta property="article:published_time" content="2019-10-13T15:37:54+08:00" />
+<meta property="article:modified_time" content="2019-10-13T15:37:54+08:00" />
 
 
   <meta name="twitter:card" content="summary"/>
@@ -426,6 +426,17 @@ sudo systemctl status caddy.service
 
         </section>
         <header>
+          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
+          <time class="published" datetime="">September 1, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/06/20/52%E6%AD%B2%E7%9A%84%E7%94%9F%E6%97%A5/">52歲的生日</a></h1>
           <time class="published" datetime="">June 20, 2021</time>
         </header>
@@ -483,17 +494,6 @@ sudo systemctl status caddy.service
         <header>
           <h1><a href="../../../../2020/08/10/%E8%9A%A4%E4%B8%8D%E5%88%B0%E5%92%8C%E5%85%A8%E8%83%BD%E7%8B%97%E7%9A%84%E5%8D%80%E5%88%A5/">蚤不到和全能狗的區別</a></h1>
           <time class="published" datetime="">August 10, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2020/07/27/%E5%A4%8F%E5%B0%8F%E6%BB%BF%E7%9A%84%E5%88%B0%E4%BE%86/">夏小滿的到來</a></h1>
-          <time class="published" datetime="">July 27, 2020</time>
         </header>
       </article>
       
@@ -571,7 +571,7 @@ sudo systemctl status caddy.service
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.83.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.86.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

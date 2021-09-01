@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.86.0" />
   <meta itemprop="name" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin">
 <meta itemprop="description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
 如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
@@ -25,8 +25,8 @@ joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0
 然後重點來了，這裡如果錯了，php會不能用，請注意紅色部分就是要將註解取消
 這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock
 location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
-# NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127."><meta itemprop="datePublished" content="2012-10-04T08:02:42&#43;00:00" />
-<meta itemprop="dateModified" content="2012-10-04T08:02:42&#43;00:00" />
+# NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127."><meta itemprop="datePublished" content="2012-10-04T08:02:42+00:00" />
+<meta itemprop="dateModified" content="2012-10-04T08:02:42+00:00" />
 <meta itemprop="wordCount" content="114">
 <meta itemprop="keywords" content="" />
   <meta property="og:title" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin" />
@@ -48,8 +48,8 @@ location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
 # NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2012-10-04T08:02:42&#43;00:00" />
-<meta property="article:modified_time" content="2012-10-04T08:02:42&#43;00:00" />
+<meta property="article:published_time" content="2012-10-04T08:02:42+00:00" />
+<meta property="article:modified_time" content="2012-10-04T08:02:42+00:00" />
 
 
   <meta name="twitter:card" content="summary"/>
@@ -423,6 +423,17 @@ include /etc/nginx/fastcgi_params;</p>
 
         </section>
         <header>
+          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
+          <time class="published" datetime="">September 1, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/06/20/52%E6%AD%B2%E7%9A%84%E7%94%9F%E6%97%A5/">52歲的生日</a></h1>
           <time class="published" datetime="">June 20, 2021</time>
         </header>
@@ -480,17 +491,6 @@ include /etc/nginx/fastcgi_params;</p>
         <header>
           <h1><a href="../../../../2020/08/10/%E8%9A%A4%E4%B8%8D%E5%88%B0%E5%92%8C%E5%85%A8%E8%83%BD%E7%8B%97%E7%9A%84%E5%8D%80%E5%88%A5/">蚤不到和全能狗的區別</a></h1>
           <time class="published" datetime="">August 10, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2020/07/27/%E5%A4%8F%E5%B0%8F%E6%BB%BF%E7%9A%84%E5%88%B0%E4%BE%86/">夏小滿的到來</a></h1>
-          <time class="published" datetime="">July 27, 2020</time>
         </header>
       </article>
       
@@ -568,7 +568,7 @@ include /etc/nginx/fastcgi_params;</p>
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.83.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.86.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
