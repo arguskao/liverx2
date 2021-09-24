@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+  <meta charset="utf-8">
+<title>Caddy和wordpress - 活力藥師網番外篇</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.88.1" />
+  <meta itemprop="name" content="Caddy和wordpress">
+<meta itemprop="description" content="自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
+一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
+假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
+sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+最後再安裝Mysql，務必按照順序。
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL："><meta itemprop="datePublished" content="2019-12-01T18:27:33+08:00" />
+<meta itemprop="dateModified" content="2019-12-01T18:27:33+08:00" />
+<meta itemprop="wordCount" content="241">
+<meta itemprop="keywords" content="" />
+  <meta property="og:title" content="Caddy和wordpress" />
+<meta property="og:description" content="自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
+一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
+假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
+sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+最後再安裝Mysql，務必按照順序。
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2019-12-01T18:27:33+08:00" />
+<meta property="article:modified_time" content="2019-12-01T18:27:33+08:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Caddy和wordpress"/>
+<meta name="twitter:description" content="自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
+一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
+假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
+sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+最後再安裝Mysql，務必按照順序。
+sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL："/>
+<meta name="twitter:site" content="@arguskao"/>
+
+  
+
+  <link rel="stylesheet"
+      href="../../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="../../../../css/normalize.css">
+      <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+       <link rel="stylesheet" href="../../../../use.fontawesome.com/releases/v5.9.0/css/all.css">
+      <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/css/jquery.fancybox.min.css">
+      
+      
+      <link rel="stylesheet" href="../../../../css/main.min.f16c933dd496fa55e8ea7d074b5fcd851c15f29625f5580af649f85aa998f76a.css" >
+      <link rel="stylesheet" href="../../../../css/add-on.css">
+    
+  
+  
+  
+  
+
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="../../../../">
+        
+          
+            博客
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="../../../../" class="link"><i class="fas fa-home">&nbsp;</i>首頁</a>
+      
+        <a href="../../../../category/%E5%B0%8F%E8%AA%AA%E5%BD%B1%E8%A9%95/" class="link"><i class="far fa-id-card">&nbsp;</i>電影影評</a>
+      
+        <a href="../../../../category/" class="link"><i class="fas fa-sitemap">&nbsp;</i>分類</a>
+      
+        <a href="../../../../links/" class="link"><i class="far fa-envelope">&nbsp;</i>好站連結</a>
+      
+      <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      
+
+    </menu>
+    
+
+    <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+    <menu id="share-menu" class="flyout-menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Caddy%e5%92%8cwordpress&amp;url=https%3a%2f%2fwww.liverx.org%2f2019%2f12%2f01%2fcaddy%25E5%2592%258Cwordpress%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.liverx.org%2f2019%2f12%2f01%2fcaddy%25E5%2592%258Cwordpress%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fwww.liverx.org%2f2019%2f12%2f01%2fcaddy%25E5%2592%258Cwordpress%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="../../../../"><img src="../../../../img/jslogo.png" class="circle" width="100" alt="照片" /></a>
+  <header>
+    <h1>一個藥師的自由自語</h1>
+  </header>
+  <main>
+    <p>無聊的人請進來.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/arguskao" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@arguskao" target="_blank" rel="noopener" title="Medium" class="fab fa-medium"></a></li>
+
+
+
+
+
+<li><a href="//facebook.com/masterkao" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=886980347570" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+<li><a href="//instagram.com/arguskao" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/arguskao" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:wii543@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="../../../../2019/12/01/caddy%E5%92%8Cwordpress/">Caddy和wordpress</a></h2>
+    
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2019-12-01 18:27:33 &#43;0800 CST">
+      December 1, 2019
+    </time>
+    <span class="author">高藥師</span>
+    
+      <p>2 分鐘</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Caddy%e5%92%8cwordpress&amp;url=https%3a%2f%2fwww.liverx.org%2f2019%2f12%2f01%2fcaddy%25E5%2592%258Cwordpress%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.liverx.org%2f2019%2f12%2f01%2fcaddy%25E5%2592%258Cwordpress%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fwww.liverx.org%2f2019%2f12%2f01%2fcaddy%25E5%2592%258Cwordpress%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+
+  <div class="content">
+    <p>自從上一篇<a href="https://www.liverx.org/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/">caddy終於成功了以後</a>，我真的就迷上<a href="https://www.liverx.org/tag/caddy">caddy</a>了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。</p>
+<p>一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。</p>
+<p>假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)</p>
+<pre tabindex="0"><code>sudo apt-get install -y php7.2-fpm php7.2-mysql  php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip
+</code></pre><p>裝好以後，可以用info.php<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>或者php -v 看看是否有成功
+然後就是把設定加到Caddyfile裡面</p>
+<pre tabindex="0"><code>example.com {
+    tls xxx@gmail.com # 你自己的Email
+    root /var/www/wordpress
+    gzip
+    fastcgi / unix:/var/run/php/php7.3-fpm.sock php
+    rewrite {
+        if {path} not_match ^\/wp-admin
+        to {path} {path}/ /index.php?{query}
+    }
+    header /assets {       # 加入檔頭，指定 assets 路徑下
+      Cache-Control &quot;max-age=604800&quot;   # 控制瀏覽器快取，壽命一週
+    }
+}
+</code></pre><p>上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。</p>
+<p>最後再安裝Mysql，務必按照順序。</p>
+<pre tabindex="0"><code>sudo apt-get install mysql-server
+sudo apt install mysql-client
+sudo apt install libmysqlclient-dev
+</code></pre><p>然後就登入MySQL：</p>
+<pre tabindex="0"><code>mysql -u root -p [^2]
+</code></pre><p>或者可以先執行</p>
+<pre tabindex="0"><code>mysql_secure_installation
+</code></pre><p>把密碼改一改</p>
+<pre tabindex="0"><code>Enter current password for root (enter for none): 
+#第一次設定，直接按 Enter 鍵即可
+OK, successfully used password, moving on...
+Setting the root password ensures that nobody can log into the MariaDB
+root user without the proper authorisation.
+
+Set root password? [Y/n] 按 Y 設定資料庫 root 密碼
+New password: 輸入新密碼
+Re-enter new password: 再次輸入新密碼
+Password updated successfully!
+Reloading privilege tables..
+</code></pre><p>然後再做一些小動作</p>
+<pre tabindex="0"><code>CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改
+CREATE USER wpuser@localhost; #代表用戶名是wpuser，也可以更改
+SET PASSWORD FOR wpuser@localhost= PASSWORD(&quot;password&quot;); #password就是你要的密碼
+GRANT ALL PRIVILEGES ON wordpress.* TO wpuser@localhost IDENTIFIED BY 'password';
+FLUSH PRIVILEGES;
+exit
+</code></pre><p>最後要記得改一下權限，假設目錄是wordpress，要改成caddy</p>
+<pre tabindex="0"><code>sudo chown -R caddy:caddy wordpress
+</code></pre><p>PHP的設定檔也要改，找到www.conf檔</p>
+<pre tabindex="0"><code>; Unix user/group of processes
+; Note: The user is mandatory. If the group is not set, the default user's group
+;       will be used.
+; RPM: apache Choosed to be able to access some dir as httpd
+user = apache.  ***這裡改成caddy***
+; RPM: Keep a group allowed to write in log dir.
+group = apache ***這裡改成caddy***
+</code></pre><p>基本上這樣就可以成功了。</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>裡面只要 <!-- raw HTML omitted -->&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="category">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98">電腦筆記</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tag">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/tag/caddy">caddy</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/tag/wordpress">wordpress</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "liverx2" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+<script>
+  (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+  h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+  l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+  r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+  n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+  A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+  sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+  void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+  (f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+  sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+  a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+  ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+  !1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+  y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+  d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+  a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+  trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+  (window,"UA-1697101-5",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+</script>
+
+
+
+<div class="pagination">
+  
+    <a href="../../../../2019/11/04/%E5%8D%83%E8%90%AC%E4%B8%8D%E8%A6%81%E7%94%A8godaddy%E8%B2%B7%E7%B6%B2%E5%9D%80/" class="button big previous"><i class="fas fa-angle-left"></i> 千萬不要用godaddy買網址</a>
+  
+  
+    <a href="../../../../2019/12/05/%E7%AB%A5%E8%80%81%E5%B8%AB%E6%94%B9%E8%AE%8A%E4%BA%86%E6%88%91%E7%9A%84%E4%B8%80%E7%94%9F/" class="button big next">童老師改變了我的一生 <i class="fas fa-angle-right"></i></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>最新文章</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/09/16/%E5%8D%81%E5%A4%A7%E6%96%87%E6%A1%88%E6%8E%A8%E8%96%A6%E7%B6%B2%E7%AB%99/">十大文案推薦網站</a></h1>
+          <time class="published" datetime="">September 16, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
+          <time class="published" datetime="">September 1, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/06/20/52%E6%AD%B2%E7%9A%84%E7%94%9F%E6%97%A5/">52歲的生日</a></h1>
+          <time class="published" datetime="">June 20, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/">怎麼解決git上傳github的問題</a></h1>
+          <time class="published" datetime="">June 14, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2020/09/24/%E5%81%A5%E5%BA%B7%E9%A3%9F%E5%93%81%E6%9F%A5%E9%A9%97%E7%99%BB%E8%A8%98%E8%AB%AE%E8%A9%A2%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C/">健康食品查驗登記諮詢常見問題</a></h1>
+          <time class="published" datetime="">September 24, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2020/09/18/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%B3%E8%AB%8B%E5%81%A5%E5%BA%B7%E9%A3%9F%E5%93%81%E5%B0%B1%E4%B8%8A%E6%89%8B/">第一次申請健康食品就上手</a></h1>
+          <time class="published" datetime="">September 18, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2020/08/25/%E8%87%AA%E5%B7%B1%E5%A0%B1%E5%BB%A2%E6%B1%BD%E8%BB%8A/">自己報廢汽車</a></h1>
+          <time class="published" datetime="">August 25, 2020</time>
+        </header>
+      </article>
+      
+      
+        <a href="../../../../blog/" class="button">查看更多</a>
+      
+    </section>
+  
+
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>關於</h1>
+    </header>
+    <p>一個無聊的藥師，寫一些自己的心情</p>
+    <footer>
+      <a href="../../../../about" class="button">了解更多</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/arguskao" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@arguskao" target="_blank" rel="noopener" title="Medium" class="fab fa-medium"></a></li>
+
+
+
+
+
+<li><a href="//facebook.com/masterkao" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=886980347570" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+<li><a href="//instagram.com/arguskao" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/arguskao" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:wii543@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2021
+      
+        活力藥師網番外篇
+      
+    . <br>
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src=../../../../js/highlight.min.js></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src=../../../../code.jquery.com/jquery-3.3.1.min.js></script>
+  <script src=../../../../js/skel.min.js></script>
+  <script src=../../../../js/jquery.fancybox.min.js></script>
+  <script src=../../../../js/util.js></script>
+  <script src=../../../../js/main.js></script>
+  <script src=../../../../js/add-on.js></script>
+  
+
+<script src='../../../../js/staticman.js'></script>
+  
+
+  
+
+
+
+    </div>
+  </body>
+</html>

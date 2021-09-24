@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+  <meta charset="utf-8">
+<title>Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin - 活力藥師網番外篇</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.88.1" />
+  <meta itemprop="name" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin">
+<meta itemprop="description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
+如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
+安裝nginx&#43;php apt-get install htop joe unzip
+可以直接安裝nignx apt-get install nginx
+然後再裝php5-fpm apt-get install php5 php5-fpm，不建議再裝php-fcgi，容易相衝
+apt-get install php5-cli php5-xcache
+php -v 檢查是否成功安裝xcache，成功的話，會出現xcache字眼
+joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0
+可以先確定一下停掉apache2 ，service apache2 stop
+我個人習慣將root 目錄設成 /var/www/vhosts，所以待會的例子都以此目錄為準，請自己更改成您自己的目錄
+更改 root /var/www/vhosts (請改成自己的目錄）
+ index index.php index.htm index.html (index.php 是新增的，原來沒有)
+然後重點來了，這裡如果錯了，php會不能用，請注意紅色部分就是要將註解取消
+這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock
+location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
+# NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127."><meta itemprop="datePublished" content="2012-10-04T08:02:42+00:00" />
+<meta itemprop="dateModified" content="2012-10-04T08:02:42+00:00" />
+<meta itemprop="wordCount" content="114">
+<meta itemprop="keywords" content="" />
+  <meta property="og:title" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin" />
+<meta property="og:description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
+如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
+安裝nginx&#43;php apt-get install htop joe unzip
+可以直接安裝nignx apt-get install nginx
+然後再裝php5-fpm apt-get install php5 php5-fpm，不建議再裝php-fcgi，容易相衝
+apt-get install php5-cli php5-xcache
+php -v 檢查是否成功安裝xcache，成功的話，會出現xcache字眼
+joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0
+可以先確定一下停掉apache2 ，service apache2 stop
+我個人習慣將root 目錄設成 /var/www/vhosts，所以待會的例子都以此目錄為準，請自己更改成您自己的目錄
+更改 root /var/www/vhosts (請改成自己的目錄）
+ index index.php index.htm index.html (index.php 是新增的，原來沒有)
+然後重點來了，這裡如果錯了，php會不能用，請注意紅色部分就是要將註解取消
+這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock
+location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
+# NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.liverx.org/2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2012-10-04T08:02:42+00:00" />
+<meta property="article:modified_time" content="2012-10-04T08:02:42+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin"/>
+<meta name="twitter:description" content="上一篇寫到Ubuntu和Centos的選擇以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。
+如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，
+安裝nginx&#43;php apt-get install htop joe unzip
+可以直接安裝nignx apt-get install nginx
+然後再裝php5-fpm apt-get install php5 php5-fpm，不建議再裝php-fcgi，容易相衝
+apt-get install php5-cli php5-xcache
+php -v 檢查是否成功安裝xcache，成功的話，會出現xcache字眼
+joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0
+可以先確定一下停掉apache2 ，service apache2 stop
+我個人習慣將root 目錄設成 /var/www/vhosts，所以待會的例子都以此目錄為準，請自己更改成您自己的目錄
+更改 root /var/www/vhosts (請改成自己的目錄）
+ index index.php index.htm index.html (index.php 是新增的，原來沒有)
+然後重點來了，這裡如果錯了，php會不能用，請注意紅色部分就是要將註解取消
+這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock
+location ~ .php$ { fastcgi_split_path_info ^(.&#43;.php)(/.&#43;)$;
+# NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini # With php5-cgi alone: #fastcgi_pass 127."/>
+<meta name="twitter:site" content="@arguskao"/>
+
+  
+
+  <link rel="stylesheet"
+      href="../../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="../../../../css/normalize.css">
+      <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+       <link rel="stylesheet" href="../../../../use.fontawesome.com/releases/v5.9.0/css/all.css">
+      <link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/css/jquery.fancybox.min.css">
+      
+      
+      <link rel="stylesheet" href="../../../../css/main.min.f16c933dd496fa55e8ea7d074b5fcd851c15f29625f5580af649f85aa998f76a.css" >
+      <link rel="stylesheet" href="../../../../css/add-on.css">
+    
+  
+  
+  
+  
+
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="../../../../">
+        
+          
+            博客
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="../../../../" class="link"><i class="fas fa-home">&nbsp;</i>首頁</a>
+      
+        <a href="../../../../category/%E5%B0%8F%E8%AA%AA%E5%BD%B1%E8%A9%95/" class="link"><i class="far fa-id-card">&nbsp;</i>電影影評</a>
+      
+        <a href="../../../../category/" class="link"><i class="fas fa-sitemap">&nbsp;</i>分類</a>
+      
+        <a href="../../../../links/" class="link"><i class="far fa-envelope">&nbsp;</i>好站連結</a>
+      
+      <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      
+
+    </menu>
+    
+
+    <a href="#share-menu" class="share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+    <menu id="share-menu" class="flyout-menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Ubuntu%e8%a3%9dNginx%2bphp%2bmysql%2bphpmyadmin&amp;url=https%3a%2f%2fwww.liverx.org%2f2012%2f10%2f04%2fubuntu%25E8%25A3%259Dnginx-php-mysql-phpmyadmin%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.liverx.org%2f2012%2f10%2f04%2fubuntu%25E8%25A3%259Dnginx-php-mysql-phpmyadmin%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fwww.liverx.org%2f2012%2f10%2f04%2fubuntu%25E8%25A3%259Dnginx-php-mysql-phpmyadmin%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="../../../../"><img src="../../../../img/jslogo.png" class="circle" width="100" alt="照片" /></a>
+  <header>
+    <h1>一個藥師的自由自語</h1>
+  </header>
+  <main>
+    <p>無聊的人請進來.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/arguskao" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@arguskao" target="_blank" rel="noopener" title="Medium" class="fab fa-medium"></a></li>
+
+
+
+
+
+<li><a href="//facebook.com/masterkao" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=886980347570" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+<li><a href="//instagram.com/arguskao" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/arguskao" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:wii543@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="../../../../2012/10/04/ubuntu%E8%A3%9Dnginx-php-mysql-phpmyadmin/">Ubuntu裝Nginx&#43;php&#43;mysql&#43;phpmyadmin</a></h2>
+    
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2012-10-04 08:02:42 &#43;0000 &#43;0000">
+      October 4, 2012
+    </time>
+    <span class="author">arguskao</span>
+    
+      <p>1 分鐘</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Ubuntu%e8%a3%9dNginx%2bphp%2bmysql%2bphpmyadmin&amp;url=https%3a%2f%2fwww.liverx.org%2f2012%2f10%2f04%2fubuntu%25E8%25A3%259Dnginx-php-mysql-phpmyadmin%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.liverx.org%2f2012%2f10%2f04%2fubuntu%25E8%25A3%259Dnginx-php-mysql-phpmyadmin%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fwww.liverx.org%2f2012%2f10%2f04%2fubuntu%25E8%25A3%259Dnginx-php-mysql-phpmyadmin%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+
+  <div class="content">
+    <p>上一篇寫到<a href="http://www.liverx.org/2013/02/13/centos%e5%92%8cubuntu%e7%9a%84%e9%81%b8%e6%93%87/">Ubuntu和Centos的選擇</a>以後，因為碰到安裝nginx的問題，讓我已經捨棄Centos不用了，因為在安裝nginx的操作上，ubuntu實在是太方便了，現在就跟大家分享一下，如何利用ubuntu 12.10安裝nginx為主的server，解決一下wordpress會碰到的rewrite的問題。</p>
+<p>如果是vps的話，可以直接選擇ubuntu 12.10 server版，首先要安裝一些小工具，</p>
+<h1 id="安裝nginxphp">安裝nginx+php</h1>
+<p>apt-get install htop joe unzip</p>
+<p>可以直接安裝nignx      apt-get install nginx</p>
+<p>然後再裝php5-fpm    apt-get install php5 php5-fpm，不建議再裝php-fcgi，容易相衝</p>
+<p>apt-get install php5-cli php5-xcache</p>
+<p>php -v 檢查是否成功安裝xcache，成功的話，會出現xcache字眼</p>
+<p>joe /etc/php5/fpm/php.ini ，將cgi.fix_pathinfo=1改成cgi.fix_pathinfo=0</p>
+<p>可以先確定一下停掉apache2 ，service apache2 stop</p>
+<p>我個人習慣將root 目錄設成 /var/www/vhosts，所以待會的例子都以此目錄為準，請自己更改成您自己的目錄</p>
+<p>更改 root  /var/www/vhosts  (請改成自己的目錄）</p>
+<p>       index  index.php index.htm index.html  (index.php 是新增的，原來沒有)</p>
+<p>然後重點來了，這裡如果錯了，php會不能用，請注意紅色部分就是要將註解取消</p>
+<p>這裡有一個重點，unix:/run/php5-fpm.sock，在每個server上不一樣，建議先確定自己的目錄，一般是unix:/var/run/php5-fpm.sock</p>
+<p>location ~ .php$ {
+fastcgi_split_path_info ^(.+.php)(/.+)$;</p>
+<h1 id="-note-you-should-have-cgifix_pathinfo--0-in-phpini"># NOTE: You should have &ldquo;cgi.fix_pathinfo = 0;&rdquo; in php.ini</h1>
+<h1 id="-with-php5-cgi-alone"># With php5-cgi alone:</h1>
+<h1 id="fastcgi_pass-1270019000">#fastcgi_pass 127.0.0.1:9000;</h1>
+<h1 id="-with-php5-fpm"># With php5-fpm:</h1>
+<p>fastcgi_pass unix:/run/php5-fpm.sock;
+fastcgi_index index.php;
+fastcgi_param SCRIPT_FILENAME /var/www/vhosts$fastcgi_script_name;
+include /etc/nginx/fastcgi_params;</p>
+<p>service php5-fpm restart，確定要有 OK出現，才有設定成功</p>
+<p>service nginx restart</p>
+<p>改好以後，看看是否正常，可以joe /var/www/vhosts/info.php</p>
+<p>填入 <!-- raw HTML omitted -->，然後http://ip/info.php ，看到該看的畫面就成功了。</p>
+<h1 id="安裝-mysql">安裝 mysql</h1>
+<p>apt-get install mysql-server</p>
+<p>我自己覺得mysql效能不好，所以其實是用Percona，使用方法和mysql完全一樣，安裝方法可以參考<a href="http://blog.longwin.com.tw/2012/10/ubuntu-debian-percona-mysql-2012/">percona安裝</a>。</p>
+<h1 id="安裝phpmyadmin">安裝phpmyadmin</h1>
+<p>我個人偏向用http://ip/phpmyadmin 的方式來使用phpmyadmin，而ubuntu的安裝更是簡單</p>
+<p>apt-get install phpmyadmin</p>
+<p>安裝好以後，建議</p>
+<p>mv /usr/share/phpmyadmin /var/www/vhosts/</p>
+<p>到這裡，所有的安裝都成功了。</p>
+<p>下一篇<a href="http://www.liverx.org/2012/09/06/%e6%89%93%e9%96%8baws%e4%b8%bb%e6%a9%9fping%e7%9a%84%e6%96%b9%e6%b3%95/">打開AWS ping的方法</a></p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="category">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98">電腦筆記</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tag">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/tag/linux">Linux</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/tag/ubuntu">ubuntu</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://www.liverx.org/tag/vps">vps</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "liverx2" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+<script>
+  (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+  h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+  l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+  r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+  n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+  A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+  sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+  void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+  (f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+  sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+  a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+  ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+  !1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+  y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+  d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+  a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+  trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+  (window,"UA-1697101-5",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+</script>
+
+
+
+<div class="pagination">
+  
+    <a href="../../../../2012/09/06/%E6%89%93%E9%96%8Baws%E4%B8%BB%E6%A9%9Fping%E7%9A%84%E6%96%B9%E6%B3%95/" class="button big previous"><i class="fas fa-angle-left"></i> 打開AWS主機ping的方法</a>
+  
+  
+    <a href="../../../../2012/11/22/mac%E4%B8%8A%E5%AF%AB%E7%B6%B2%E9%A0%81%E4%B8%80%E5%AE%9A%E8%A6%81%E7%94%A8%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/" class="button big next">Mac上寫網頁一定要用的編輯器 <i class="fas fa-angle-right"></i></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>最新文章</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/09/16/%E5%8D%81%E5%A4%A7%E6%96%87%E6%A1%88%E6%8E%A8%E8%96%A6%E7%B6%B2%E7%AB%99/">十大文案推薦網站</a></h1>
+          <time class="published" datetime="">September 16, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
+          <time class="published" datetime="">September 1, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/06/20/52%E6%AD%B2%E7%9A%84%E7%94%9F%E6%97%A5/">52歲的生日</a></h1>
+          <time class="published" datetime="">June 20, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/">怎麼解決git上傳github的問題</a></h1>
+          <time class="published" datetime="">June 14, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2020/09/24/%E5%81%A5%E5%BA%B7%E9%A3%9F%E5%93%81%E6%9F%A5%E9%A9%97%E7%99%BB%E8%A8%98%E8%AB%AE%E8%A9%A2%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C/">健康食品查驗登記諮詢常見問題</a></h1>
+          <time class="published" datetime="">September 24, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2020/09/18/%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%94%B3%E8%AB%8B%E5%81%A5%E5%BA%B7%E9%A3%9F%E5%93%81%E5%B0%B1%E4%B8%8A%E6%89%8B/">第一次申請健康食品就上手</a></h1>
+          <time class="published" datetime="">September 18, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2020/08/25/%E8%87%AA%E5%B7%B1%E5%A0%B1%E5%BB%A2%E6%B1%BD%E8%BB%8A/">自己報廢汽車</a></h1>
+          <time class="published" datetime="">August 25, 2020</time>
+        </header>
+      </article>
+      
+      
+        <a href="../../../../blog/" class="button">查看更多</a>
+      
+    </section>
+  
+
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>關於</h1>
+    </header>
+    <p>一個無聊的藥師，寫一些自己的心情</p>
+    <footer>
+      <a href="../../../../about" class="button">了解更多</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/arguskao" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="//medium.com/@arguskao" target="_blank" rel="noopener" title="Medium" class="fab fa-medium"></a></li>
+
+
+
+
+
+<li><a href="//facebook.com/masterkao" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+<li><a href="//api.whatsapp.com/send?phone=886980347570" target="_blank" rel="noopener" title="WhatsApp" class="fab fa-whatsapp"></a></li>
+
+
+
+<li><a href="//instagram.com/arguskao" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/arguskao" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:wii543@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2021
+      
+        活力藥師網番外篇
+      
+    . <br>
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src=../../../../js/highlight.min.js></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src=../../../../code.jquery.com/jquery-3.3.1.min.js></script>
+  <script src=../../../../js/skel.min.js></script>
+  <script src=../../../../js/jquery.fancybox.min.js></script>
+  <script src=../../../../js/util.js></script>
+  <script src=../../../../js/main.js></script>
+  <script src=../../../../js/add-on.js></script>
+  
+
+<script src='../../../../js/staticman.js'></script>
+  
+
+  
+
+
+
+    </div>
+  </body>
+</html>
