@@ -42,6 +42,11 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.liverx.org/2021/08/16/%E4%B8%89%E5%80%8B%E6%96%87%E6%A1%88%E4%BF%AE%E6%94%B9%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2021-08-16T12:07:07+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.liverx.org/2021/07/23/%E4%B8%83%E5%80%8B%E8%AA%AA%E6%9C%8D%E5%8A%9B%E5%85%83%E7%B4%A0/</loc>
     <lastmod>2021-07-23T15:55:09+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -2862,6 +2867,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.liverx.org/1/01/01/%E5%93%AA%E7%A8%AEmac-mini%E6%9C%80%E5%A5%BD/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.liverx.org/1/01/01/%E6%8A%93%E4%BD%8F%E4%B8%89%E5%80%8B%E6%B6%88%E8%B2%BB%E8%80%85%E5%BF%83%E7%90%86/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
