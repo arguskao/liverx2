@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.88.1" />
   <meta itemprop="name" content="用Caddy2來架設wordpress">
 <meta itemprop="description" content="講起Web server，大家熟知的應該是apache或者Nginx，但是這幾年出現更輕薄短小的Caddy，我會知道這個東西，是因為玩Hugo，剛好都是go語言寫的東西，雖然一直還沒時間研究出如果用Caddy&#43;hugo並且自動部屬。
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
@@ -256,21 +256,21 @@ systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile�
     <p>講起Web server，大家熟知的應該是apache或者Nginx，但是這幾年出現更輕薄短小的<a href="https://caddyserver.com/">Caddy</a>，我會知道這個東西，是因為玩<a href="https://www.liverx.org/tag/hugo/">Hugo</a>，剛好都是go語言寫的東西，雖然一直還沒時間研究出如果用Caddy+hugo並且自動部屬。</p>
 <p>之前Caddy1的時候，<a href="https://www.liverx.org/2019/12/01/caddy%E5%92%8Cwordpress/">我有拿來架過Wordpress</a>，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。</p>
 <p>安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。</p>
-<pre><code>sudo vim /etc/systemd/system/caddy.service
-</code></pre><pre><code>; User and group the process will run as.
+<pre tabindex="0"><code>sudo vim /etc/systemd/system/caddy.service
+</code></pre><pre tabindex="0"><code>; User and group the process will run as.
 User=root
 Group=www-data
 </code></pre><p>然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是<a href="https://caddyserver.com/docs/download">download</a></p>
-<pre><code>echo &quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&quot; \
+<pre tabindex="0"><code>echo &quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&quot; \
     | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list
 sudo apt update
 sudo apt install caddy
 </code></pre><p>基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。</p>
-<pre><code>sudo systemctl daemon-reload
+<pre tabindex="0"><code>sudo systemctl daemon-reload
 sudo systemctl enable caddy
 sudo systemctl start caddy
 </code></pre><p>設定好以後，檢查一下是否正確</p>
-<pre><code>systemctl status caddy
+<pre tabindex="0"><code>systemctl status caddy
 </code></pre><p>Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。
 正常來說，直接進入/etc/caddy裡面編輯就好</p>
 <p>第一行預設是:80，我直接改成網址去掉後面的:80</p>
@@ -278,12 +278,12 @@ sudo systemctl start caddy
 <p>然後有一行是要安裝php才要用的，所以要先安裝php再來設定</p>
 <p>這裡重點來的，安裝php，不需要整個都裝，只需要裝php-fpm就好</p>
 <p>所以只需要打</p>
-<pre><code>apt install php7.4-fpm
+<pre tabindex="0"><code>apt install php7.4-fpm
 </code></pre><p>然後剛剛那個Caddyfile裡面加上一行</p>
-<pre><code>php_fastcgi unix//run/php/php7.4-fpm.sock
+<pre tabindex="0"><code>php_fastcgi unix//run/php/php7.4-fpm.sock
 </code></pre><p>再重啟php-fpm就可以了！</p>
 <p>接下來再裝一下Mysql ，只需要一行</p>
-<pre><code>apt install mysql-server -y
+<pre tabindex="0"><code>apt install mysql-server -y
 </code></pre><p>然後繼續設定一下資料庫，建議架一下Webmin，方便很多，也不用背指令</p>
 <p>最後下載wordpress，打完收工！</p>
 
@@ -404,6 +404,17 @@ sudo systemctl start caddy
 
         </section>
         <header>
+          <h1><a href="../../../../2021/09/04/%E4%B8%89%E6%8B%9B%E7%87%9F%E9%8A%B7%E5%BF%83%E7%90%86%E5%AD%B8/">三招營銷心理學</a></h1>
+          <time class="published" datetime="">September 4, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
           <time class="published" datetime="">September 1, 2021</time>
         </header>
@@ -450,17 +461,6 @@ sudo systemctl start caddy
         <header>
           <h1><a href="../../../../2021/07/05/%E4%B8%89%E7%A8%AE%E6%96%87%E6%A1%88%E6%A8%99%E9%A1%8C%E7%9A%84%E5%AF%AB%E4%BD%9C%E6%96%B9%E5%BC%8F/">三種文案標題的寫作方式</a></h1>
           <time class="published" datetime="">July 5, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/06/28/%E5%A6%82%E4%BD%95%E8%AA%AA%E6%95%85%E4%BA%8B/">如何說故事</a></h1>
-          <time class="published" datetime="">June 28, 2021</time>
         </header>
       </article>
       
@@ -538,7 +538,7 @@ sudo systemctl start caddy
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.87.0'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
