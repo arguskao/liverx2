@@ -357,6 +357,16 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://www.liverx.org/category/mac/</loc>
+    <lastmod>2020-02-02T02:01:55+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.liverx.org/2020/02/02/%E5%93%AA%E7%A8%AEmac-mini%E6%9C%80%E5%A5%BD/</loc>
+    <lastmod>2020-02-02T02:01:55+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://www.liverx.org/tag/ebay/</loc>
     <lastmod>2020-01-28T08:56:38+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -2869,14 +2879,6 @@
   </url><url>
     <loc>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95/</loc>
     <lastmod>2006-03-17T09:31:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.liverx.org/category/mac/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://www.liverx.org/1/01/01/%E5%93%AA%E7%A8%AEmac-mini%E6%9C%80%E5%A5%BD/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
