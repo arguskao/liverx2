@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.88.1" />
   <meta itemprop="name" content="Gitlab的設定">
 <meta itemprop="description" content="對於很多人來說，或者是網路上的說明，都說Github和Gitlab一樣，不過網路上的教學幾乎都是Github，要找到Gitlab的非常非常少，就算有，也因為是技術人員寫的，所以根本不會寫一些簡單的事情。
 實際上這兩個網站是有不少的差別的，對於想要把Hugo這個SSG，Host在上面的人來說，可能會花點力氣，至少對我這種沒程度的人來說，差點搞死了。
@@ -259,7 +259,7 @@ git submodule init git submodule update 還要設定."/>
 </ol>
 <p>這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml
 這個有範例，但不知道為何網路上範例都不一樣，結果不能用</p>
-<pre><code>image: monachus/hugo
+<pre tabindex="0"><code>image: monachus/hugo
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -279,13 +279,13 @@ pages:
   only:
   - master
 </code></pre><p>本來以為設定這個成功以後，就可以用了，沒想到居然出現</p>
-<pre><code>fatal: No url found for submodule path 'public' in .gitmodules
+<pre tabindex="0"><code>fatal: No url found for submodule path 'public' in .gitmodules
 </code></pre><p>我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是</p>
-<pre><code>[submodule &quot;path_to_submodule&quot;] （這裡一定要 打public）
+<pre tabindex="0"><code>[submodule &quot;path_to_submodule&quot;] （這裡一定要 打public）
 path = path_to_submodule  (通常是 themes/版面名稱）
 url = git://url-of-source/ （版面的git位置）
 </code></pre><p>設定好以後再</p>
-<pre><code>git submodule init
+<pre tabindex="0"><code>git submodule init
 git submodule update
 </code></pre><p>還要設定.gitignore 把 /public 加入，這裡表示不上傳原來需要上傳到github的那堆靜態網頁。</p>
 <p>都完成這些步驟才可以git push</p>
@@ -400,17 +400,6 @@ git submodule update
 
         </section>
         <header>
-          <h1><a href="../../../../2021/10/09/%E6%96%87%E6%A1%88%E5%B8%B8%E7%8A%AF%E7%9A%84%E9%8C%AF%E8%AA%A4/">文案常犯的錯誤</a></h1>
-          <time class="published" datetime="">October 9, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
           <h1><a href="../../../../2021/09/16/%E5%8D%81%E5%A4%A7%E6%96%87%E6%A1%88%E6%8E%A8%E8%96%A6%E7%B6%B2%E7%AB%99/">十大文案推薦網站</a></h1>
           <time class="published" datetime="">September 16, 2021</time>
         </header>
@@ -435,6 +424,17 @@ git submodule update
         <header>
           <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
           <time class="published" datetime="">September 1, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="../../../../2021/08/25/%E6%96%87%E6%A1%88%E5%B8%B8%E7%8A%AF%E7%9A%84%E9%8C%AF%E8%AA%A4/">文案常犯的錯誤</a></h1>
+          <time class="published" datetime="">August 25, 2021</time>
         </header>
       </article>
       
@@ -545,7 +545,7 @@ git submodule update
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.87.0'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
