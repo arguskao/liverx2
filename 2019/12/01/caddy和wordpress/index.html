@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.88.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
   <meta itemprop="name" content="Caddy和wordpress">
 <meta itemprop="description" content="自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
 一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
@@ -250,10 +250,10 @@ sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install
     <p>自從上一篇<a href="https://www.liverx.org/2019/10/13/caddy%E7%B5%82%E6%96%BC%E6%88%90%E5%8A%9F%E4%BA%86/">caddy終於成功了以後</a>，我真的就迷上<a href="https://www.liverx.org/tag/caddy">caddy</a>了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。</p>
 <p>一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。</p>
 <p>假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)</p>
-<pre tabindex="0"><code>sudo apt-get install -y php7.2-fpm php7.2-mysql  php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip
+<pre><code>sudo apt-get install -y php7.2-fpm php7.2-mysql  php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip
 </code></pre><p>裝好以後，可以用info.php<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>或者php -v 看看是否有成功
 然後就是把設定加到Caddyfile裡面</p>
-<pre tabindex="0"><code>example.com {
+<pre><code>example.com {
     tls xxx@gmail.com # 你自己的Email
     root /var/www/wordpress
     gzip
@@ -268,15 +268,15 @@ sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install
 }
 </code></pre><p>上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。</p>
 <p>最後再安裝Mysql，務必按照順序。</p>
-<pre tabindex="0"><code>sudo apt-get install mysql-server
+<pre><code>sudo apt-get install mysql-server
 sudo apt install mysql-client
 sudo apt install libmysqlclient-dev
 </code></pre><p>然後就登入MySQL：</p>
-<pre tabindex="0"><code>mysql -u root -p [^2]
+<pre><code>mysql -u root -p [^2]
 </code></pre><p>或者可以先執行</p>
-<pre tabindex="0"><code>mysql_secure_installation
+<pre><code>mysql_secure_installation
 </code></pre><p>把密碼改一改</p>
-<pre tabindex="0"><code>Enter current password for root (enter for none): 
+<pre><code>Enter current password for root (enter for none): 
 #第一次設定，直接按 Enter 鍵即可
 OK, successfully used password, moving on...
 Setting the root password ensures that nobody can log into the MariaDB
@@ -288,16 +288,16 @@ Re-enter new password: 再次輸入新密碼
 Password updated successfully!
 Reloading privilege tables..
 </code></pre><p>然後再做一些小動作</p>
-<pre tabindex="0"><code>CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改
+<pre><code>CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改
 CREATE USER wpuser@localhost; #代表用戶名是wpuser，也可以更改
 SET PASSWORD FOR wpuser@localhost= PASSWORD(&quot;password&quot;); #password就是你要的密碼
 GRANT ALL PRIVILEGES ON wordpress.* TO wpuser@localhost IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 exit
 </code></pre><p>最後要記得改一下權限，假設目錄是wordpress，要改成caddy</p>
-<pre tabindex="0"><code>sudo chown -R caddy:caddy wordpress
+<pre><code>sudo chown -R caddy:caddy wordpress
 </code></pre><p>PHP的設定檔也要改，找到www.conf檔</p>
-<pre tabindex="0"><code>; Unix user/group of processes
+<pre><code>; Unix user/group of processes
 ; Note: The user is mandatory. If the group is not set, the default user's group
 ;       will be used.
 ; RPM: apache Choosed to be able to access some dir as httpd
@@ -420,6 +420,17 @@ group = apache ***這裡改成caddy***
 
         </section>
         <header>
+          <h1><a href="../../../../2021/10/09/%E6%96%87%E6%A1%88%E5%B8%B8%E7%8A%AF%E7%9A%84%E9%8C%AF%E8%AA%A4/">文案常犯的錯誤</a></h1>
+          <time class="published" datetime="">October 9, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/09/16/%E5%8D%81%E5%A4%A7%E6%96%87%E6%A1%88%E6%8E%A8%E8%96%A6%E7%B6%B2%E7%AB%99/">十大文案推薦網站</a></h1>
           <time class="published" datetime="">September 16, 2021</time>
         </header>
@@ -464,30 +475,19 @@ group = apache ***這裡改成caddy***
 
         </section>
         <header>
+          <h1><a href="../../../../2021/08/03/%E6%8A%93%E4%BD%8F%E4%B8%89%E5%80%8B%E6%B6%88%E8%B2%BB%E8%80%85%E5%BF%83%E7%90%86/">抓住三個消費者心理</a></h1>
+          <time class="published" datetime="">August 3, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/07/23/%E4%B8%83%E5%80%8B%E8%AA%AA%E6%9C%8D%E5%8A%9B%E5%85%83%E7%B4%A0/">七個說服力元素</a></h1>
           <time class="published" datetime="">July 23, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/07/15/%E8%B6%85%E5%BC%B7%E8%B3%A3%E8%B2%A8%E6%96%87%E6%A1%88%E6%A8%A1%E7%89%88/">超強賣貨文案模版</a></h1>
-          <time class="published" datetime="">July 15, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/07/05/%E4%B8%89%E7%A8%AE%E6%96%87%E6%A1%88%E6%A8%99%E9%A1%8C%E7%9A%84%E5%AF%AB%E4%BD%9C%E6%96%B9%E5%BC%8F/">三種文案標題的寫作方式</a></h1>
-          <time class="published" datetime="">July 5, 2021</time>
         </header>
       </article>
       
@@ -565,7 +565,7 @@ group = apache ***這裡改成caddy***
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.87.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
