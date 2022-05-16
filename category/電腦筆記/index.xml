@@ -6,7 +6,22 @@
     <description>Recent content in 電腦筆記 on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 14 Jun 2021 22:29:09 +0800</lastBuildDate><atom:link href="https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 May 2022 17:32:03 +0800</lastBuildDate><atom:link href="https://www.liverx.org/category/%E9%9B%BB%E8%85%A6%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何開始學python</title>
+      <link>https://www.liverx.org/2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/</link>
+      <pubDate>Mon, 16 May 2022 17:32:03 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/</guid>
+      <description>講到學習語言，實在是我的弱項，不管是學英文還是學習電腦語言，我都不是很擅長，雖然自己對電腦有興趣，當初也想要考資訊科系，無奈成績太差，這十幾年來，一直想要好好的學一種語言，剛開始因為PHP用得多，所以想要好好的研究看看，結果失敗，後來覺得好像python很流行，所以又轉投python的懷抱，結果是跟戒菸一樣，不斷的失敗。
+但是皇天不負苦心人，我這次終於堅持下來了，還把我以前學的命理都寫成了程式，這次為何能夠堅持呢？我覺得有幾點原因，也跟初學者分享一下。
+  python和其他語言不一樣，對於環境的設定或者安裝模組有一定的要求，之前我光是搞安裝，就一個頭兩個大，加上沒人可以問，因為大家電腦的設定都不太一樣，沒法幫你看問題出在那裡。所以很多次都死在搞不好環境，找不到人問，我就放棄了。我是怎麼解決的呢?還是要感謝Google，有提供一個免費又好用的網頁平台：Colab。這個平台只要打開網頁就能用，不管你是Mac 或者PC，都能夠在一分鐘內開始寫程式，完全不用管設定的問題，安裝模組也非常方便。你只需要安靜地寫程式不用被干擾。
+  要有目的性，寫程式最好是有用處，你想要寫程式來解決什麼問題，這樣會比較有動力，我這次就是想把算命從手動改成程式，除了速度加快，更可以減少錯誤，所以我有目標以後，針對這個小範圍需要的語言，很快就能夠寫出來，不需要從頭學到尾。
+  感謝良好的教材，網路時代，可以從youtube甚至是大陸的網站，找到很多簡單易懂的影片，需要學什麼，Google一下，馬上就可以找到內容，真是給我很大的幫助，也不知道是不是開竅了，之前不懂的東西，現在都能看懂了。
+  感謝社團，臉書上python的社團有很多熱心的網友，自己煩惱很久的東西，他們都能夠瞬間就出正確的答案，讓我功力大增，也就有繼續學習的勇氣和動力。
+   我推薦大家都來學python   </description>
+    </item>
+    
     <item>
       <title>怎麼解決git上傳github的問題</title>
       <link>https://www.liverx.org/2021/06/14/%E6%80%8E%E9%BA%BC%E8%A7%A3%E6%B1%BAgit%E4%B8%8A%E5%82%B3github%E7%9A%84%E5%95%8F%E9%A1%8C/</link>
@@ -46,9 +61,9 @@ mac電腦裡面銷售最好的應該是macbook了，因為到外面咖啡廳辦�
       <guid>https://www.liverx.org/2020/07/09/mac%E5%BA%95%E4%B8%8B%E5%AE%89%E8%A3%9Dlaravel/</guid>
       <description>我是MAC的使用者，而且程度不是很好的那一個，所以我是使用HomeBrew，來管理這些套件。
 要安裝HomeBrew很簡單，只需要打
-/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot;  真的超容易的，首先只要brew composer，就可以裝好composer
+/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34;  真的超容易的，首先只要brew composer，就可以裝好composer
  然後再用composer安裝Laravel，你可以打
-composer global require &amp;quot;laravel/installer&amp;quot; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
+composer global require &amp;#34;laravel/installer&amp;#34; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
 你一定很興奮打laravel，想要開始打怪，但是！還不行因為php版本不夠新，現在最新的PHP版本是7.4，所以你必須
 brew install php@7.4 然後就可以執行laravel new
 然後打一個php artisan serve，然後瀏覽器打開 http://127.0.0.1:8000 就成功了！</description>
@@ -102,7 +117,7 @@ Anydesk anydesk 安全性比較差，預設不需要使用密碼，但是好處�
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
 安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
 sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
-echo &amp;quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+echo &amp;#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;#34; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
 sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
 systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
 第一行預設是:80，我直接改成網址去掉後面的:80
@@ -145,7 +160,7 @@ icloud 不能自由選擇要哪些資料夾，只能夠預設一些固定的，�
 一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。
 假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：</description>
     </item>
@@ -196,8 +211,8 @@ Forestry 非常方便，除了可以新建一個網站以外，也可以匯入�
 我覺得最大的差點有兩點，本來有三點，就是private repo，但是後來github也取消了。
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
 image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
-fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
-[submodule &amp;quot;path_to_submodule&amp;quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+fatal: No url found for submodule path &amp;#39;public&amp;#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
+[submodule &amp;#34;path_to_submodule&amp;#34;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
 git submodule init git submodule update 還要設定.</description>
     </item>
     
@@ -229,7 +244,7 @@ sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.</description>

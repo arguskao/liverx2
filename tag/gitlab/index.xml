@@ -18,8 +18,8 @@
 我覺得最大的差點有兩點，本來有三點，就是private repo，但是後來github也取消了。
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
 image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
-fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
-[submodule &amp;quot;path_to_submodule&amp;quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+fatal: No url found for submodule path &amp;#39;public&amp;#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
+[submodule &amp;#34;path_to_submodule&amp;#34;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
 git submodule init git submodule update 還要設定.</description>
     </item>
     

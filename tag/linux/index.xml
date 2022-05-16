@@ -25,7 +25,7 @@ sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.</description>

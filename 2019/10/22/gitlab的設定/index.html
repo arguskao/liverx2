@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.88.1" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta itemprop="name" content="Gitlab的設定">
 <meta itemprop="description" content="對於很多人來說，或者是網路上的說明，都說Github和Gitlab一樣，不過網路上的教學幾乎都是Github，要找到Gitlab的非常非常少，就算有，也因為是技術人員寫的，所以根本不會寫一些簡單的事情。
 實際上這兩個網站是有不少的差別的，對於想要把Hugo這個SSG，Host在上面的人來說，可能會花點力氣，至少對我這種沒程度的人來說，差點搞死了。
@@ -16,7 +16,7 @@
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
 image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
 fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
-[submodule &quot;path_to_submodule&quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+[submodule &#34;path_to_submodule&#34;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
 git submodule init git submodule update 還要設定."><meta itemprop="datePublished" content="2019-10-22T08:41:28+08:00" />
 <meta itemprop="dateModified" content="2019-10-22T08:41:28+08:00" />
 <meta itemprop="wordCount" content="75">
@@ -28,7 +28,7 @@ git submodule init git submodule update 還要設定."><meta itemprop="datePubli
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
 image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
 fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
-[submodule &quot;path_to_submodule&quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+[submodule &#34;path_to_submodule&#34;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
 git submodule init git submodule update 還要設定." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.liverx.org/2019/10/22/gitlab%E7%9A%84%E8%A8%AD%E5%AE%9A/" /><meta property="article:section" content="blog" />
@@ -44,7 +44,7 @@ git submodule init git submodule update 還要設定." />
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
 image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
 fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
-[submodule &quot;path_to_submodule&quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+[submodule &#34;path_to_submodule&#34;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
 git submodule init git submodule update 還要設定."/>
 <meta name="twitter:site" content="@arguskao"/>
 
@@ -279,9 +279,9 @@ pages:
   only:
   - master
 </code></pre><p>本來以為設定這個成功以後，就可以用了，沒想到居然出現</p>
-<pre tabindex="0"><code>fatal: No url found for submodule path 'public' in .gitmodules
+<pre tabindex="0"><code>fatal: No url found for submodule path &#39;public&#39; in .gitmodules
 </code></pre><p>我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是</p>
-<pre tabindex="0"><code>[submodule &quot;path_to_submodule&quot;] （這裡一定要 打public）
+<pre tabindex="0"><code>[submodule &#34;path_to_submodule&#34;] （這裡一定要 打public）
 path = path_to_submodule  (通常是 themes/版面名稱）
 url = git://url-of-source/ （版面的git位置）
 </code></pre><p>設定好以後再</p>
@@ -334,7 +334,7 @@ git submodule update
     <article class="post">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -400,6 +400,17 @@ git submodule update
 
         </section>
         <header>
+          <h1><a href="../../../../2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/">如何開始學python</a></h1>
+          <time class="published" datetime="">May 16, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/09/18/%E5%AD%B8%E6%9C%83%E8%B6%85%E5%BC%B7%E6%B5%B7%E5%A0%B1%E9%8A%B7%E5%94%AE%E6%96%87%E6%A1%88/">學會超強海報銷售文案</a></h1>
           <time class="published" datetime="">September 18, 2021</time>
         </header>
@@ -457,17 +468,6 @@ git submodule update
         <header>
           <h1><a href="../../../../2021/09/04/%E4%B8%89%E6%8B%9B%E7%87%9F%E9%8A%B7%E5%BF%83%E7%90%86%E5%AD%B8/">三招營銷心理學</a></h1>
           <time class="published" datetime="">September 4, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
-          <time class="published" datetime="">September 1, 2021</time>
         </header>
       </article>
       
@@ -540,12 +540,12 @@ git submodule update
   
   <p class="copyright">
     
-      &copy; 2021
+      &copy; 2022
       
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.98.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

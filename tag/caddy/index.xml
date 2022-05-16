@@ -17,7 +17,7 @@
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
 安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
 sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
-echo &amp;quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+echo &amp;#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;#34; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
 sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
 systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
 第一行預設是:80，我直接改成網址去掉後面的:80
@@ -34,7 +34,7 @@ systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile�
 一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。
 假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：</description>
     </item>
@@ -57,7 +57,7 @@ sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.</description>

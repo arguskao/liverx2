@@ -8,13 +8,13 @@
 
 
 
-  <meta name="generator" content="Hugo 0.88.1" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta itemprop="name" content="Caddy和wordpress">
 <meta itemprop="description" content="自從上一篇caddy終於成功了以後，我真的就迷上caddy了，雖然caddy更版的速度超快，但是既然已經有1.04的穩定版，於是我就手癢想試試看，能不能在caddy 架wordpress。
 一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
 假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &#34;max-age=604800&#34; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL："><meta itemprop="datePublished" content="2019-12-01T18:27:33+08:00" />
 <meta itemprop="dateModified" content="2019-12-01T18:27:33+08:00" />
@@ -25,7 +25,7 @@ sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install
 一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
 假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &#34;max-age=604800&#34; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：" />
 <meta property="og:type" content="article" />
@@ -40,7 +40,7 @@ sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install
 一般來說傳統架wordpress，都是用apache&#43;php&#43;mysql，或者騷包一點的就用nginx&#43;php&#43;mysql，今天則是要用caddy&#43;php&#43;mysql。
 假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &#34;max-age=604800&#34; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL："/>
 <meta name="twitter:site" content="@arguskao"/>
@@ -263,7 +263,7 @@ sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install
         to {path} {path}/ /index.php?{query}
     }
     header /assets {       # 加入檔頭，指定 assets 路徑下
-      Cache-Control &quot;max-age=604800&quot;   # 控制瀏覽器快取，壽命一週
+      Cache-Control &#34;max-age=604800&#34;   # 控制瀏覽器快取，壽命一週
     }
 }
 </code></pre><p>上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。</p>
@@ -290,29 +290,29 @@ Reloading privilege tables..
 </code></pre><p>然後再做一些小動作</p>
 <pre tabindex="0"><code>CREATE DATABASE wordpress; #代表資料名稱是wordpress，可以任意更改
 CREATE USER wpuser@localhost; #代表用戶名是wpuser，也可以更改
-SET PASSWORD FOR wpuser@localhost= PASSWORD(&quot;password&quot;); #password就是你要的密碼
-GRANT ALL PRIVILEGES ON wordpress.* TO wpuser@localhost IDENTIFIED BY 'password';
+SET PASSWORD FOR wpuser@localhost= PASSWORD(&#34;password&#34;); #password就是你要的密碼
+GRANT ALL PRIVILEGES ON wordpress.* TO wpuser@localhost IDENTIFIED BY &#39;password&#39;;
 FLUSH PRIVILEGES;
 exit
 </code></pre><p>最後要記得改一下權限，假設目錄是wordpress，要改成caddy</p>
 <pre tabindex="0"><code>sudo chown -R caddy:caddy wordpress
 </code></pre><p>PHP的設定檔也要改，找到www.conf檔</p>
 <pre tabindex="0"><code>; Unix user/group of processes
-; Note: The user is mandatory. If the group is not set, the default user's group
+; Note: The user is mandatory. If the group is not set, the default user&#39;s group
 ;       will be used.
 ; RPM: apache Choosed to be able to access some dir as httpd
 user = apache.  ***這裡改成caddy***
 ; RPM: Keep a group allowed to write in log dir.
 group = apache ***這裡改成caddy***
 </code></pre><p>基本上這樣就可以成功了。</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>裡面只要 <!-- raw HTML omitted -->&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
   </div>
   <footer>
@@ -354,7 +354,7 @@ group = apache ***這裡改成caddy***
     <article class="post">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -420,6 +420,17 @@ group = apache ***這裡改成caddy***
 
         </section>
         <header>
+          <h1><a href="../../../../2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/">如何開始學python</a></h1>
+          <time class="published" datetime="">May 16, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/09/18/%E5%AD%B8%E6%9C%83%E8%B6%85%E5%BC%B7%E6%B5%B7%E5%A0%B1%E9%8A%B7%E5%94%AE%E6%96%87%E6%A1%88/">學會超強海報銷售文案</a></h1>
           <time class="published" datetime="">September 18, 2021</time>
         </header>
@@ -477,17 +488,6 @@ group = apache ***這裡改成caddy***
         <header>
           <h1><a href="../../../../2021/09/04/%E4%B8%89%E6%8B%9B%E7%87%9F%E9%8A%B7%E5%BF%83%E7%90%86%E5%AD%B8/">三招營銷心理學</a></h1>
           <time class="published" datetime="">September 4, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
-          <time class="published" datetime="">September 1, 2021</time>
         </header>
       </article>
       
@@ -560,12 +560,12 @@ group = apache ***這裡改成caddy***
   
   <p class="copyright">
     
-      &copy; 2021
+      &copy; 2022
       
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.98.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

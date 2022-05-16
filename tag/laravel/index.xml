@@ -15,9 +15,9 @@
       <guid>https://www.liverx.org/2020/07/09/mac%E5%BA%95%E4%B8%8B%E5%AE%89%E8%A3%9Dlaravel/</guid>
       <description>我是MAC的使用者，而且程度不是很好的那一個，所以我是使用HomeBrew，來管理這些套件。
 要安裝HomeBrew很簡單，只需要打
-/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot;  真的超容易的，首先只要brew composer，就可以裝好composer
+/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34;  真的超容易的，首先只要brew composer，就可以裝好composer
  然後再用composer安裝Laravel，你可以打
-composer global require &amp;quot;laravel/installer&amp;quot; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
+composer global require &amp;#34;laravel/installer&amp;#34; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
 你一定很興奮打laravel，想要開始打怪，但是！還不行因為php版本不夠新，現在最新的PHP版本是7.4，所以你必須
 brew install php@7.4 然後就可以執行laravel new
 然後打一個php artisan serve，然後瀏覽器打開 http://127.0.0.1:8000 就成功了！</description>

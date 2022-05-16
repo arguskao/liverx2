@@ -8,13 +8,13 @@
 
 
 
-  <meta name="generator" content="Hugo 0.88.1" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta itemprop="name" content="用Caddy2來架設wordpress">
 <meta itemprop="description" content="講起Web server，大家熟知的應該是apache或者Nginx，但是這幾年出現更輕薄短小的Caddy，我會知道這個東西，是因為玩Hugo，剛好都是go語言寫的東西，雖然一直還沒時間研究出如果用Caddy&#43;hugo並且自動部屬。
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
 安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
 sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
-echo &quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+echo &#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&#34; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
 sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
 systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
 第一行預設是:80，我直接改成網址去掉後面的:80
@@ -27,7 +27,7 @@ systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile�
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
 安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
 sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
-echo &quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+echo &#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&#34; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
 sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
 systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
 第一行預設是:80，我直接改成網址去掉後面的:80
@@ -44,7 +44,7 @@ systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile�
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
 安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
 sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
-echo &quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+echo &#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&#34; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
 sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
 systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
 第一行預設是:80，我直接改成網址去掉後面的:80
@@ -261,7 +261,7 @@ systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile�
 User=root
 Group=www-data
 </code></pre><p>然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是<a href="https://caddyserver.com/docs/download">download</a></p>
-<pre tabindex="0"><code>echo &quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&quot; \
+<pre tabindex="0"><code>echo &#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&#34; \
     | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list
 sudo apt update
 sudo apt install caddy
@@ -327,7 +327,7 @@ sudo systemctl start caddy
     <article class="post">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -393,6 +393,17 @@ sudo systemctl start caddy
 
         </section>
         <header>
+          <h1><a href="../../../../2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/">如何開始學python</a></h1>
+          <time class="published" datetime="">May 16, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/09/18/%E5%AD%B8%E6%9C%83%E8%B6%85%E5%BC%B7%E6%B5%B7%E5%A0%B1%E9%8A%B7%E5%94%AE%E6%96%87%E6%A1%88/">學會超強海報銷售文案</a></h1>
           <time class="published" datetime="">September 18, 2021</time>
         </header>
@@ -450,17 +461,6 @@ sudo systemctl start caddy
         <header>
           <h1><a href="../../../../2021/09/04/%E4%B8%89%E6%8B%9B%E7%87%9F%E9%8A%B7%E5%BF%83%E7%90%86%E5%AD%B8/">三招營銷心理學</a></h1>
           <time class="published" datetime="">September 4, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
-          <time class="published" datetime="">September 1, 2021</time>
         </header>
       </article>
       
@@ -533,12 +533,12 @@ sudo systemctl start caddy
   
   <p class="copyright">
     
-      &copy; 2021
+      &copy; 2022
       
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.98.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

@@ -6,7 +6,22 @@
     <description>Recent content in Blog on 活力藥師網番外篇</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 18 Sep 2021 21:57:45 +0800</lastBuildDate><atom:link href="https://www.liverx.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 May 2022 17:32:03 +0800</lastBuildDate><atom:link href="https://www.liverx.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何開始學python</title>
+      <link>https://www.liverx.org/2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/</link>
+      <pubDate>Mon, 16 May 2022 17:32:03 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/</guid>
+      <description>講到學習語言，實在是我的弱項，不管是學英文還是學習電腦語言，我都不是很擅長，雖然自己對電腦有興趣，當初也想要考資訊科系，無奈成績太差，這十幾年來，一直想要好好的學一種語言，剛開始因為PHP用得多，所以想要好好的研究看看，結果失敗，後來覺得好像python很流行，所以又轉投python的懷抱，結果是跟戒菸一樣，不斷的失敗。
+但是皇天不負苦心人，我這次終於堅持下來了，還把我以前學的命理都寫成了程式，這次為何能夠堅持呢？我覺得有幾點原因，也跟初學者分享一下。
+  python和其他語言不一樣，對於環境的設定或者安裝模組有一定的要求，之前我光是搞安裝，就一個頭兩個大，加上沒人可以問，因為大家電腦的設定都不太一樣，沒法幫你看問題出在那裡。所以很多次都死在搞不好環境，找不到人問，我就放棄了。我是怎麼解決的呢?還是要感謝Google，有提供一個免費又好用的網頁平台：Colab。這個平台只要打開網頁就能用，不管你是Mac 或者PC，都能夠在一分鐘內開始寫程式，完全不用管設定的問題，安裝模組也非常方便。你只需要安靜地寫程式不用被干擾。
+  要有目的性，寫程式最好是有用處，你想要寫程式來解決什麼問題，這樣會比較有動力，我這次就是想把算命從手動改成程式，除了速度加快，更可以減少錯誤，所以我有目標以後，針對這個小範圍需要的語言，很快就能夠寫出來，不需要從頭學到尾。
+  感謝良好的教材，網路時代，可以從youtube甚至是大陸的網站，找到很多簡單易懂的影片，需要學什麼，Google一下，馬上就可以找到內容，真是給我很大的幫助，也不知道是不是開竅了，之前不懂的東西，現在都能看懂了。
+  感謝社團，臉書上python的社團有很多熱心的網友，自己煩惱很久的東西，他們都能夠瞬間就出正確的答案，讓我功力大增，也就有繼續學習的勇氣和動力。
+   我推薦大家都來學python   </description>
+    </item>
+    
     <item>
       <title>學會超強海報銷售文案</title>
       <link>https://www.liverx.org/2021/09/18/%E5%AD%B8%E6%9C%83%E8%B6%85%E5%BC%B7%E6%B5%B7%E5%A0%B1%E9%8A%B7%E5%94%AE%E6%96%87%E6%A1%88/</link>
@@ -428,9 +443,9 @@ mac電腦裡面銷售最好的應該是macbook了，因為到外面咖啡廳辦�
       <guid>https://www.liverx.org/2020/07/09/mac%E5%BA%95%E4%B8%8B%E5%AE%89%E8%A3%9Dlaravel/</guid>
       <description>我是MAC的使用者，而且程度不是很好的那一個，所以我是使用HomeBrew，來管理這些套件。
 要安裝HomeBrew很簡單，只需要打
-/bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot;  真的超容易的，首先只要brew composer，就可以裝好composer
+/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34;  真的超容易的，首先只要brew composer，就可以裝好composer
  然後再用composer安裝Laravel，你可以打
-composer global require &amp;quot;laravel/installer&amp;quot; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
+composer global require &amp;#34;laravel/installer&amp;#34; 記得要改一下小地方，請在 ~/.bash_profile 這裡加上一句 export PATH=$PATH=/Users/電腦名稱/.composer/vendor/bin 然後離開終端機。
 你一定很興奮打laravel，想要開始打怪，但是！還不行因為php版本不夠新，現在最新的PHP版本是7.4，所以你必須
 brew install php@7.4 然後就可以執行laravel new
 然後打一個php artisan serve，然後瀏覽器打開 http://127.0.0.1:8000 就成功了！</description>
@@ -584,7 +599,7 @@ Anydesk anydesk 安全性比較差，預設不需要使用密碼，但是好處�
 之前Caddy1的時候，我有拿來架過Wordpress，不知道是不是心理作用，真的速度上有比較快，結果一眨眼，Caddy2就出現了，但是網路上很少人討論，我花了一些時間研究，記錄下來，免得自己忘掉。
 安裝在VPS上，只有一個地方要注意，就是如果在 GCP 架設 Caddy 的話要注意，GCP 因為安全考量，必須要用 root 身分執行 Caddy 才能監聽 80 Port，所以要修改 caddy.service。
 sudo vim /etc/systemd/system/caddy.service ; User and group the process will run as. User=root Group=www-data 然後在Ubuntu上安裝Caddy2，其實步驟比Caddy1更容易。首先是download
-echo &amp;quot;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;quot; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
+echo &amp;#34;deb [trusted=yes] https://apt.fury.io/caddy/ /&amp;#34; \ | sudo tee -a /etc/apt/sources.list.d/caddy-fury.list sudo apt update sudo apt install caddy 基本上到這裡，就快安裝好了，但是沒有設定開機啟動可不行，所以要設定一下。
 sudo systemctl daemon-reload sudo systemctl enable caddy sudo systemctl start caddy 設定好以後，檢查一下是否正確
 systemctl status caddy Caddy2 到此就安裝好，接下來要設定Caddyfile這個重要的檔案。 正常來說，直接進入/etc/caddy裡面編輯就好
 第一行預設是:80，我直接改成網址去掉後面的:80
@@ -724,7 +739,7 @@ icloud 不能自由選擇要哪些資料夾，只能夠預設一些固定的，�
 一般來說傳統架wordpress，都是用apache+php+mysql，或者騷包一點的就用nginx+php+mysql，今天則是要用caddy+php+mysql。
 假設你都安裝好caddy，接下來要裝PHP 7.2 (以ubuntu18.04為例，如果是19.04，是php7.3，底下的7.2要改成7.3)
 sudo apt-get install -y php7.2-fpm php7.2-mysql php7.2-bcmath php7.2-bz2 php7.2-curl php7.2-gd php7.2-intl php7.2-fileinfo php7.2-iconv php7.2-mbstring php7.2-xml php7.2-xmlrpc php7.2-zip 裝好以後，可以用info.php1或者php -v 看看是否有成功 然後就是把設定加到Caddyfile裡面
-example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
+example.com { tls xxx@gmail.com # 你自己的Email root /var/www/wordpress gzip fastcgi / unix:/var/run/php/php7.3-fpm.sock php rewrite { if {path} not_match ^\/wp-admin to {path} {path}/ /index.php?{query} } header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 上面有個小坑，害我花了三四個小時找錯誤，就是路徑 /var/run/php (有的說明文件沒有php，所以路徑錯，一直php不能啟動。
 最後再安裝Mysql，務必按照順序。
 sudo apt-get install mysql-server sudo apt install mysql-client sudo apt install libmysqlclient-dev 然後就登入MySQL：</description>
     </item>
@@ -775,8 +790,8 @@ Forestry 非常方便，除了可以新建一個網站以外，也可以匯入�
 我覺得最大的差點有兩點，本來有三點，就是private repo，但是後來github也取消了。
  Hugo 產生的靜態網頁目錄，預設是public，是要直接丟在github上，然後就可以執行了。但是gitlab不行，他必須將整個網站丟上去，讓gitlab去執行，然後還必須設定一個CI/CD檔案。（就是這個設定，讓我搞了快一個月，本來是要放棄的，因為網路上找不到資料）。 有時候在git push 的時候，因為遠端的檔案比較新，github可以用force的指令，硬上傳就沒事，但是Gitlab一定要找出原因，通常要git pull下來解決才行，這個也挺頭大。  這裡記載一下搞了我很久的問題，就是設定CI/CD檔案，檔名是.gitlab-ci.yml 這個有範例，但不知道為何網路上範例都不一樣，結果不能用
 image: monachus/hugo variables: GIT_SUBMODULE_STRATEGY: recursive test: script: - hugo except: - master pages: script: - hugo artifacts: paths: - public only: - master 本來以為設定這個成功以後，就可以用了，沒想到居然出現
-fatal: No url found for submodule path &#39;public&#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
-[submodule &amp;quot;path_to_submodule&amp;quot;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
+fatal: No url found for submodule path &amp;#39;public&amp;#39; in .gitmodules 我看大家都沒事，不知道我為何會這樣，找了半天資料告訴我應該先設定.gitmodules 這個檔案，裡面的內容是
+[submodule &amp;#34;path_to_submodule&amp;#34;] （這裡一定要 打public） path = path_to_submodule (通常是 themes/版面名稱） url = git://url-of-source/ （版面的git位置） 設定好以後再
 git submodule init git submodule update 還要設定.</description>
     </item>
     
@@ -808,7 +823,7 @@ sudo setcap &#39;cap_net_bind_service=+ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;quot;max-age=604800&amp;quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &amp;#34;max-age=604800&amp;#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy.</description>
@@ -1034,7 +1049,7 @@ sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.ser
   銀行帳戶與PayPal登記名稱必須相符，以利PayPal識別身分；
   若您銀行帳戶為約定轉帳的模式，需事先將PayPal登記為收款人(查看收款人資訊)；
   轉帳資金需要3~6天才能顯示於PayPal帳戶餘額中。
-  不同國家地區的PayPal連結銀行與儲值的規定不同，請參考**常見問題**或**連繫客服**。
+  不同國家地區的PayPal連結銀行與儲值的規定不同，請參考**常見問題或連繫客服**。
   </description>
     </item>
     
@@ -3325,8 +3340,7 @@ View more documents from Alexei Kapterev.</description>
       <description>10月底，Google在美國《麻省技術評論》、《LinuxJournal》、《Mensa》、《今日物理》等幾本專業雜誌上，刊登了一份 「Google實驗室能力傾向測試」。試卷開頭，蠱惑地寫著「試試看!把答案寄回Google，你有希望去Google總部參觀，並成為我們其中一員」。 我看了這些題目，雖然古怪，但是也不算有困難，有興趣的人可以做完了郵寄給google公司，也許會得到一個工作機會呢。
   Solve this cryptic equation， realizing of course that values for M and E could be interchanged. No leading zeros are allowed. WWWDOT - GOOGLE = DOTCOM
   Write a haiku describing possible methods for predicting search traffic seasonality.
-   1 1 1 2 1 1 2 1 1 1 1 1 2 2 1 What is the next line?
- You are in a maze of twisty little passages，all alike.</description>
+   You are in a maze of twisty little passages，all alike. There is a dusty laptop here with a weak wireless connection. There are dull，lifeless gnomes strolling about.</description>
     </item>
     
     <item>
@@ -4563,7 +4577,7 @@ Lancet的Rss 是 http://www.thelancet.com/rss
       <description>最近有一部片子叫做巴黎拜金女，這部片子特殊在於大家都說它爛，本來我也因為大家評論不好，所以正要跳過去；不過因為女主角是我喜歡的奧黛麗朵杜，她演過達文西密碼，艾蜜麗的異想世界，所以我就看看她的努力轉型之作，是不是有特殊之處呢??
 沒想到我一看之下，發現這部片子真的是典型的法國片子，也難怪台灣紅片子幾乎沒有法國片，拍的這麼深，連我都看了兩遍才搞懂，何況現在喜歡速食文化的年輕人，怎麼會看懂裡面的訴求呢??那廢話不多說，馬上來介紹這部片子囉
 故事的大綱是一個在外面&amp;quot;找尋上流社會對象 &amp;ldquo;的漂亮妹妹，然後再壹次誤認當中，他把在餐廳的服務生當成是有錢公子哥兒，然後發生一些好玩的事情，最後故事的結局就是這女主角愛上男主角，看到這裡你應該已經睡著了吧&amp;hellip;&amp;hellip;..這種劇情可能花錢請你去看，你都要考慮，但是導演的功力在於場景，也就是說你一定要去看電影，配上經典的對白，才能深深領悟!!
-大家都知道吃魚子醬，是一種上流社會的象徵，但是女主角吃著很貴的魚子醬的時候，他卻說出了:&amp;ldquo;我根本不喜歡吃魚子醬，硬逼自己吃，總有一天會真的喜歡!!&amp;quot;
+大家都知道吃魚子醬，是一種上流社會的象徵，但是女主角吃著很貴的魚子醬的時候，他卻說出了:&amp;ldquo;我根本不喜歡吃魚子醬，硬逼自己吃，總有一天會真的喜歡!!&amp;rdquo;
 這一句是本劇中的經典，但我問過很多人，大家完全沒有印象，我想也是，在台灣女主角這樣的行為大概會被很多人罵賤女人，爛貨，公共汽車之類的，但是在法國，他是一種職業，台灣稱之為&amp;quot;交際花&amp;rdquo;，靠勞力賺錢並沒有什麼可恥的；但是這對白其實有著其他的涵義，對於練習吃魚子醬然後進入上流社會，女主角並不喜歡，我們要付出許多的努力才能得到成功，我們也不願意，但是我們還是用各種理由來強迫自己去努力，然後還是只有少數人可以得到成功。又換種角度，女主角其實不喜歡那些老男人，但是因為她要滿足自己的欲望，所以她強迫自己去做她並不喜歡做的事情，硬逼著自己做，以為有一天她能忘掉自己心裡的盼望???
 女主角在高貴的飯店中發出讚嘆：&amp;quot;我喜歡這裡，平易近人、安靜而奢華，置身其中，令人倍感與眾不同。&amp;ldquo;不知道是不是翻譯錯誤，可惜我不懂法文，一道菜六七千台幣居然叫做&amp;quot;平易近人&amp;rdquo;???這是哪門子的道理!!安靜是上流社會必備條件，置身其中令人備感奢華竟然要用花很多錢才可以達到，有錢人心裡都很空虛嗎???變態的餐具居然是鯊魚骨作的，手工磨的，光製作就要兩年，而且一頭鯊魚才作一套餐具；時間真的就是金錢!!!
 還有一個場景也連續出現三次，就是一歐元；第一次出現在女主角把男主角的錢都花光了以後，正要拔腿逃跑時，男主角身上剩下最後的一歐元，跟她買十秒鐘的凝望(一分鐘六歐元，一天將近九千歐元，折算成台幣40萬，這種價錢男主角還不怕死)；後來第二次出現在一個精品店的試衣間裡面，換成女主角跟他買十秒鐘，但是外面的人隨時可以能衝進來，讓她們所擁有的瞬間消失；第三次則是結局男女主角一起騎車要去玩，通過一個收費站，男主角拿出珍藏的一歐元。
@@ -4686,10 +4700,10 @@ WordPress 是 PHP 程式所建立的 Blog 系統。網頁 URL 的表達方式，
     
     <item>
       <title>永不滿意現狀----Google的哲學!!!</title>
-      <link>https://www.liverx.org/2007/04/30/%E6%B0%B8%E4%B8%8D%E6%BB%BF%E6%84%8F%E7%8F%BE%E7%8B%80-google%E7%9A%84%E5%93%B2%E5%AD%B8/</link>
+      <link>https://www.liverx.org/2007/04/30/%E6%B0%B8%E4%B8%8D%E6%BB%BF%E6%84%8F%E7%8F%BE%E7%8B%80----google%E7%9A%84%E5%93%B2%E5%AD%B8/</link>
       <pubDate>Mon, 30 Apr 2007 05:14:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2007/04/30/%E6%B0%B8%E4%B8%8D%E6%BB%BF%E6%84%8F%E7%8F%BE%E7%8B%80-google%E7%9A%84%E5%93%B2%E5%AD%B8/</guid>
+      <guid>https://www.liverx.org/2007/04/30/%E6%B0%B8%E4%B8%8D%E6%BB%BF%E6%84%8F%E7%8F%BE%E7%8B%80----google%E7%9A%84%E5%93%B2%E5%AD%B8/</guid>
       <description>這是我無意間在網路上看到google的理念,我覺得相當不錯,所以一方面我把它原原本本的摘錄下來給你們看,一方面加上自己的看法,當然你們也可以提出意見!!!
 我們的哲學
 永不滿足現狀 Google 創辦人 Larry Page 說道：「完美的搜尋引擎，要能做到確實瞭解使用者想要的東西，並確實提供對應的資訊。」鑒於今日的搜尋技術，尚還需要研究、開發和創新才能確實做到那遙遠願景的「瞭解」境界。Google 將會致力迸發那道光芒。儘管 Google 已經被認可為世界上的領導搜尋技術公司，但 Google 的目標在於提供更高水準的服務給那些搜尋資訊的人員，無論他們是坐在波士頓的辦公桌前、在波昂驅車行駛或在曼谷閒逛。
@@ -4791,10 +4805,10 @@ Google 能成功是因為它仰賴數百萬的個別使用者在網站上張貼�
 然後李察基爾為了接近這個很正的舞蹈老師就產生了一連串的故事!!!當然這部片子是值得你去租VCD來看的!!j我就不多介紹劇情了，挑出幾個我覺得有意思的場景!!!
 最早發現男主角有問題的是他的女兒，她有一次看電視的時候，忽然告訴她的媽媽，不管爸爸在幹麻，他最近開心了點!!&amp;ldquo;媽媽聽了以後有點覺得不對勁!!!
 當男主角的太太發現她的先生有外遇的時候，她委託私家偵探來調查，她問到這部戲中的經典名言!!!
-，&amp;ldquo;到底是什麼可以讓一個男人，一個20年來都表現如一的男人，突然之間都改變了!!&amp;quot;，&amp;ldquo;男人在沉默的絕望中生活，也許這絕望不想再沉默了!!&amp;quot;&amp;rdquo;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.語出自梭羅
+，&amp;ldquo;到底是什麼可以讓一個男人，一個20年來都表現如一的男人，突然之間都改變了!!&amp;quot;，&amp;ldquo;男人在沉默的絕望中生活，也許這絕望不想再沉默了!!&amp;rdquo;&amp;rdquo;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.語出自梭羅
 她問怎麼找到先生，私家偵探的助手很有意思，他回答&amp;quot;找到先生是個藝術，但是留住他是個工程!!&amp;rdquo;
 後來當她決定不再雇用私家偵探的時候，她跟偵探聊起結婚的理由
-人為什麼要結婚?因為我們需要有人見證我們的人生,在婚姻裡,承諾要照料一切,好事.壞事.恐怖的事.繁瑣俗事,所有一切.每一刻.每一天,你的人生不會被忽視,因我會注意,你的人生不會無人見證,因為我會為你見證&amp;rdquo;
+人為什麼要結婚?因為我們需要有人見證我們的人生,在婚姻裡,承諾要照料一切,好事.壞事.恐怖的事.繁瑣俗事,所有一切.每一刻.每一天,你的人生不會被忽視,因我會注意,你的人生不會無人見證,因為我會為你見證&amp;quot;
 到後來他去參加舞蹈比賽的時候，他太太也去現場參觀，男主角看到以後獃住了，這時候他的太太就奪門而逃，然後他太太問他，你做什麼都可以，但爲什麼將我置身事外????
 男主角說:&amp;ldquo;我不好意思!!&amp;rdquo; &amp;ldquo;不好意思變的更開心一點!,尤其是當我們已經變的這麼美滿的時候!!&amp;ldquo;我一生中最驕傲的事情是，你和我在一起很快樂，如果我不能告訴你我有些時候不快樂，是因為我不想傷害我最珍惜的人,我很抱歉.&amp;rdquo;
 故事的結局令人難忘！！快點去租這片子來看吧!!!</description>
@@ -4829,7 +4843,7 @@ Google 能成功是因為它仰賴數百萬的個別使用者在網站上張貼�
       <pubDate>Thu, 05 Apr 2007 11:57:00 +0000</pubDate>
       
       <guid>https://www.liverx.org/2007/04/05/%E7%95%B6%E5%B9%B8%E7%A6%8F%E4%BE%86%E6%95%B2%E9%96%80%E8%AE%80%E5%BE%8C%E6%84%9F/</guid>
-      <description>最近看了&amp;rsquo;當幸福來敲門&#39; ，這部片子挺多人看的，討論的人也很多，不過我懷疑有多少人真的能夠體會片中的真義，很多人看完只是哭哭就算了，到底哭什麼也不清楚，就像我們看到乞丐覺得他很可憐以外，只是留下兩行同情的熱淚．
+      <description>最近看了&amp;rsquo;當幸福來敲門&amp;rsquo; ，這部片子挺多人看的，討論的人也很多，不過我懷疑有多少人真的能夠體會片中的真義，很多人看完只是哭哭就算了，到底哭什麼也不清楚，就像我們看到乞丐覺得他很可憐以外，只是留下兩行同情的熱淚．
 我花了好多次片段的時間終於把這部片子看完了，不過除了威爾史密斯的演技還可以以外，整部戲的張力其實還好而已，至少我個人的感覺啦
 不過整個真實故事在於威爾史密斯的選擇，我覺得這是很不容易的，在美國來說,因為有很好的社會福利，所以就算你真的失業，也可以領救濟金，但是他沒有選澤這樣做，而且通常如果一般人應該會選擇先找一個比較普通的工作，先穩穩的賺再說，可是他居然在這麼苦的情況下，還去選擇六個月沒有薪水的實習工作，重點還在於不是做完以後就有工作 只有5%的成功機會，不要說是他這種情況了，就算一般人要跳槽也不會選擇這種情況，就算我自己也不會去挑戰這麼低的錄取率，想想自己上一個工作居然工作了十年!!!!
 十年耶!!!一個小孩可以從國小一年級讀到高中了!!!怎麼能在一家公司呆了十年，就是懶惰，不敢挑戰不可知的未來，所以我很佩服劇中的男主角!!!
@@ -5662,10 +5676,10 @@ Kacy也提出了五個缺點(也是想了半天) 沒自信，自我設限，少�
     
     <item>
       <title>網友Call-in站--part one</title>
-      <link>https://www.liverx.org/2007/01/20/%E7%B6%B2%E5%8F%8Bcall-in%E7%AB%99-part-one/</link>
+      <link>https://www.liverx.org/2007/01/20/%E7%B6%B2%E5%8F%8Bcall-in%E7%AB%99--part-one/</link>
       <pubDate>Sat, 20 Jan 2007 11:09:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2007/01/20/%E7%B6%B2%E5%8F%8Bcall-in%E7%AB%99-part-one/</guid>
+      <guid>https://www.liverx.org/2007/01/20/%E7%B6%B2%E5%8F%8Bcall-in%E7%AB%99--part-one/</guid>
       <description>因為這裡的網友都太熱心,本著互助合作的精神,對於網友提出的問題都能夠有中肯的建議,所以高藥師決定將網友的問題放到工商服務裡面,正名為&amp;quot;網友Call-in站&amp;quot;,以後大家的問題,如果高藥師不能回答的(其實除了醫藥,電腦問題大部分是不懂的),經徵求網友同意以後,會請大家來幫忙的!!!
 高藥師您好, 首先先向您致意! 您真是我們格友們亦師亦友的問題解決者! 您的高人氣,高訂閱率~絕非偶然! 而且這裡的網友真的又熱心又專業!!!!以前我有問題都去奇摩知識發問,但是通常都是廣告或者是一些沒有用的回答,您這裡的回應,比奇摩知識還要多出很多倍,速度又快;難怪大家喜歡來!!
 看到前兩位網友得到這麼多的問題回應, 我也想找你幫忙~倒不是因為要交友或徵婚! 呵&amp;hellip;我是11月下旬才接觸blog,原本就是電腦白癡的我,在電腦前也有了興趣! 這幾年來試圖轉型能做些生意! 也做了很多的投資但都是肉包子打狗,有去無回! 沉寂了好幾個月靠著刷卡度日,可是現在需要很嚴肅的去思考生存的問題! 我想透過網路能做些生意,來謀生獲得生活的需要! 可是卻不知如何起步! 要怎麼做? 我目前手上有自己好友所手工自製的產品,眼鏡鏈,名牌鏈,手機鏈都很有設計感,很獨特,很漂亮! 我沒有什麼資金可以開店! 我想在網路上做銷售,要如何開始,怎麼做呢? 請您幫我忙,教教我好嗎?非常感謝您!!!!
@@ -5942,7 +5956,7 @@ ps:有感想於台灣社會的亂源在於大家不守本分
 然後你可以 在那個背景色 裡面填 你要的顏色 (但是我沒有改,就按照原來的,數字不同代表顏色不同)
 填好以後 按下 xxxxxxxxxxxxxxx作成xxx (日文字不會打) ,外面有個白框框
 就會跳出 一段代碼  &amp;ldquo;http://www.muryo-counter.net/counter_FFFFFF_000000_000000_www.kimo.com.jpg&amp;quot; border=&amp;ldquo;0&amp;rdquo; alt=&amp;ldquo;&amp;ldquo;&amp;ldquo;&amp;ldquo;カウンター&amp;rdquo;&amp;gt;&amp;rdquo;
-然後你進入&amp;quot;管理我的部落格&amp;rdquo;,左邊有一個&amp;rsquo;進階管理&#39;,下面有個&amp;rsquo;自定管理欄位&#39;,把自訂管理欄位按下去以後,右邊的畫面會出現&#39; 自訂欄位名稱&#39;,你就自己填入&amp;quot;線上人數&amp;quot;呀,或是&amp;quot;識貨的內行人數&amp;quot;隨便都可以
+然後你進入&amp;quot;管理我的部落格&amp;rdquo;,左邊有一個&amp;rsquo;進階管理&amp;rsquo;,下面有個&amp;rsquo;自定管理欄位&amp;rsquo;,把自訂管理欄位按下去以後,右邊的畫面會出現&amp;rsquo; 自訂欄位名稱&amp;rsquo;,你就自己填入&amp;quot;線上人數&amp;quot;呀,或是&amp;quot;識貨的內行人數&amp;quot;隨便都可以
 至於&amp;quot;自訂欄位內容&amp;rdquo;,就把剛剛代碼那段給他整段貼進去,這樣就OK了!!!
 記得按儲存 這樣就搞定了
 下一篇又前進兩名</description>
@@ -6377,10 +6391,10 @@ Paint集團告訴我們簡單的幾點網路創業的秘訣
     
     <item>
       <title>屏東人幹麻要去台北吃黑鮪魚???---藍星人自以為是的智財權</title>
-      <link>https://www.liverx.org/2006/10/22/%E5%B1%8F%E6%9D%B1%E4%BA%BA%E5%B9%B9%E9%BA%BB%E8%A6%81%E5%8E%BB%E5%8F%B0%E5%8C%97%E5%90%83%E9%BB%91%E9%AE%AA%E9%AD%9A-%E8%97%8D%E6%98%9F%E4%BA%BA%E8%87%AA%E4%BB%A5%E7%82%BA%E6%98%AF%E7%9A%84%E6%99%BA%E8%B2%A1%E6%AC%8A/</link>
+      <link>https://www.liverx.org/2006/10/22/%E5%B1%8F%E6%9D%B1%E4%BA%BA%E5%B9%B9%E9%BA%BB%E8%A6%81%E5%8E%BB%E5%8F%B0%E5%8C%97%E5%90%83%E9%BB%91%E9%AE%AA%E9%AD%9A---%E8%97%8D%E6%98%9F%E4%BA%BA%E8%87%AA%E4%BB%A5%E7%82%BA%E6%98%AF%E7%9A%84%E6%99%BA%E8%B2%A1%E6%AC%8A/</link>
       <pubDate>Sun, 22 Oct 2006 16:06:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2006/10/22/%E5%B1%8F%E6%9D%B1%E4%BA%BA%E5%B9%B9%E9%BA%BB%E8%A6%81%E5%8E%BB%E5%8F%B0%E5%8C%97%E5%90%83%E9%BB%91%E9%AE%AA%E9%AD%9A-%E8%97%8D%E6%98%9F%E4%BA%BA%E8%87%AA%E4%BB%A5%E7%82%BA%E6%98%AF%E7%9A%84%E6%99%BA%E8%B2%A1%E6%AC%8A/</guid>
+      <guid>https://www.liverx.org/2006/10/22/%E5%B1%8F%E6%9D%B1%E4%BA%BA%E5%B9%B9%E9%BA%BB%E8%A6%81%E5%8E%BB%E5%8F%B0%E5%8C%97%E5%90%83%E9%BB%91%E9%AE%AA%E9%AD%9A---%E8%97%8D%E6%98%9F%E4%BA%BA%E8%87%AA%E4%BB%A5%E7%82%BA%E6%98%AF%E7%9A%84%E6%99%BA%E8%B2%A1%E6%AC%8A/</guid>
       <description>怎麼會想寫這個怪題目呢??還是因為員工旅遊的關係,有一位同事說,他是從加拿大回來,那裏的楓葉比台灣的漂亮太多了;所以這次得跟我們去奧萬大看楓葉,實在有些多餘,聊起這話題,讓我來了興趣,以前我們出國旅遊的時候,如果中午吃的不是中餐,就會跟導遊抱怨,怎麼連個中餐廳也找不到,你是混哪裡的呀.導遊就會笑笑說,要吃中餐留在台灣吃就好了,出來玩當然要吃吃當地的食物囉.如果心情就算了,心情不好的話,就會衝上前去,用力揮出我的右手&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-把小費用力塞給他,然後告訴她,你有在露天的咖啡座吃過中餐嗎???導遊低下頭,看看手中的晃亮的美金,最後還是給我們安排了;有一次老婆的親戚從高雄來台北玩,我帶她們去淡水,請他們吃最有名的淡水魚丸,結果有位長輩開口了:&amp;ldquo;台北人真是笨呀,這種爛東西哪裡能跟我們旗山的魚丸比呢???&amp;ldquo;我用力的吸了一口氣,再仔細咬了一口魚丸,實在分不出旗山的魚丸和淡水的魚丸有啥分別???
 魚丸可能有分別,月亮應該沒有了吧,哪裡的月亮可都是一樣的吧,總也搞不懂這群情侶們幹麻跑到淡水河邊去看月亮,自己家裡樓上隨便看看就好了,或者是看看錄影帶就好了;不都是一樣的月亮,還記得一個笑話嗎???詩人太太帶科學家的丈夫跑去看夕陽,過了十分鐘,他告訴太太,你看完了沒,我們可以回家了嗎????對於詩人來說,月亮上有嫦娥月兔還有可憐的吳剛,但是對科學家來說,月亮只是塊石頭.
 不知道你去過士林夜市吃過嗎???如果你有朋友住在那附近的話,通常得到的答案是他幾乎從來不去那邊吃,真奇怪的答案呀,其實越在你身邊的東西,你越是不會去注意,越是不會去珍惜,卻要等到失去了以後,要等到你出國以後,才會發現原來滷肉飯會讓人想到媽媽,會讓你清楚分辨每一顆飯粒是吸收了多少陽光.是,人都是不知足的,你如果不是因為出國旅遊不知道台灣的美,不知道原來大部分的國家,晚上是買不到東西的.
@@ -6422,7 +6436,7 @@ Paint集團告訴我們簡單的幾點網路創業的秘訣
       <description>今天和一個藥界的朋友聊天,聊到一個話題,以下是我的對話
 朋友問:&amp;ldquo;你不覺得台灣的藥廠太多了嗎??&amp;rdquo;
 我問,&amp;ldquo;你覺得台灣的醫院診所太多了嗎??&amp;rdquo;
-朋友聽了愣了一下，回答我&amp;quot;&#39; 當然太多了&amp;quot;，就連醫生也說太多了
+朋友聽了愣了一下，回答我&amp;quot;&amp;rsquo; 當然太多了&amp;quot;，就連醫生也說太多了
 我又問:&amp;ldquo;那為什麼還有人要等一年一度的義診，走兩三個小時去看醫生，還有人生小孩要坐直升機??&amp;rdquo;
 朋友答不出來:&amp;quot; 這跟藥廠多少有何關係??&amp;quot;
 我說：&amp;quot;台灣的醫療資源過度集中在城市!!&amp;quot;，在城市顯的多，在鄉村卻不夠，同樣的理由，台灣的藥廠幾乎都生產一樣的學名藥所以太多，但是對於專門用藥可是不賺錢的卻沒有人做，所以我認為在某方面藥廠又太少，台灣有很多掛羊頭賣狗肉的&amp;quot;生技公司&amp;ldquo;做出來的所謂&amp;quot;食品&amp;quot;不用經過衛生署審核，民眾吃到肚仔裡也沒有保障，這樣看起來，這些亂七八糟的食品廠都應該改成藥廠，所以藥廠又太少了!!!
@@ -7038,7 +7052,7 @@ D代表Drug
 &amp;ldquo;你算啊，我每天要交 380元，油費大概210 元左右。一天17小時，平均每小時固定成本 22元，交給公司，平均每小時12.5 元油費。這是不是就是34.5元？ &amp;ldquo;，我有些驚訝。我打了10 年的車，第一次聽到有計程車司機這麼計算成本。以前的司機都和我說，每公里成本0.3元，另外每天交多少錢之類的。
 &amp;ldquo;成本是不能按公里算的，只能按時間算。你看，計價器有一個 &amp;ldquo;檢查&amp;rdquo; 功能。你可以看到一天的詳細記錄。我做過資料分析，每次載客之間的空駛時間平均為7分鐘。如果上來一個起步價， 10元，大概要開 10分鐘。也就是每一個10 元的客人要花17分鐘的成本，就是 9.8元。不賺錢啊！如果說做浦東、杭州、青浦的客人是吃飯，做10 元的客人連吃菜都算不上，只能算是撒了些味精。&amp;rdquo;
 強！這位師傅聽上去真不像計程車司機，到像是一位成本核算師。&amp;rdquo; 那你怎麼辦呢？&amp;ldquo;我更感興趣了，繼續問。看來去機場的路上還能學到新東西。
-&amp;ldquo;千萬不能被客戶拉了滿街跑。而是通過選擇停車的地點，時間，和客戶，主動地決定你要去的地方。 &amp;ldquo;我非常驚訝，這聽上去很有意思。&amp;rdquo; 有人說做計程車司機是靠運氣吃飯的職業。我以為不是。你要站在客戶的位置上，從客戶的角度去思考。&amp;rdquo; 這句話聽上去很專業，有點像很多商業管理培訓老師說的&amp;quot;put yourself into others&#39; shoes.&amp;rdquo;
+&amp;ldquo;千萬不能被客戶拉了滿街跑。而是通過選擇停車的地點，時間，和客戶，主動地決定你要去的地方。 &amp;ldquo;我非常驚訝，這聽上去很有意思。&amp;rdquo; 有人說做計程車司機是靠運氣吃飯的職業。我以為不是。你要站在客戶的位置上，從客戶的角度去思考。&amp;rdquo; 這句話聽上去很專業，有點像很多商業管理培訓老師說的&amp;quot;put yourself into others&amp;rsquo; shoes.&amp;rdquo;
 &amp;ldquo;給你舉個例子，醫院門口，一個拿著藥的，一個拿著臉盆的，你帶哪一個。 &amp;ldquo;我想了想，說不知道。
 &amp;ldquo;你要帶那個拿臉盆的。一般人病小痛的到醫院看一看，拿點藥，不一定會去很遠的醫院。拿著臉盆打車的，那是出院的。住院哪有不死人的？今天二樓的誰死了，明天三樓又死了一個。從醫院出來的人通常會有一種重獲新生的感覺，重新認識生命的意義，健康才最重要。那天這個說：走，去青浦。眼睛都不眨一下。你說他會打車到人民廣場，再去做青浦線嗎？絕對不會！ &amp;quot;
 我不由得開始佩服。
@@ -7065,10 +7079,10 @@ D代表Drug
     
     <item>
       <title>藥局的黑幕--part IV</title>
-      <link>https://www.liverx.org/2006/04/09/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95-part-iv/</link>
+      <link>https://www.liverx.org/2006/04/09/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95--part-iv/</link>
       <pubDate>Sun, 09 Apr 2006 07:41:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2006/04/09/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95-part-iv/</guid>
+      <guid>https://www.liverx.org/2006/04/09/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95--part-iv/</guid>
       <description>到底有多少假藥????
 每隔一陣子就可以在報章雜誌上看到警察又查獲了哪裡有做假藥,假藥怎麼會這麼多呢??因為這都是消費者造成的,一聽之下覺得很怪,賣假貨跟消費者哪裡有關係,消費者當然不願意買假貨呀,其實這就跟名牌包包有仿冒品一樣,有沒有聽過雜牌包包有人願意仿冒的呢???絕對沒有的,因為仿冒的最主要原因是利潤,如果沒有價差的話,誰願意來仿冒呢???
 全台灣號稱仿冒第一名的藥是威X剛,怎麼會有這種情形呢??因為消費者都要買最便宜的,於是到處比價,你想想賣一顆藥該賺多少利潤,10%???5%???還是成本賣,如果你買過一顆400元的威X剛,那幾乎不太會假,因為那在合理利潤的範圍,不是所有的藥師都是下流胚子,但是如果你買一顆350元的話,那就開始步入危險邊緣了,不敢說一定是假的,不過已經有這樣的機率了,如果你買一顆300元的話,那除非你同時買了很多東西,不然的話,假貨機率幾乎已經超過一半,這樣說吧,如果有人可以拿真貨一顆300元賣我的話,有多少買多少,請馬上跟我聯絡!!!一顆再讓你賺10元!!!!這樣你懂我的意思了嗎???為了要賺錢,為了要應付客人無止盡的比價,而不重視專業,這樣的客人當然會被&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;.
@@ -7314,10 +7328,10 @@ yam的搜尋結果是完全找不到!!!!(雖然號稱跟google合作,但是好�
     
     <item>
       <title>藥局的黑幕--part III</title>
-      <link>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95-part-iii/</link>
+      <link>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95--part-iii/</link>
       <pubDate>Fri, 17 Mar 2006 14:44:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95-part-iii/</guid>
+      <guid>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95--part-iii/</guid>
       <description>接下來要說廣告藥囉
 幾乎每一家藥局的廣告藥都是照成本賣的,舉例來說,普X疼,你進的價錢和賣價幾乎都差不多,但是有的藥局連廣告藥也要拼價,可能賠個五元或者十元,也是很簡單的測驗原理,你先問老闆一盒多少錢,如果老闆說多少,你說要買一打能不能算便宜一點,如果他是賺你很多的話,他一定會打折給你的,因為他有賺錢怎麼可能不賺你錢呢???
 也許你又奇怪了,為什麼要賠錢賣呢??這很簡單,人吃五穀雜糧,沒有不生病的,而且台灣人喜歡 吃藥的可是有名的,普X疼算你便宜,哪天你要買維他命,肝藥之類的,一次就把你賺夠本!!!
@@ -7328,10 +7342,10 @@ yam的搜尋結果是完全找不到!!!!(雖然號稱跟google合作,但是好�
     
     <item>
       <title>藥局的黑幕--part II</title>
-      <link>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95-part-ii/</link>
+      <link>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95--part-ii/</link>
       <pubDate>Fri, 17 Mar 2006 13:06:00 +0000</pubDate>
       
-      <guid>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95-part-ii/</guid>
+      <guid>https://www.liverx.org/2006/03/17/%E8%97%A5%E5%B1%80%E7%9A%84%E9%BB%91%E5%B9%95--part-ii/</guid>
       <description>藥局對一般人來說,都以為是相當賺錢的行業
 想說一顆藥才幾毛錢,怎麼賣我這麼貴,最重要的是現在有健保,去醫院領一堆藥,不過幾百元,怎麼到藥局買個藥,有時候要一兩千,可見藥局多黑心？??!!!
 其實台灣的民眾最可憐的地方在於沒有邏輯觀念,遇到事情不會分析前因後果,所以才會連兩顆子彈也能改變選舉!!(好像扯太遠了)

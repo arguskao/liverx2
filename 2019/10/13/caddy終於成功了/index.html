@@ -8,7 +8,7 @@
 
 
 
-  <meta name="generator" content="Hugo 0.88.1" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta itemprop="name" content="Caddy終於成功了">
 <meta itemprop="description" content="每次我都會玩一些有的沒有的，基本上都問不到人，只能從網路上找一些資料，偏偏網路資料很多錯誤的，尤其是內地的資料，很多都是抄襲的，錯誤的地方還一模一樣，所以希望趕快筆記下來，免得我自己忘記。
 前一陣子，整個從Wordpress，換到Hugo，然後研究Hugo幾個禮拜，可惜台灣幾乎沒有人玩這個，也可能有，我智障找不到，只能夠自己慢慢研究，後來終於選了一些好的版型，發現即使沒有AMP，SEO的效果也很好。
@@ -22,7 +22,7 @@ sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &#34;max-age=604800&#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy."><meta itemprop="datePublished" content="2019-10-13T15:37:54+08:00" />
@@ -42,7 +42,7 @@ sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &#34;max-age=604800&#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy." />
@@ -66,7 +66,7 @@ sudo setcap &#39;cap_net_bind_service=&#43;ep&#39; /usr/local/bin/caddy
 我每次都會出現沒有setcap這個指令，請安裝libcap2-bin，才會出現
 這裡打對了，等一下設定檔，只需要打一行就好，他會自動幫你申請證書。
 重點來了，Caddyfile要怎麼設定呢？舉一個例子，假設你的網址是oracle.example.com
- oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &quot;max-age=604800&quot; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
+ oracle.example.com { tls example@gmail.com #這裡打你自己的Email root /var/www #這裡打你的檔案路徑 index index.html gzip # 網頁壓縮 header /assets { # 加入檔頭，指定 assets 路徑下 Cache-Control &#34;max-age=604800&#34; # 控制瀏覽器快取，壽命一週 } } 這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！
 附註：會碰到port 80 被占用的話，就使用
 sudo netstat -lnp | grep 80 看哪個程式PID佔用port 80，通常caddy自己也會佔用，砍掉就正常了。
 sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.service sudo systemctl start caddy."/>
@@ -293,7 +293,7 @@ sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.ser
   index index.html
   gzip                             # 網頁壓縮
     header /assets {       # 加入檔頭，指定 assets 路徑下
-      Cache-Control &quot;max-age=604800&quot;   # 控制瀏覽器快取，壽命一週
+      Cache-Control &#34;max-age=604800&#34;   # 控制瀏覽器快取，壽命一週
     }
   }
 </code></pre><p>這樣就打完收工了！我希望Caddy能夠繼續輕薄短小，不要再肥大囉！</p>
@@ -305,17 +305,16 @@ sudo chmod 644 /etc/systemd/system/caddy.service sudo systemctl enable caddy.ser
 sudo systemctl enable caddy.service
 sudo systemctl start caddy.service
 sudo systemctl status caddy.service
-
 </code></pre><p><a href="https://www.giuem.com/caddy-tutorial-for-debian/">參考文章</a> (Debain)</p>
 <p><a href="https://wzfou.com/caddy/">參考文章</a> 內地的文章，挺詳細</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>如果說Cloudflare的DNS地方沒有打勾。問題就會變得很簡單。只是雖然這樣不知道為何要用CF的DNS了。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 
   </div>
   <footer>
@@ -360,7 +359,7 @@ sudo systemctl status caddy.service
     <article class="post">
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -426,6 +425,17 @@ sudo systemctl status caddy.service
 
         </section>
         <header>
+          <h1><a href="../../../../2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/">如何開始學python</a></h1>
+          <time class="published" datetime="">May 16, 2022</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
           <h1><a href="../../../../2021/09/18/%E5%AD%B8%E6%9C%83%E8%B6%85%E5%BC%B7%E6%B5%B7%E5%A0%B1%E9%8A%B7%E5%94%AE%E6%96%87%E6%A1%88/">學會超強海報銷售文案</a></h1>
           <time class="published" datetime="">September 18, 2021</time>
         </header>
@@ -483,17 +493,6 @@ sudo systemctl status caddy.service
         <header>
           <h1><a href="../../../../2021/09/04/%E4%B8%89%E6%8B%9B%E7%87%9F%E9%8A%B7%E5%BF%83%E7%90%86%E5%AD%B8/">三招營銷心理學</a></h1>
           <time class="published" datetime="">September 4, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="../../../../2021/09/01/%E5%8F%88%E8%A6%81%E9%96%8B%E5%A7%8B%E5%AF%AB%E5%B0%88%E6%A1%88%E4%BA%86/">又要開始寫專案了</a></h1>
-          <time class="published" datetime="">September 1, 2021</time>
         </header>
       </article>
       
@@ -566,12 +565,12 @@ sudo systemctl status caddy.service
   
   <p class="copyright">
     
-      &copy; 2021
+      &copy; 2022
       
         活力藥師網番外篇
       
     . <br>
-    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.88.1'>Hugo</a> 提供
+    主題: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>移植自 <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | 由 <a href='https://gohugo.io/' target='_blank' rel='noopener' title='0.98.0'>Hugo</a> 提供
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>

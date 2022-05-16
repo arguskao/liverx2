@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on 活力藥師網番外篇</title>
+    <link>https://www.liverx.org/tag/python/</link>
+    <description>Recent content in python on 活力藥師網番外篇</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 16 May 2022 17:32:03 +0800</lastBuildDate><atom:link href="https://www.liverx.org/tag/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何開始學python</title>
+      <link>https://www.liverx.org/2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/</link>
+      <pubDate>Mon, 16 May 2022 17:32:03 +0800</pubDate>
+      
+      <guid>https://www.liverx.org/2022/05/16/%E5%A6%82%E4%BD%95%E9%96%8B%E5%A7%8B%E5%AD%B8python/</guid>
+      <description>講到學習語言，實在是我的弱項，不管是學英文還是學習電腦語言，我都不是很擅長，雖然自己對電腦有興趣，當初也想要考資訊科系，無奈成績太差，這十幾年來，一直想要好好的學一種語言，剛開始因為PHP用得多，所以想要好好的研究看看，結果失敗，後來覺得好像python很流行，所以又轉投python的懷抱，結果是跟戒菸一樣，不斷的失敗。
+但是皇天不負苦心人，我這次終於堅持下來了，還把我以前學的命理都寫成了程式，這次為何能夠堅持呢？我覺得有幾點原因，也跟初學者分享一下。
+  python和其他語言不一樣，對於環境的設定或者安裝模組有一定的要求，之前我光是搞安裝，就一個頭兩個大，加上沒人可以問，因為大家電腦的設定都不太一樣，沒法幫你看問題出在那裡。所以很多次都死在搞不好環境，找不到人問，我就放棄了。我是怎麼解決的呢?還是要感謝Google，有提供一個免費又好用的網頁平台：Colab。這個平台只要打開網頁就能用，不管你是Mac 或者PC，都能夠在一分鐘內開始寫程式，完全不用管設定的問題，安裝模組也非常方便。你只需要安靜地寫程式不用被干擾。
+  要有目的性，寫程式最好是有用處，你想要寫程式來解決什麼問題，這樣會比較有動力，我這次就是想把算命從手動改成程式，除了速度加快，更可以減少錯誤，所以我有目標以後，針對這個小範圍需要的語言，很快就能夠寫出來，不需要從頭學到尾。
+  感謝良好的教材，網路時代，可以從youtube甚至是大陸的網站，找到很多簡單易懂的影片，需要學什麼，Google一下，馬上就可以找到內容，真是給我很大的幫助，也不知道是不是開竅了，之前不懂的東西，現在都能看懂了。
+  感謝社團，臉書上python的社團有很多熱心的網友，自己煩惱很久的東西，他們都能夠瞬間就出正確的答案，讓我功力大增，也就有繼續學習的勇氣和動力。
+   我推薦大家都來學python   </description>
+    </item>
+    
+  </channel>
+</rss>
